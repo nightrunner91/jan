@@ -1,0 +1,41 @@
+[{
+  "id": "jan-{{ ALTER_SLUG }}",
+  "user_id": "{{ USER_ID }}",
+  "base_model_id": "{{ BASE_MODEL_ID }}",
+  "name": "Jan: {{ ALTER_NAME }}",
+  "params": {
+    "system": "{{ SYSTEM_PROMPT }}"
+  },
+  "meta": {
+    "profile_image_url": "/static/favicon.png",
+    "description": "{{ SHORT_DESCRIPTION }}",
+    "capabilities": {
+      "file_context": {{ FILE_CONTEXT }},
+      "vision": {{ VISION }},
+      "file_upload": {{ FILE_UPLOAD }},
+      "web_search": {{ WEB_SEARCH }},
+      "image_generation": {{ IMAGE_GENERATION }},
+      "code_interpreter": {{ CODE_INTERPRETER }},
+      "terminal": {{ TERMINAL }},
+      "citations": {{ CITATIONS }},
+      "status_updates": {{ STATUS_UPDATES }},
+      "builtin_tools": {{ BUILTIN_TOOLS }}
+    },
+    "suggestion_prompts": null,
+    "tags": {{ TAGS }},
+    "toolIds": {{ TOOL_IDS }},
+    "filterIds": ["token_usage_display"],
+    "defaultFeatureIds": {{ DEFAULT_FEATURE_IDS }}
+  },
+  "access_grants": [],
+  "is_active": true,
+  "updated_at": {{ TIMESTAMP }},
+  "created_at": {{ TIMESTAMP }},
+  "user": {
+    "id": "{{ USER_ID }}",
+    "name": "{{ USER_NAME }}",
+    "role": "{{ USER_ROLE }}",
+    "email": "{{ USER_EMAIL }}"
+  },
+  "write_access": true
+}]
