@@ -1,0 +1,19 @@
+{
+  "id": "blueprint-reader",
+  "name": {
+    "en": "Blueprint & Photo Reader",
+    "ru": "Чтение чертежей и фото"
+  },
+  "description": {
+    "en": "Guide interpretation of uploaded blueprints, sketches, and photos to extract measurements, materials, and actionable construction guidance.",
+    "ru": "Помощь в интерпретации загруженных чертежей, эскизов и фотографий для извлечения размеров, материалов и практических рекомендаций."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "constructor", "blueprints", "vision", "planning"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

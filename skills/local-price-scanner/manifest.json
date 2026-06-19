@@ -1,0 +1,19 @@
+{
+  "id": "local-price-scanner",
+  "name": {
+    "en": "Local Price Scanner (Moldova)",
+    "ru": "Сканер локальных цен (Молдова)"
+  },
+  "description": {
+    "en": "Use web search efficiently to scan supraten.md, volta.md, 999.md, and construct.md for material and tool prices in Moldova.",
+    "ru": "Эффективный поиск цен на материалы и инструменты в Молдове через сайты supraten.md, volta.md, 999.md и construct.md."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "constructor", "prices", "moldova", "web-search"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

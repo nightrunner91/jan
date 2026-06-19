@@ -1,0 +1,19 @@
+{
+  "id": "build-planner",
+  "name": {
+    "en": "Build Planner",
+    "ru": "Планировщик работ"
+  },
+  "description": {
+    "en": "Structure any construction or DIY project into a consistent, actionable plan with overview, materials, numbered steps, time estimates, and safety notes.",
+    "ru": "Структурирование любого строительного или DIY-проекта в последовательный план: обзор, материалы, нумерованные шаги, сроки и замечания по безопасности."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "constructor", "planning", "diy", "workflow"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

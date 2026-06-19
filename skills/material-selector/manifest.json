@@ -1,0 +1,19 @@
+{
+  "id": "material-selector",
+  "name": {
+    "en": "Material Selector",
+    "ru": "Подбор материалов"
+  },
+  "description": {
+    "en": "Compare and select construction materials based on project requirements, climate, budget, durability, and local availability.",
+    "ru": "Сравнение и выбор строительных материалов на основе требований проекта, климата, бюджета, долговечности и локальной доступности."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "constructor", "materials", "diy", "construction"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

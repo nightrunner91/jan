@@ -1,0 +1,19 @@
+{
+  "id": "tool-selector",
+  "name": {
+    "en": "Tool Selector",
+    "ru": "Подбор инструментов"
+  },
+  "description": {
+    "en": "Recommend the right tools for a task, explain safe setup and operation, and provide maintenance and buying guidance.",
+    "ru": "Рекомендации по выбору инструментов для задачи, безопасной настройке и использованию, а также советы по обслуживанию и покупке."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "constructor", "tools", "safety", "diy"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

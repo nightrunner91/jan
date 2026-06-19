@@ -1,0 +1,19 @@
+{
+  "id": "safety-code-checker",
+  "name": {
+    "en": "Safety & Code Checker",
+    "ru": "Проверка безопасности и норм"
+  },
+  "description": {
+    "en": "Flag hazards, separate DIY-safe work from licensed-professional work, and reference building codes or GOSTs with citations.",
+    "ru": "Выявление опасностей, разграничение работ, доступных для самостоятельного выполнения, и работ, требующих лицензированного специалиста, а также ссылки на строительные нормы и ГОСТы."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "constructor", "safety", "codes", "compliance"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
