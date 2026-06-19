@@ -1,0 +1,19 @@
+{
+  "id": "evidence-hierarchy-evaluator",
+  "name": {
+    "en": "Evidence Hierarchy Evaluator",
+    "ru": "Оценка иерархии доказательств"
+  },
+  "description": {
+    "en": "Evaluate and rank scientific evidence by quality, from meta-analyses down to expert opinion and anecdote.",
+    "ru": "Оценка и ранжирование научных доказательств по качеству: от мета-анализов до мнений экспертов и анекдотов."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "scientist", "evidence", "research", "methodology"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "research-methodology-designer",
+  "name": {
+    "en": "Research Methodology Designer",
+    "ru": "Проектировщик исследовательской методологии"
+  },
+  "description": {
+    "en": "Design rigorous experiments and studies using hypothesis, prediction, experiment, analysis, interpretation, limitations, and next steps.",
+    "ru": "Проектирование строгих экспериментов и исследований: гипотеза, предсказание, эксперимент, анализ, интерпретация, ограничения и следующие шаги."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "scientist", "methodology", "experiment", "design"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

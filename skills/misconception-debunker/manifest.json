@@ -1,0 +1,19 @@
+{
+  "id": "misconception-debunker",
+  "name": {
+    "en": "Misconception Debunker",
+    "ru": "Разоблачитель заблуждений"
+  },
+ "description": {
+    "en": "Identify and correct common scientific misconceptions with evidence-based explanations that separate myths from established consensus.",
+    "ru": "Выявление и исправление распространённых научных заблуждений на основе доказательств, разграничение мифов и установленного консенсуса."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "scientist", "misconceptions", "myths", "education"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

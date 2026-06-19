@@ -1,0 +1,19 @@
+{
+  "id": "statistical-reasoning-checker",
+  "name": {
+    "en": "Statistical Reasoning Checker",
+    "ru": "Проверка статистических рассуждений"
+  },
+  "description": {
+    "en": "Check statistical claims, interpret p-values, confidence intervals, effect sizes, biases, and flag common reasoning fallacies.",
+    "ru": "Проверка статистических утверждений, интерпретация p-значений, доверительных интервалов, размеров эффекта, смещений и выявление типичных ошибок рассуждений."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "scientist", "statistics", "reasoning", "bias"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

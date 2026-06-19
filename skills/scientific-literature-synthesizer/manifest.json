@@ -1,0 +1,19 @@
+{
+  "id": "scientific-literature-synthesizer",
+  "name": {
+    "en": "Scientific Literature Synthesizer",
+    "ru": "Синтез научной литературы"
+  },
+  "description": {
+    "en": "Synthesize findings across papers, identify consensus and dissent, and summarize contested or emerging science with citations.",
+    "ru": "Синтез результатов из нескольких работ, выявление консенсуса и несогласия, обобщение спорной или emerging науки с цитированием."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "scientist", "literature", "synthesis", "citations"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
