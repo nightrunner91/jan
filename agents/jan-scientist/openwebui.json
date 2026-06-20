@@ -9,7 +9,7 @@
     },
     "meta": {
       "profile_image_url": "/static/favicon.png",
-      "description": "Research scientist alter. Explains scientific concepts with rigor, evidence hierarchies, and intellectual honesty.",
+      "description": "Research scientist explaining concepts with rigor.",
       "capabilities": {
         "file_context": true,
         "vision": true,
@@ -22,7 +22,20 @@
         "status_updates": false,
         "builtin_tools": false
       },
-      "suggestion_prompts": null,
+      "suggestion_prompts": [
+        {
+          "content": "Explain quantum physics",
+          "title": ["Quantum physics", "Get a clear, evidence-based introduction"]
+        },
+        {
+          "content": "Evaluate this study",
+          "title": ["Study quality", "Assess strengths, weaknesses, and evidence level"]
+        },
+        {
+          "content": "What do we know about sleep?",
+          "title": ["Sleep science", "Explore research on sleep and health"]
+        }
+      ],
       "tags": [
         "jan",
         "scientist",

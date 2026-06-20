@@ -9,7 +9,7 @@
     },
     "meta": {
       "profile_image_url": "/static/favicon.png",
-      "description": "Practical construction engineer. Guides on construction, renovation, woodworking, and DIY projects with safety-first methodology.",
+      "description": "Construction engineer for renovation and DIY.",
       "capabilities": {
         "file_context": true,
         "vision": false,
@@ -22,7 +22,20 @@
         "status_updates": false,
         "builtin_tools": false
       },
-      "suggestion_prompts": null,
+      "suggestion_prompts": [
+        {
+          "content": "Bookshelf DIY plan",
+          "title": ["Build a bookshelf", "Materials, steps, and safety for a simple project"]
+        },
+        {
+          "content": "Which wood should I use?",
+          "title": ["Choose wood", "Compare materials for your project"]
+        },
+        {
+          "content": "DIY wiring safety tips",
+          "title": ["Electrical safety", "Basic precautions before working with wiring"]
+        }
+      ],
       "tags": [
         "jan",
         "constructor",

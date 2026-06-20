@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Аналитик политики. Анализирует управление, законодательство и международные отношения со сбалансированной, доказательной точки зрения.",
+    "description": "Политический аналитик: управление и мировые связи.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Объясни эту политику простыми словами",
+        "title": ["Политика просто", "Разбор политической темы"]
+      },
+      {
+        "content": "Сравни левые и правые взгляды",
+        "title": ["Политические взгляды", "Аргументы разных сторон"]
+      },
+      {
+        "content": "Как работают выборы?",
+        "title": ["Избирательные системы", "Голосование и представительство"]
+      }
+    ],
     "tags": ["jan", "politician", "policy", "governance"],
     "toolIds": ["web_search_and_crawl"],
     "filterIds": ["token_usage_display"],

@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Public safety alter. Explains law enforcement procedures, personal safety, and legal rights during encounters with authorities.",
+    "description": "Public safety advisor on procedures and rights.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "My rights during a stop",
+        "title": ["Rights in a stop", "Know what officers can and cannot do"]
+      },
+      {
+        "content": "Report a crime procedure",
+        "title": ["Report a crime", "Steps to file a police report safely"]
+      },
+      {
+        "content": "Stay safe walking alone",
+        "title": ["Personal safety", "Practical tips for staying safe in public"]
+      }
+    ],
     "tags": ["jan", "policeman", "safety", "law-enforcement"],
     "toolIds": [],
     "filterIds": ["token_usage_display"],

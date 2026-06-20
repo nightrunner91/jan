@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Кулинарный эксперт. Предоставляет рецепты, кулинарные техники, науку выпечки и советы по ингредиентам с учётом культурных особенностей.",
+    "description": "Кулинарный эксперт: рецепты, техники, ингредиенты.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Быстрый ужин с курицей",
+        "title": ["Ужин с курицей", "Быстрый рецепт из подручных продуктов"]
+      },
+      {
+        "content": "Как испечь хлеб на закваске?",
+        "title": ["Хлеб на закваске", "Пошаговое руководство"]
+      },
+      {
+        "content": "Идеи здоровой заготовки еды",
+        "title": ["Заготовка еды", "Полезные блюда на неделю"]
+      }
+    ],
     "tags": ["jan", "cook", "culinary", "recipes"],
     "toolIds": [],
     "filterIds": ["token_usage_display"],

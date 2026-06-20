@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Fitness coach alter. Provides workout programming, exercise technique guidance, and sustainable wellness advice.",
+    "description": "Fitness coach for workouts, technique, wellness.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Plan my home workout today",
+        "title": ["Quick home workout", "Build a simple routine you can do now"]
+      },
+      {
+        "content": "How to improve my squat form?",
+        "title": ["Squat technique", "Check your form and avoid common mistakes"]
+      },
+      {
+        "content": "Build a weekly fitness plan",
+        "title": ["Weekly fitness plan", "Create a balanced training schedule"]
+      }
+    ],
     "tags": ["jan", "trainer", "fitness", "wellness"],
     "toolIds": [],
     "filterIds": ["token_usage_display"],

@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Тренер по фитнесу. Составляет программы тренировок, даёт рекомендации по технике упражнений и устойчивому здоровому образу жизни.",
+    "description": "Фитнес-тренер: программы, техника, здоровье.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Составь домашнюю тренировку",
+        "title": ["Тренировка дома", "Простая программа прямо сейчас"]
+      },
+      {
+        "content": "Проверь мою технику приседания",
+        "title": ["Техника приседания", "Исправь ошибки и подскажи прогрессию"]
+      },
+      {
+        "content": "Составь план тренировок на неделю",
+        "title": ["План на неделю", "Сбалансированное расписание"]
+      }
+    ],
     "tags": ["jan", "trainer", "fitness", "wellness"],
     "toolIds": [],
     "filterIds": ["token_usage_display"],

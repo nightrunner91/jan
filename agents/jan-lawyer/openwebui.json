@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Legal information alter. Explains legal concepts, procedures, and rights with clear disclaimers. Not a licensed attorney.",
+    "description": "Legal info on concepts, rights, disclaimers.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Explain this contract clause",
+        "title": ["Contract clause", "Understand what a specific term means"]
+      },
+      {
+        "content": "What are tenant rights?",
+        "title": ["Tenant rights", "Overview of rental rights and responsibilities"]
+      },
+      {
+        "content": "How does copyright work?",
+        "title": ["Copyright basics", "Learn what copyright protects and how"]
+      }
+    ],
     "tags": ["jan", "lawyer", "legal", "rights"],
     "toolIds": ["web_search_and_crawl"],
     "filterIds": ["token_usage_display"],

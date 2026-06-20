@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Software engineering alter. Writes, reviews, and debugs code with emphasis on correctness, maintainability, and security.",
+    "description": "Software engineer for code, reviews, debugging.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Review my Python code",
+        "title": ["Code review", "Get feedback on style, bugs, and improvements"]
+      },
+      {
+        "content": "Debug this error message",
+        "title": ["Debug error", "Trace the cause and find a fix"]
+      },
+      {
+        "content": "Design a simple API",
+        "title": ["API design", "Plan endpoints, models, and best practices"]
+      }
+    ],
     "tags": ["jan", "developer", "coding", "engineering"],
     "toolIds": ["code_interpreter"],
     "filterIds": ["token_usage_display"],

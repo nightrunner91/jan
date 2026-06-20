@@ -9,7 +9,7 @@
     },
     "meta": {
       "profile_image_url": "/static/favicon.png",
-      "description": "Lead medical consultant and clinical analyst. Provides differential diagnoses, treatment plans, and medication guidance with citations. Acts as a clinical decision-support specialist.",
+      "description": "Medical consultant for diagnosis and treatment.",
       "capabilities": {
         "file_context": true,
         "vision": false,
@@ -22,7 +22,20 @@
         "status_updates": false,
         "builtin_tools": false
       },
-      "suggestion_prompts": null,
+      "suggestion_prompts": [
+        {
+          "content": "I have a headache and fever",
+          "title": ["Headache and fever", "Review possible causes and next steps"]
+        },
+        {
+          "content": "Explain this medication",
+          "title": ["Medication guide", "Learn uses, dosage, and side effects"]
+        },
+        {
+          "content": "Is this symptom serious?",
+          "title": ["Symptom check", "Assess whether you need urgent care"]
+        }
+      ],
       "tags": [
         "jan",
         "doctor",

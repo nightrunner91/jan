@@ -9,7 +9,7 @@
     },
     "meta": {
       "profile_image_url": "/static/favicon.png",
-      "description": "Практический инженер-строитель. Помогает в строительстве, ремонте, столярном деле и DIY-проектах с приоритетом безопасности.",
+      "description": "Инженер-строитель: ремонт, DIY и безопасность.",
       "capabilities": {
         "file_context": true,
         "vision": false,
@@ -22,7 +22,20 @@
         "status_updates": false,
         "builtin_tools": false
       },
-      "suggestion_prompts": null,
+      "suggestion_prompts": [
+        {
+          "content": "План полки своими руками",
+          "title": ["Полка своими руками", "Материалы, шаги и безопасность"]
+        },
+        {
+          "content": "Какое дерево выбрать?",
+          "title": ["Выбор дерева", "Сравни материалы для проекта"]
+        },
+        {
+          "content": "Безопасность при работе с электрикой",
+          "title": ["Безопасность электрики", "Меры предосторожности"]
+        }
+      ],
       "tags": [
         "jan",
         "constructor",

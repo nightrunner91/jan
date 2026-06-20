@@ -9,7 +9,7 @@
     },
     "meta": {
       "profile_image_url": "/static/favicon.png",
-      "description": "Учёный-исследователь. Объясняет научные концепции с rigor, иерархией доказательств и интеллектуальной честностью.",
+      "description": "Учёный-исследователь: наука и доказательства.",
       "capabilities": {
         "file_context": true,
         "vision": true,
@@ -22,7 +22,20 @@
         "status_updates": false,
         "builtin_tools": false
       },
-      "suggestion_prompts": null,
+      "suggestion_prompts": [
+        {
+          "content": "Объясни квантовую физику",
+          "title": ["Квантовая физика", "Простое введение на основе фактов"]
+        },
+        {
+          "content": "Оцени качество этого исследования",
+          "title": ["Качество исследования", "Сильные стороны и доказательства"]
+        },
+        {
+          "content": "Что мы знаем о сне?",
+          "title": ["Наука о сне", "Исследования о сне и здоровье"]
+        }
+      ],
       "tags": [
         "jan",
         "scientist",

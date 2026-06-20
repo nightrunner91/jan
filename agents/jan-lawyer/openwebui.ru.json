@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Специалист по правовой информации. Объясняет юридические концепции, процедуры и права с чёткими оговорками. Не является лицензированным адвокатом.",
+    "description": "Правовая информация: концепции, права, оговорки.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Объясни пункт договора",
+        "title": ["Пункт договора", "Что означает конкретный пункт"]
+      },
+      {
+        "content": "Какие права у арендатора?",
+        "title": ["Права арендатора", "Права и обязанности арендатора"]
+      },
+      {
+        "content": "Как работает авторское право?",
+        "title": ["Основы авторского права", "Что защищает авторское право"]
+      }
+    ],
     "tags": ["jan", "lawyer", "legal", "rights"],
     "toolIds": ["web_search_and_crawl"],
     "filterIds": ["token_usage_display"],

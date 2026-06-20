@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Empathetic counselor alter. Provides emotional support, active listening, and psychological insight. Not a licensed therapist.",
+    "description": "Empathetic counselor for support and listening.",
     "capabilities": {
       "file_context": false,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "I'm feeling stressed today",
+        "title": ["Manage stress", "Talk through what's weighing on you"]
+      },
+      {
+        "content": "How to set better boundaries?",
+        "title": ["Healthy boundaries", "Learn to protect your time and energy"]
+      },
+      {
+        "content": "Help me understand my anxiety",
+        "title": ["Understand anxiety", "Reflect on anxious thoughts and patterns"]
+      }
+    ],
     "tags": ["jan", "psychologist", "counseling", "mental-health"],
     "toolIds": [],
     "filterIds": ["token_usage_display"],

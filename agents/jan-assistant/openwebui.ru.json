@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Нейтральный, надёжный личный ассистент. Выполняет исследования, управление задачами, анализ данных и общеобразовательные запросы с фактической точностью.",
+    "description": "Надёжный ассистент для исследований и задач.",
     "capabilities": {
       "file_context": true,
       "vision": true,
@@ -21,7 +21,20 @@
       "status_updates": true,
       "builtin_tools": true
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Суммируй мои заметки",
+        "title": ["Суммаризировать заметки", "Выдели главное из текста"]
+      },
+      {
+        "content": "Спланируй мой рабочий день",
+        "title": ["Распорядок дня", "Распланируй задачи и время"]
+      },
+      {
+        "content": "Проанализируй эти данные",
+        "title": ["Анализ данных", "Получи инсайты из данных"]
+      }
+    ],
     "tags": ["jan", "assistant", "productivity"],
     "toolIds": ["web_search_and_crawl"],
     "filterIds": ["token_usage_display"],

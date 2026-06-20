@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Neutral, reliable personal assistant. Handles research, task management, data analysis, and general knowledge queries with factual precision.",
+    "description": "Reliable assistant for research and tasks.",
     "capabilities": {
       "file_context": true,
       "vision": true,
@@ -21,7 +21,20 @@
       "status_updates": true,
       "builtin_tools": true
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Summarize my notes",
+        "title": ["Summarize notes", "Condense text into key points"]
+      },
+      {
+        "content": "Plan my workday schedule",
+        "title": ["Daily schedule", "Organize tasks and time blocks"]
+      },
+      {
+        "content": "Analyze this data for me",
+        "title": ["Data analysis", "Get insights from a dataset or table"]
+      }
+    ],
     "tags": ["jan", "assistant", "productivity"],
     "toolIds": ["web_search_and_crawl"],
     "filterIds": ["token_usage_display"],

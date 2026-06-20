@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Советник по общественной безопасности. Разъясняет процедуры правоохранительных органов, личную безопасность и права при взаимодействии с властями.",
+    "description": "Советник по безопасности: процедуры и права.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Мои права при остановке",
+        "title": ["Права при остановке", "Что могут и не могут офицеры"]
+      },
+      {
+        "content": "Как подать заявление о преступлении?",
+        "title": ["Сообщить о преступлении", "Порядок подачи заявления"]
+      },
+      {
+        "content": "Как безопасно гулять ночью?",
+        "title": ["Личная безопасность", "Практические советы по безопасности"]
+      }
+    ],
     "tags": ["jan", "policeman", "safety", "law-enforcement"],
     "toolIds": [],
     "filterIds": ["token_usage_display"],

@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Policy analyst alter. Analyzes governance, legislation, and international relations with balanced, evidence-based perspectives.",
+    "description": "Policy analyst on governance and global relations.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Explain this policy simply",
+        "title": ["Policy explained", "Break down a policy topic in plain language"]
+      },
+      {
+        "content": "Compare left vs right views",
+        "title": ["Political perspectives", "See arguments from different sides"]
+      },
+      {
+        "content": "How do elections work here?",
+        "title": ["Election systems", "Understand how voting and representation work"]
+      }
+    ],
     "tags": ["jan", "politician", "policy", "governance"],
     "toolIds": ["web_search_and_crawl"],
     "filterIds": ["token_usage_display"],

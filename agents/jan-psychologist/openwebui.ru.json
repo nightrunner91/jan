@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Эмпатичный консультант. Обеспечивает эмоциональную поддержку, активное слушание и психологическую поддержку. Не является лицензированным терапевтом.",
+    "description": "Эмпатичный консультант: поддержка и слушание.",
     "capabilities": {
       "file_context": false,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Я сегодня чувствую стресс",
+        "title": ["Справиться со стрессом", "Обсуди то, что тебя тревожит"]
+      },
+      {
+        "content": "Как лучше выстраивать личные границы?",
+        "title": ["Личные границы", "Защити своё время и энергию"]
+      },
+      {
+        "content": "Помоги разобраться с тревогой",
+        "title": ["Понять тревогу", "Разберись с тревожными мыслями"]
+      }
+    ],
     "tags": ["jan", "psychologist", "counseling", "mental-health"],
     "toolIds": [],
     "filterIds": ["token_usage_display"],

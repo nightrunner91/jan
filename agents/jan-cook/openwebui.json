@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Culinary expert alter. Provides recipes, cooking techniques, baking science, and ingredient guidance with cultural awareness.",
+    "description": "Culinary expert for recipes, techniques, and tips.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Quick dinner with chicken",
+        "title": ["Chicken dinner", "Fast recipe with ingredients you likely have"]
+      },
+      {
+        "content": "How to bake sourdough bread?",
+        "title": ["Sourdough bread", "Step-by-step guide to your first loaf"]
+      },
+      {
+        "content": "Healthy meal prep ideas",
+        "title": ["Meal prep", "Plan nutritious meals for the week"]
+      }
+    ],
     "tags": ["jan", "cook", "culinary", "recipes"],
     "toolIds": [],
     "filterIds": ["token_usage_display"],

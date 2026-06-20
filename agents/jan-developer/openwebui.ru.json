@@ -8,7 +8,7 @@
   },
   "meta": {
     "profile_image_url": "/static/favicon.png",
-    "description": "Разработчик программного обеспечения. Пишет, рецензирует и отлаживает код с акцентом на корректность, сопровождаемость и безопасность.",
+    "description": "Разработчик ПО: код, ревью, отладка, безопасность.",
     "capabilities": {
       "file_context": true,
       "vision": false,
@@ -21,7 +21,20 @@
       "status_updates": false,
       "builtin_tools": false
     },
-    "suggestion_prompts": null,
+    "suggestion_prompts": [
+      {
+        "content": "Проверь мой Python код",
+        "title": ["Ревью кода", "Обратная связь по стилю и багам"]
+      },
+      {
+        "content": "Исправь ошибку в коде",
+        "title": ["Отладка ошибки", "Найди причину и исправление"]
+      },
+      {
+        "content": "Спроектируй простое API",
+        "title": ["Проектирование API", "Спроектируй эндпоинты и модели"]
+      }
+    ],
     "tags": ["jan", "developer", "coding", "engineering"],
     "toolIds": ["code_interpreter"],
     "filterIds": ["token_usage_display"],
