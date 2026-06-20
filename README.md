@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-  <img src="avatars/jan-assistant.png" alt="Jan Assistant" width="80">
-  <img src="avatars/jan-developer.png" alt="Jan Developer" width="80">
-  <img src="avatars/jan-psychologist.png" alt="Jan Psychologist" width="80">
-  <img src="avatars/jan-scientist.png" alt="Jan Scientist" width="80">
+  <img src="agents/jan-assistant/avatar.png" alt="Jan Assistant" width="80">
+  <img src="agents/jan-developer/avatar.png" alt="Jan Developer" width="80">
+  <img src="agents/jan-psychologist/avatar.png" alt="Jan Psychologist" width="80">
+  <img src="agents/jan-scientist/avatar.png" alt="Jan Scientist" width="80">
 </p>
 
 <p align="center">
@@ -72,21 +72,19 @@ In the same spirit, each Jan alter is the same AI model beneath the surface, dif
 
 ```
 jan/
-  models/
-    assistant/           # System prompt + OpenWebUI export
-    constructor/
-    cook/
-    developer/
-    doctor/
-    lawyer/
-    policeman/
-    politician/
-    psychologist/
-    scientist/
-    trainer/
-  skills/                # Reusable methodology documents
-    code-review.md       # Code review checklist
-    therapy-framework.md # Therapeutic conversation framework
+  agents/                # One folder per alter/personality
+    jan-assistant/       # avatar.png + system prompts + OpenWebUI exports
+    jan-constructor/     # + skills/
+    jan-cook/
+    jan-developer/
+    jan-doctor/          # + knowledge/ and skills/
+    jan-lawyer/
+    jan-policeman/
+    jan-politician/
+    jan-psychologist/
+    jan-scientist/       # + skills/
+    jan-trainer/
+  skills/                # Global/shared skills (empty for now)
   templates/             # Portability templates
     openwebui-model-template.json
     librecchat-model-template.md
@@ -95,7 +93,10 @@ jan/
   docs/
     architecture.md      # Design decisions and philosophy
     portability-guide.md # Platform export instructions
-  avatars/               # Avatar PNGs and Figma source
+  scripts/
+    fix_ru_imperatives.ps1
+  shared/                # Shared global assets
+    avatar.fig           # Figma source for avatars
   README.md
   README.ru.md
 ```
@@ -107,7 +108,7 @@ jan/
 1. Open your OpenWebUI instance.
 2. Navigate to **Workspace > Models**.
 3. Click the import button (upload icon).
-4. Select any `models/{alter}/jan-{alter}.json` file.
+4. Select any `agents/jan-{alter}/openwebui.json` file.
 5. The model appears in your model list with all capabilities and tools pre-configured.
 
 You can import all 11 models at once. Duplicate IDs are updated automatically.
@@ -123,13 +124,13 @@ You can import all 11 models at once. Duplicate IDs are updated automatically.
 
 ## Portability
 
-Each alter is defined in three files:
+Each alter is defined by these files inside `agents/jan-{alter}/`:
 
 | File | Purpose | Portable to |
 |------|---------|-------------|
-| `jan-{alter}.md` | System prompt (plain text) | All platforms |
-| `jan-{alter}.json` | OpenWebUI export | OpenWebUI only |
-| `jan-{alter}.ru.md` | Russian system prompt | All platforms |
+| `system.md` | System prompt (plain text) | All platforms |
+| `system.ru.md` | Russian system prompt | All platforms |
+| `openwebui.json` | OpenWebUI export | OpenWebUI only |
 
 To use an alter on another platform:
 
@@ -141,12 +142,13 @@ See `docs/portability-guide.md` for detailed instructions.
 
 ## Adding a New Alter
 
-1. Copy an existing alter folder (e.g., `models/trainer/`).
-2. Edit `jan-{name}.md` -- change role, tone, behavior, and trigger topics.
-3. Edit `jan-{name}.json` -- update id, name, description, capabilities, and toolIds.
-4. Add a matching `jan-{name}.png` to `avatars/`.
+1. Copy an existing alter folder (e.g., `agents/jan-trainer/`).
+2. Edit `system.md` -- change role, tone, behavior, and trigger topics.
+3. Edit `system.ru.md` -- update the Russian translation.
+4. Edit `openwebui.json` -- update id, name, description, capabilities, and toolIds.
+5. Replace `avatar.png` with a matching avatar image.
 
-That is all. No build step, no database changes, no configuration beyond these three files.
+That is all. No build step, no database changes, no configuration beyond these files.
 
 For a blank starting point, use `templates/openwebui-model-template.json`.
 

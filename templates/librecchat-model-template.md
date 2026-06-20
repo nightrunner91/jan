@@ -6,7 +6,7 @@ LibreChat uses a different model system than OpenWebUI. Here is how to adapt eac
 
 - Open your LibreChat instance.
 - Go to Settings > Presets or create a new conversation.
-- Paste the content of `jan-{alter}.md` into the **System Prompt** field.
+- Paste the content of `agents/jan-{alter}/system.md` into the **System Prompt** field.
 - LibreChat supports `{{USER}}` and `{{DATE}}` variables natively. Adjust Jinja2 variables accordingly.
 
 ## 2. Model Selection
@@ -47,7 +47,7 @@ You cannot have multiple agents active in one conversation. Switch agents by:
 ```
 Agent Name: Jan: Developer
 Model: gpt-4o
-Instructions: [paste jan-developer.md content]
+Instructions: [paste agents/jan-developer/system.md content]
 Plugins: Code Interpreter
 Prompt Variables: USER={{user}}, DATE={{date}}
 ```

@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-  <img src="avatars/jan-assistant.png" alt="Jan Ассистент" width="80">
-  <img src="avatars/jan-developer.png" alt="Jan Разработчик" width="80">
-  <img src="avatars/jan-psychologist.png" alt="Jan Психолог" width="80">
-  <img src="avatars/jan-scientist.png" alt="Jan Учёный" width="80">
+  <img src="agents/jan-assistant/avatar.png" alt="Jan Ассистент" width="80">
+  <img src="agents/jan-developer/avatar.png" alt="Jan Разработчик" width="80">
+  <img src="agents/jan-psychologist/avatar.png" alt="Jan Психолог" width="80">
+  <img src="agents/jan-scientist/avatar.png" alt="Jan Учёный" width="80">
 </p>
 
 <p align="center">
@@ -69,21 +69,19 @@ Jan -- это коллекция AI-личностей (альтеров) для
 
 ```
 jan/
-  models/
-    assistant/           # Системный промпт + JSON экспорт
-    constructor/
-    cook/
-    developer/
-    doctor/
-    lawyer/
-    policeman/
-    politician/
-    psychologist/
-    scientist/
-    trainer/
-  skills/                # Документы с методиками
-    code-review.md       # Чеклист ревью кода
-    therapy-framework.md # Структура терапевтической беседы
+  agents/                # Одна папка на альтера/личность
+    jan-assistant/       # avatar.png + системные промпты + экспорты OpenWebUI
+    jan-constructor/     # + skills/
+    jan-cook/
+    jan-developer/
+    jan-doctor/          # + knowledge/ и skills/
+    jan-lawyer/
+    jan-policeman/
+    jan-politician/
+    jan-psychologist/
+    jan-scientist/       # + skills/
+    jan-trainer/
+  skills/                # Глобальные/общие навыки (пока пусто)
   templates/             # Шаблоны для переносимости
     openwebui-model-template.json
     librecchat-model-template.md
@@ -92,7 +90,10 @@ jan/
   docs/
     architecture.md      # Дизайн-решения и философия
     portability-guide.md # Инструкции по экспорту
-  avatars/               # PNG аватаров и Figma-исходник
+  scripts/
+    fix_ru_imperatives.ps1
+  shared/                # Общие глобальные ресурсы
+    avatar.fig           # Figma-исходник аватаров
   README.md
   README.ru.md
 ```
@@ -104,7 +105,7 @@ jan/
 1. Откройте ваш OpenWebUI.
 2. Перейдите в **Workspace > Models**.
 3. Нажмите кнопку импорта (иконка загрузки).
-4. Выберите любой `models/{alter}/jan-{alter}.json`.
+4. Выберите любой `agents/jan-{alter}/openwebui.json`.
 5. Модель появится в списке со всеми настроенными возможностями и инструментами.
 
 Можно импортировать все 11 моделей одновременно. Дублирующиеся ID обновляются автоматически.
@@ -117,13 +118,13 @@ jan/
 
 ## Переносимость
 
-Каждый альтер определён в трёх файлах:
+Каждый альтер определён следующими файлами внутри `agents/jan-{alter}/`:
 
 | Файл | Назначение | Куда переносится |
 |------|------------|------------------|
-| `jan-{alter}.md` | Системный промпт (текст) | Все платформы |
-| `jan-{alter}.json` | Экспорт для OpenWebUI | Только OpenWebUI |
-| `jan-{alter}.ru.md` | Системный промпт (русский) | Все платформы |
+| `system.md` | Системный промпт (текст) | Все платформы |
+| `system.ru.md` | Системный промпт (русский) | Все платформы |
+| `openwebui.json` | Экспорт для OpenWebUI | Только OpenWebUI |
 
 Для использования на другой платформе:
 
@@ -135,10 +136,11 @@ jan/
 
 ## Добавление нового альтера
 
-1. Скопируйте существующую папку альтера (например, `models/trainer/`).
-2. Отредактируйте `jan-{name}.md` -- измените роль, тон, правила поведения и темы.
-3. Отредактируйте `jan-{name}.json` -- обновите id, name, description, capabilities и toolIds.
-4. Добавьте соответствующий `jan-{name}.png` в `avatars/`.
+1. Скопируйте существующую папку альтера (например, `agents/jan-trainer/`).
+2. Отредактируйте `system.md` -- измените роль, тон, правила поведения и темы.
+3. Отредактируйте `system.ru.md` -- обновите русский перевод.
+4. Отредактируйте `openwebui.json` -- обновите id, name, description, capabilities и toolIds.
+5. Замените `avatar.png` на соответствующий аватар.
 
 Всё. Никакой сборки, изменений в БД или дополнительной настройки.
 

@@ -63,23 +63,28 @@ Other tools (terminal, image generation) are toggled at the capability level rat
 
 Skills are reusable markdown documents that describe structured methodologies for specific alter activities. They are not platform-native features — they serve as reference material for prompt authors and as optional context that can be injected into conversations.
 
-- `skills/code-review.md` — Used by the Developer alter during code review conversations.
-- `skills/therapy-framework.md` — Used by the Psychologist alter to structure therapeutic conversations.
+- Per-agent skills live under `agents/jan-{alter}/skills/{skill-slug}/` and are bound to that alter in its `openwebui.json` (`skillIds`).
+- Global/shared skills that many alters can use live under `skills/` at the project root.
 
-Skills are referenced in the system prompt by name and can be expanded independently of the model definitions.
+Each skill folder contains:
+- `manifest.json` — skill metadata for OpenWebUI.
+- `skill.en.md` — English skill implementation.
+- `skill.ru.md` — Russian skill implementation.
+
+Skills are referenced in the system prompt by slug and can be expanded independently of the model definitions.
 
 ## Portability Strategy
 
-Each alter is defined in three files:
+Each alter is defined by these files inside `agents/jan-{alter}/`:
 
-1. **`jan-{alter}.md`** — System prompt in plain English (the canonical behavioral definition).
-2. **`jan-{alter}.ru.md`** — Russian translation of the system prompt.
-3. **`jan-{alter}.json`** — OpenWebUI export JSON (the canonical platform-specific artifact).
+1. **`system.md`** — System prompt in plain English (the canonical behavioral definition).
+2. **`system.ru.md`** — Russian translation of the system prompt.
+3. **`openwebui.json`** — OpenWebUI export JSON (the canonical platform-specific artifact).
 
 The `.md` file is the source of truth. The JSON is generated from it. For other platforms:
-- **LM Studio**: Copy `.md` content into a preset's system prompt field.
-- **LibreChat**: Copy `.md` content into an agent's instructions field.
-- **Ollama**: Create a Modelfile with the `SYSTEM` block containing the `.md` content.
+- **LM Studio**: Copy `system.md` content into a preset's system prompt field.
+- **LibreChat**: Copy `system.md` content into an agent's instructions field.
+- **Ollama**: Create a Modelfile with the `SYSTEM` block containing the `system.md` content.
 
 See `docs/portability-guide.md` for step-by-step instructions.
 
@@ -87,25 +92,28 @@ See `docs/portability-guide.md` for step-by-step instructions.
 
 Adding a new alter requires:
 
-1. Copy an existing alter folder (e.g., `models/trainer/`).
-2. Edit `jan-{name}.md`: change role, tone, behavior, trigger topics.
-3. Edit `jan-{name}.json`: update id, name, description, capabilities, toolIds.
-4. Drop a matching `jan-{name}.png` into `avatars/`.
+1. Copy an existing alter folder (e.g., `agents/jan-trainer/`).
+2. Edit `system.md`: change role, tone, behavior, trigger topics.
+3. Edit `system.ru.md`: update the Russian translation.
+4. Edit `openwebui.json`: update id, name, description, capabilities, toolIds.
+5. Replace `avatar.png` with a matching avatar image.
 
-That is it. No build step, no database changes, no configuration beyond these three files.
+That is it. No build step, no database changes, no configuration beyond these files.
 
 ## Directory Structure
 
 ```
 jan/
-  models/
-    {alter}/
-      jan-{alter}.md        # English system prompt
-      jan-{alter}.ru.md     # Russian system prompt (placeholder)
-      jan-{alter}.json      # OpenWebUI export
-  skills/                   # Shared methodology documents
-    code-review.md
-    therapy-framework.md
+  agents/                   # One folder per alter/personality
+    jan-{alter}/
+      system.md             # English system prompt
+      system.ru.md          # Russian system prompt
+      openwebui.json        # OpenWebUI export
+      openwebui.ru.json     # Russian OpenWebUI export
+      avatar.png            # Avatar image
+      skills/               # Per-agent skills (optional)
+      knowledge/            # Per-agent knowledge templates (optional)
+  skills/                   # Global/shared skills
   templates/                # Portability templates
     openwebui-model-template.json
     librecchat-model-template.md
@@ -114,7 +122,10 @@ jan/
   docs/
     architecture.md          # This file
     portability-guide.md     # Platform export guide
-  avatars/                   # Avatar PNGs (existing)
+  scripts/
+    fix_ru_imperatives.ps1
+  shared/                    # Shared global assets
+    avatar.fig               # Figma source for avatars
   README.md
   README.ru.md
 ```

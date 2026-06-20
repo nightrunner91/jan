@@ -3,5 +3,5 @@ SKILL_creation.md
 # Personal medical knowledge-base files (filled from templates).
 # Templates (*.template-*.md) are tracked; filled copies are ignored to keep
 # sensitive health data out of Git.
-/knowledge/medical-profile-en.md
-/knowledge/medical-profile-ru.md
+/agents/jan-doctor/knowledge/medical-profile-en.md
+/agents/jan-doctor/knowledge/medical-profile-ru.md

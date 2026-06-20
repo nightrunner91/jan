@@ -4,13 +4,13 @@ This guide explains how to take any Jan alter model from this collection and use
 
 ## Overview
 
-Every alter is defined by three files:
+Every alter is defined by these files inside `agents/jan-{alter}/`:
 
 | File | Purpose | Portable to |
 |------|---------|-------------|
-| `jan-{alter}.md` | English system prompt | All platforms |
-| `jan-{alter}.json` | OpenWebUI export | OpenWebUI only |
-| `jan-{alter}.ru.md` | Russian system prompt | All platforms |
+| `system.md` | English system prompt | All platforms |
+| `system.ru.md` | Russian system prompt | All platforms |
+| `openwebui.json` | OpenWebUI export | OpenWebUI only |
 
 The `.md` file is the portable artifact. The JSON is OpenWebUI-specific.
 
@@ -23,7 +23,7 @@ This is the native format and requires no adaptation.
 1. Open OpenWebUI.
 2. Go to Workspace > Models.
 3. Click the import button (upload icon).
-4. Select a `jan-{alter}.json` file.
+4. Select an `agents/jan-{alter}/openwebui.json` file.
 5. The model appears in your model list with all capabilities and tools pre-configured.
 
 **Bulk import**: You can import all 11 JSON files at once. OpenWebUI handles duplicates by updating existing models.
@@ -38,7 +38,7 @@ This is the native format and requires no adaptation.
 2. Click the preset icon (or go to Settings > Presets).
 3. Create a new preset.
 4. Set Name to "Jan: {Alter Name}".
-5. Paste the content of `jan-{alter}.md` into the **System Prompt** field.
+5. Paste the content of `agents/jan-{alter}/system.md` into the **System Prompt** field.
 6. Select a model (GPT-4o, Claude, or any connected provider).
 7. Save the preset.
 
@@ -48,7 +48,7 @@ This is the native format and requires no adaptation.
 2. Click "Add Agent".
 3. Set the following:
    - **Name**: Jan: {Alter Name}
-   - **Instructions**: Paste `jan-{alter}.md` content
+   - **Instructions**: Paste `agents/jan-{alter}/system.md` content
    - **Model**: Choose your preferred provider
    - **Plugins**: Enable relevant tools based on the alter's `toolIds` in the JSON
 4. Save.
@@ -70,7 +70,7 @@ Alters without `toolIds` do not need plugins.
 2. Load any supported model.
 3. Click the **Presets** button (or go to Settings > Presets).
 4. Click "New Preset" and name it "Jan: {Alter Name}".
-5. Paste the content of `jan-{alter}.md` into the **System Prompt** field.
+5. Paste the content of `agents/jan-{alter}/system.md` into the **System Prompt** field.
 6. Adjust **Temperature**:
    - Technical alters (Developer, Scientist, Constructor): 0.3 - 0.5
    - Creative alters (Cook, Psychologist): 0.6 - 0.8
@@ -100,7 +100,7 @@ Create a file named `Modelfile.jan-{alter}` in any directory:
 ```dockerfile
 FROM {base_model}
 
-SYSTEM """{paste content of jan-{alter}.md here}"""
+SYSTEM """{paste content of agents/jan-{alter}/system.md here}"""
 
 PARAMETER temperature {see table below}
 PARAMETER num_ctx 8192
@@ -188,4 +188,4 @@ These are OpenWebUI-specific affordances and are omitted from portable exports.
 | LM Studio | `.md` → Preset system prompt | No | Low |
 | Ollama | `.md` → Modelfile | No | Medium |
 
-The quickest path to a working alter on any platform is: **paste the `.md` content into the system prompt field and select a capable base model.**
+The quickest path to a working alter on any platform is: **paste the `system.md` content into the system prompt field and select a capable base model.**
