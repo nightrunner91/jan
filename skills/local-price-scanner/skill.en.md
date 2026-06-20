@@ -10,6 +10,7 @@ Use this skill when the user wants to compare material or tool prices from local
 | Volta | https://volta.md/ | Electrotechnical store | Electrical supplies, cables, switches, power tools |
 | 999.md | https://999.md/ru/category/construction-and-repair | Classifieds marketplace | New/used tools, materials, services, bargains |
 | Construct.md | https://construct.md/ | Construction marketplace | Materials, finishes, companies, contractors |
+| Remont.md | https://remont.md/ | Construction marketplace | Materials, finishes, companies, contractors |
 
 ## Search strategy
 
