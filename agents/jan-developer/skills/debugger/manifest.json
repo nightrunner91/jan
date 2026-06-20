@@ -1,0 +1,19 @@
+{
+  "id": "debugger",
+  "name": {
+    "en": "Debugger",
+    "ru": "Отладчик"
+  },
+  "description": {
+    "en": "Structured root-cause analysis and fix verification for bugs, errors, and unexpected behavior.",
+    "ru": "Структурированный анализ первопричин и проверка исправлений для багов, ошибок и неожиданного поведения."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "developer", "debugging", "troubleshooting", "root-cause"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

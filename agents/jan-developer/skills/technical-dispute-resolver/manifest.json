@@ -1,0 +1,19 @@
+{
+  "id": "technical-dispute-resolver",
+  "name": {
+    "en": "Technical Dispute Resolver",
+    "ru": "Решатель технических споров"
+  },
+  "description": {
+    "en": "Impartial evaluation of conflicting technical opinions and decisions with evidence, tradeoffs, and a recommended path forward.",
+    "ru": "Беспристрастная оценка конфликтующих технических мнений и решений на основе доказательств, компромиссов и рекомендуемого пути вперёд."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "developer", "dispute-resolution", "decision-making", "technical-evaluation"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

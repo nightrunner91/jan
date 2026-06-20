@@ -1,0 +1,19 @@
+{
+  "id": "refactoring-planner",
+  "name": {
+    "en": "Refactoring Planner",
+    "ru": "Планировщик рефакторинга"
+  },
+  "description": {
+    "en": "Plan and execute safe, test-backed refactoring to improve code quality while preserving behavior.",
+    "ru": "Планирование и выполнение безопасного рефакторинга, подкреплённого тестами, для улучшения качества кода с сохранением поведения."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "developer", "refactoring", "code-quality", "testing"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

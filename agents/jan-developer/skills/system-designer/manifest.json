@@ -1,0 +1,19 @@
+{
+  "id": "system-designer",
+  "name": {
+    "en": "System Designer",
+    "ru": "Проектировщик систем"
+  },
+  "description": {
+    "en": "Pragmatic architecture and API design guidance with tradeoffs, data flow, and scalability considerations.",
+    "ru": "Прагматичное проектирование архитектуры и API с учётом компромиссов, потоков данных и масштабируемости."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "developer", "system-design", "architecture", "api"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
