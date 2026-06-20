@@ -1,0 +1,19 @@
+{
+  "id": "differential-diagnosis",
+  "name": {
+    "en": "Differential Diagnosis",
+    "ru": "Дифференциальный диагноз"
+  },
+  "description": {
+    "en": "Build a structured differential diagnosis from symptoms, rank likely causes, flag red flags, and request missing clinical data.",
+    "ru": "Построение структурированного дифференциального диагноза по симптомам, ранжирование вероятных причин, выявление красных флагов и запрос недостающих клинических данных."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "doctor", "diagnosis", "symptoms", "clinical"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

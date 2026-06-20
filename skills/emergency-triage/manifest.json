@@ -1,0 +1,19 @@
+{
+  "id": "emergency-triage",
+  "name": {
+    "en": "Emergency Triage",
+    "ru": "Экстренное триажирование"
+  },
+  "description": {
+    "en": "Recognize emergency symptoms and provide immediate first-aid instructions while urging emergency services contact.",
+    "ru": "Распознавание экстренных симптомов и немедленные инструкции по первой помощи с рекомендацией вызвать экстренные службы."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "doctor", "emergency", "triage", "first-aid"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

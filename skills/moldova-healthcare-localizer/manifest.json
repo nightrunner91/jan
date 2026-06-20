@@ -1,0 +1,19 @@
+{
+  "id": "moldova-healthcare-localizer",
+  "name": {
+    "en": "Moldova Healthcare Localizer",
+    "ru": "Молдавский локатор здравоохранения"
+  },
+  "description": {
+    "en": "Find and analyze Moldovan hospitals, pharmacies, official health portals, forums, and news to provide addresses, phone numbers, doctors, clinics, prices, and process guidance.",
+    "ru": "Поиск и анализ молдавских больниц, аптек, официальных порталов здравоохранения, форумов и новостей для предоставления адресов, телефонов, врачей, клиник, цен и инструкций по процессу."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "doctor", "moldova", "healthcare", "local", "pharmacy"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

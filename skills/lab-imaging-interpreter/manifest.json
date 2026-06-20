@@ -1,0 +1,19 @@
+{
+  "id": "lab-imaging-interpreter",
+  "name": {
+    "en": "Lab & Imaging Interpreter",
+    "ru": "Интерпретация анализов и снимков"
+  },
+  "description": {
+    "en": "Interpret uploaded lab reports and imaging descriptions, flag abnormal findings, and connect results to differential diagnoses.",
+    "ru": "Интерпретация загруженных результатов анализов и описаний снимков, выявление отклонений и связь результатов с дифференциальным диагнозом."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "doctor", "lab", "imaging", "reports", "interpretation"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

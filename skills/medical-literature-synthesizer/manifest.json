@@ -1,0 +1,19 @@
+{
+  "id": "medical-literature-synthesizer",
+  "name": {
+    "en": "Medical Literature Synthesizer",
+    "ru": "Синтез медицинской литературы"
+  },
+  "description": {
+    "en": "Synthesize medical guidelines, consensus statements, and clinical studies with citations; separate established practice from emerging evidence.",
+    "ru": "Синтез медицинских руководств, консенсусных документов и клинических исследований с цитированием; разделение устоявшейся практики и emerging доказательств."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "doctor", "literature", "guidelines", "evidence-based-medicine"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

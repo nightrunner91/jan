@@ -1,0 +1,19 @@
+{
+  "id": "medication-guide",
+  "name": {
+    "en": "Medication Guide",
+    "ru": "Справочник по препаратам"
+  },
+  "description": {
+    "en": "Provide structured medication guidance including mechanism, indications, dosing, course, side effects, contraindications, and interactions.",
+    "ru": "Структурированное руководство по препаратам: механизм действия, показания, дозировка, курс, побочные эффекты, противопоказания и взаимодействия."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "doctor", "medication", "pharmacology", "prescribing"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
