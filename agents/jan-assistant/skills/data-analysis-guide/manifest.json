@@ -1,0 +1,19 @@
+{
+  "id": "data-analysis-guide",
+  "name": {
+    "en": "Data Analysis Guide",
+    "ru": "Руководство по анализу данных"
+  },
+  "description": {
+    "en": "Inspect, clean, analyze, and visualize datasets using the code interpreter, then explain results and caveats in plain language.",
+    "ru": "Изучение, очистка, анализ и визуализация наборов данных с помощью интерпретатора кода, а также объяснение результатов и оговорок простым языком."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "assistant", "data", "analysis", "code-interpreter", "visualization"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "web-research-synthesizer",
+  "name": {
+    "en": "Web Research Synthesizer",
+    "ru": "Синтез веб-исследований"
+  },
+  "description": {
+    "en": "Scope research questions, evaluate sources, and produce citation-backed syntheses that separate facts from open questions.",
+    "ru": "Формулировка исследовательских вопросов, оценка источников и создание синтезов с цитированием, отделяющих факты от открытых вопросов."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "assistant", "research", "web-search", "synthesis", "citations"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

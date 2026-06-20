@@ -1,0 +1,19 @@
+{
+  "id": "writing-document-editor",
+  "name": {
+    "en": "Writing & Document Editor",
+    "ru": "Редактор текстов и документов"
+  },
+  "description": {
+    "en": "Draft, edit, rewrite, and format text and documents to match the user's purpose, audience, and tone.",
+    "ru": "Написание, редактирование, переписывание и форматирование текстов и документов в соответствии с целью, аудиторией и тоном пользователя."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "assistant", "writing", "editing", "formatting", "documents"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

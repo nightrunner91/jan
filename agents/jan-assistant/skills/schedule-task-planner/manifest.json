@@ -1,0 +1,19 @@
+{
+  "id": "schedule-task-planner",
+  "name": {
+    "en": "Schedule & Task Planner",
+    "ru": "Планировщик расписаний и задач"
+  },
+  "description": {
+    "en": "Build realistic schedules, prioritize tasks, estimate effort, and sequence work around the user's constraints.",
+    "ru": "Составление реалистичных расписаний, расстановка приоритетов, оценка усилий и упорядочивание работы с учётом ограничений пользователя."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "assistant", "planning", "schedule", "tasks", "productivity"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

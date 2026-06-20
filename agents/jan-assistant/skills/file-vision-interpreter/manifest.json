@@ -1,0 +1,19 @@
+{
+  "id": "file-vision-interpreter",
+  "name": {
+    "en": "File & Vision Interpreter",
+    "ru": "Интерпретатор файлов и изображений"
+  },
+  "description": {
+    "en": "Extract, summarize, and answer questions about uploaded files, images, screenshots, and documents using vision and file context.",
+    "ru": "Извлечение, суммирование и ответы на вопросы по загруженным файлам, изображениям, скриншотам и документам с использованием зрения и контекста файла."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "assistant", "files", "vision", "upload", "extraction"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
