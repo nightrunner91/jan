@@ -51,23 +51,33 @@
 
 ## Каталог альтеров
 
-| Альтер | Роль | Базовая модель | Лучше всего подходит для |
-|--------|------|----------------|--------------------------|
-| [Ян: Ассистент](#jan-assistant) | Персональный помощник | DeepSeek V4 Flash | Исследования, задачи, анализ данных, написание текстов |
-| [Ян: Конструктор](#jan-constructor) | Инженер-строитель | DeepSeek V4 Flash | Ремонт, столярка, DIY, подбор материалов |
-| [Ян: Повар](#jan-cook) | Шеф-повар / Кулинар | DeepSeek V4 Flash | Рецепты, наука выпечки, планирование питания |
-| [Ян: Разработчик](#jan-developer) | Разработчик ПО | DeepSeek V4 Flash | Ревью кода, отладка, проектирование систем, рефакторинг |
-| [Ян: Доктор](#jan-doctor) | Медицинский консультант | DeepSeek V4 Flash | Интерпретация симптомов, диагностика, информация о препаратах |
-| [Ян: Юрист](#jan-lawyer) | Специалист по правовой информации | DeepSeek V4 Flash | Пункты договоров, права, правовые процедуры Молдовы |
-| [Ян: Полицейский](#jan-policeman) | Советник по общественной безопасности | DeepSeek V4 Flash | Процедуры безопасности, протоколы правопорядка, деэскалация |
-| [Ян: Политик](#jan-politician) | Аналитик политики и дипломат | DeepSeek V4 Flash | Анализ политики, управление, международные отношения |
-| [Ян: Психолог](#jan-psychologist) | Психолог | DeepSeek V4 Flash | Тревога, отношения, самооценка, горе, личностный рост |
-| [Ян: Учёный](#jan-scientist) | Учёный-исследователь | DeepSeek V4 Flash | Физика, биология, методология исследований, оценка доказательств |
-| [Ян: Тренер](#jan-trainer) | Тренер по фитнесу и ЗОЖ | DeepSeek V4 Flash | Программы тренировок, техника упражнений, формирование привычек |
+| | Альтер | Роль | Базовая модель |
+|--------|--------|------|----------------|
+| <img src="agents/jan-assistant/avatar.png" alt="Ян: Ассистент" width="24"> | [Ян: Ассистент](#jan-assistant) | Персональный помощник | `deepseek/deepseek-v4-flash` |
+| <img src="agents/jan-constructor/avatar.png" alt="Ян: Конструктор" width="24"> | [Ян: Конструктор](#jan-constructor) | Инженер-строитель | `deepseek/deepseek-v4-flash` |
+| <img src="agents/jan-cook/avatar.png" alt="Ян: Повар" width="24"> | [Ян: Повар](#jan-cook) | Шеф-повар / Кулинар | `deepseek/deepseek-v4-flash` |
+| <img src="agents/jan-developer/avatar.png" alt="Ян: Разработчик" width="24"> | [Ян: Разработчик](#jan-developer) | Разработчик ПО | `qwen/qwen3.6-plus` |
+| <img src="agents/jan-doctor/avatar.png" alt="Ян: Доктор" width="24"> | [Ян: Доктор](#jan-doctor) | Медицинский консультант | `google/gemma-4-26b-a4b-it` |
+| <img src="agents/jan-lawyer/avatar.png" alt="Ян: Юрист" width="24"> | [Ян: Юрист](#jan-lawyer) | Специалист по правовой информации | `deepseek/deepseek-v4-pro` |
+| <img src="agents/jan-policeman/avatar.png" alt="Ян: Полицейский" width="24"> | [Ян: Полицейский](#jan-policeman) | Советник по общественной безопасности | `deepseek/deepseek-v4-pro` |
+| <img src="agents/jan-politician/avatar.png" alt="Ян: Политик" width="24"> | [Ян: Политик](#jan-politician) | Аналитик политики и дипломат | `deepseek/deepseek-v4-flash` |
+| <img src="agents/jan-psychologist/avatar.png" alt="Ян: Психолог" width="24"> | [Ян: Психолог](#jan-psychologist) | Психолог | `google/gemma-4-26b-a4b-it` |
+| <img src="agents/jan-scientist/avatar.png" alt="Ян: Учёный" width="24"> | [Ян: Учёный](#jan-scientist) | Учёный-исследователь | `deepseek/deepseek-v4-pro` |
+| <img src="agents/jan-trainer/avatar.png" alt="Ян: Тренер" width="24"> | [Ян: Тренер](#jan-trainer) | Тренер по фитнесу и ЗОЖ | `deepseek/deepseek-v4-flash` |
+
+
+> [!NOTE]
+> * Базовая модель для каждого альтера подобрана исходя из личного  опыта пользования. Используйте любую иную на своё усмотрение.
 
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-assistant/avatar.png" alt="Ян: Ассистент" width="24" align="left" style="margin-right: 12px;"> Ян: Ассистент
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -90,9 +100,17 @@
 
 **База знаний:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-constructor/avatar.png" alt="Ян: Конструктор" width="24" align="left" style="margin-right: 12px;"> Ян: Конструктор
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -116,9 +134,17 @@
 
 **База знаний:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-cook/avatar.png" alt="Ян: Повар" width="24" align="left" style="margin-right: 12px;"> Ян: Повар
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -141,9 +167,17 @@
 
 **База знаний:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-developer/avatar.png" alt="Ян: Разработчик" width="24" align="left" style="margin-right: 12px;"> Ян: Разработчик
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -172,9 +206,17 @@
 | [developer-profile.template-en.md](agents/jan-developer/knowledge/developer-profile.template-en.md) | Шаблон личного профиля разработчика (заполнить и прикрепить как базу знаний OpenWebUI). |
 | [developer-profile.template-ru.md](agents/jan-developer/knowledge/developer-profile.template-ru.md) | Русская версия шаблона личного профиля разработчика. |
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-doctor/avatar.png" alt="Ян: Доктор" width="24" align="left" style="margin-right: 12px;"> Ян: Доктор
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -206,9 +248,17 @@
 > [!WARNING]
 > Ян: Доктор предоставляет **медицинскую информацию**, а не медицинские рекомендации. Всегда консультируйся с лицензированным врачом для принятия личных медицинских решений.
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-lawyer/avatar.png" alt="Ян: Юрист" width="24" align="left" style="margin-right: 12px;"> Ян: Юрист
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -238,9 +288,17 @@
 > [!WARNING]
 > Ян: Юрист предоставляет **правовую информацию**, а не юридическую консультацию. Перед принятием действий проконсультируйся с квалифицированным адвокатом.
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-policeman/avatar.png" alt="Ян: Полицейский" width="24" align="left" style="margin-right: 12px;"> Ян: Полицейский
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -263,9 +321,17 @@
 
 **База знаний:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-politician/avatar.png" alt="Ян: Политик" width="24" align="left" style="margin-right: 12px;"> Ян: Политик
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -288,9 +354,17 @@
 
 **База знаний:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-psychologist/avatar.png" alt="Ян: Психолог" width="24" align="left" style="margin-right: 12px;"> Ян: Психолог
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -316,9 +390,17 @@
 > [!WARNING]
 > Ян: Психолог — это ИИ-ресурс поддержки, а не лицензированный специалист по психическому здоровью. В кризисной ситуации немедленно обратись в экстренные службы или на линию кризисной помощи.
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-scientist/avatar.png" alt="Ян: Учёный" width="24" align="left" style="margin-right: 12px;"> Ян: Учёный
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -341,9 +423,17 @@
 
 **База знаний:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-trainer/avatar.png" alt="Ян: Тренер" width="24" align="left" style="margin-right: 12px;"> Ян: Тренер
+
+</summary>
+
 
 | Параметр | Значение |
 |---------|----------|
@@ -368,6 +458,8 @@
 
 > [!WARNING]
 > Ян: Тренер даёт рекомендации по фитнесу, а не медицинское лечение. Прекрати тренировку и обратись к специалисту, если чувствуешь боль или подозреваешь травму.
+
+</details>
 
 ## Структура проекта
 

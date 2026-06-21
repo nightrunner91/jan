@@ -51,23 +51,33 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 ## Agent Catalog
 
-| Alter | Role | Base Model | Best For |
-|-------|------|------------|----------|
-| [Jan: Assistant](#jan-assistant) | Personal Assistant | DeepSeek V4 Flash | Research, tasks, data analysis, writing |
-| [Jan: Constructor](#jan-constructor) | Construction Engineer | DeepSeek V4 Flash | Renovation, woodworking, DIY, material selection |
-| [Jan: Cook](#jan-cook) | Chef / Cook | DeepSeek V4 Flash | Recipes, baking science, meal planning |
-| [Jan: Developer](#jan-developer) | Software Developer | DeepSeek V4 Flash | Code review, debugging, system design, refactoring |
-| [Jan: Doctor](#jan-doctor) | Medical Consultant | DeepSeek V4 Flash | Symptom interpretation, diagnosis, medication information |
-| [Jan: Lawyer](#jan-lawyer) | Legal Information Specialist | DeepSeek V4 Flash | Contract clauses, rights, Moldovan legal procedures |
-| [Jan: Policeman](#jan-policeman) | Public Safety Advisor | DeepSeek V4 Flash | Safety procedures, law enforcement protocols, de-escalation |
-| [Jan: Politician](#jan-politician) | Policy Analyst & Diplomat | DeepSeek V4 Flash | Policy analysis, governance, international relations |
-| [Jan: Psychologist](#jan-psychologist) | Counselor / Psychologist | DeepSeek V4 Flash | Anxiety, relationships, self-esteem, grief, personal growth |
-| [Jan: Scientist](#jan-scientist) | Research Scientist | DeepSeek V4 Flash | Physics, biology, research methodology, evidence evaluation |
-| [Jan: Trainer](#jan-trainer) | Fitness & Wellness Coach | DeepSeek V4 Flash | Workout programs, exercise technique, habit formation |
+| | Alter | Role | Base model |
+|--------|-------|------|------------|
+| <img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="24"> | [Jan: Assistant](#jan-assistant) | Personal Assistant | `deepseek/deepseek-v4-flash` |
+| <img src="agents/jan-constructor/avatar.png" alt="Jan: Constructor" width="24"> | [Jan: Constructor](#jan-constructor) | Construction Engineer | `deepseek/deepseek-v4-flash` |
+| <img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="24"> | [Jan: Cook](#jan-cook) | Chef / Cook | `deepseek/deepseek-v4-flash` |
+| <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="24"> | [Jan: Developer](#jan-developer) | Software Developer | `qwen/qwen3.6-plus` |
+| <img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="24"> | [Jan: Doctor](#jan-doctor) | Medical Consultant | `google/gemma-4-26b-a4b-it` |
+| <img src="agents/jan-lawyer/avatar.png" alt="Jan: Lawyer" width="24"> | [Jan: Lawyer](#jan-lawyer) | Legal Information Specialist | `deepseek/deepseek-v4-pro` |
+| <img src="agents/jan-policeman/avatar.png" alt="Jan: Policeman" width="24"> | [Jan: Policeman](#jan-policeman) | Public Safety Advisor | `deepseek/deepseek-v4-pro` |
+| <img src="agents/jan-politician/avatar.png" alt="Jan: Politician" width="24"> | [Jan: Politician](#jan-politician) | Policy Analyst & Diplomat | `deepseek/deepseek-v4-flash` |
+| <img src="agents/jan-psychologist/avatar.png" alt="Jan: Psychologist" width="24"> | [Jan: Psychologist](#jan-psychologist) | Counselor / Psychologist | `google/gemma-4-26b-a4b-it` |
+| <img src="agents/jan-scientist/avatar.png" alt="Jan: Scientist" width="24"> | [Jan: Scientist](#jan-scientist) | Research Scientist | `deepseek/deepseek-v4-pro` |
+| <img src="agents/jan-trainer/avatar.png" alt="Jan: Trainer" width="24"> | [Jan: Trainer](#jan-trainer) | Fitness & Wellness Coach | `deepseek/deepseek-v4-flash` |
+
+
+> [!NOTE]
+> * The base model for each alter is chosen based on personal experience. Use any other model at your discretion.
 
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="24" align="left" style="margin-right: 12px;"> Jan: Assistant
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
@@ -90,9 +100,17 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 **Knowledge base:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-constructor/avatar.png" alt="Jan: Constructor" width="24" align="left" style="margin-right: 12px;"> Jan: Constructor
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
@@ -116,9 +134,17 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 **Knowledge base:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="24" align="left" style="margin-right: 12px;"> Jan: Cook
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
@@ -141,15 +167,23 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 **Knowledge base:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="24" align="left" style="margin-right: 12px;"> Jan: Developer
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
 | Role | Software Developer |
 | Tone | Technical, precise, pragmatic |
-| Base model | `deepseek/deepseek-v4-flash` |
+| Base model | `qwen/qwen3.6-plus` |
 | Scenarios | Programming in any language, code review, debugging, system design, algorithm selection, refactoring, testing strategies, CI/CD concepts, version control. |
 
 [View system prompt ➦](agents/jan-developer/system.md)
@@ -172,15 +206,23 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [developer-profile.template-en.md](agents/jan-developer/knowledge/developer-profile.template-en.md) | Template for a personal developer profile (fill and attach as OpenWebUI knowledge). |
 | [developer-profile.template-ru.md](agents/jan-developer/knowledge/developer-profile.template-ru.md) | Russian version of the personal developer profile template. |
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="24" align="left" style="margin-right: 12px;"> Jan: Doctor
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
 | Role | Lead Medical Consultant and Clinical Analyst |
 | Tone | Confident, professional, direct |
-| Base model | `deepseek/deepseek-v4-flash` |
+| Base model | `google/gemma-4-26b-a4b-it` |
 | Scenarios | Diagnosis and treatment of symptoms, preventive medical examinations, prescribing and adjusting drug therapy, anatomy and physiology, nutrition science, sleep health, stress physiology, first aid procedures (including emergency). |
 
 [View system prompt ➦](agents/jan-doctor/system.md)
@@ -206,15 +248,23 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 > [!WARNING]
 > Jan: Doctor provides health **information**, not medical advice. Always consult a licensed healthcare professional for personal medical decisions.
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-lawyer/avatar.png" alt="Jan: Lawyer" width="24" align="left" style="margin-right: 12px;"> Jan: Lawyer
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
 | Role | Legal Information Specialist |
 | Tone | Formal, precise, measured |
-| Base model | `deepseek/deepseek-v4-flash` |
+| Base model | `deepseek/deepseek-v4-pro` |
 | Scenarios | Contract clause explanations, legal procedure overviews, rights education, court system structure, intellectual property basics, housing rental legislation overview, employment law concepts. |
 
 [View system prompt ➦](agents/jan-lawyer/system.md)
@@ -238,15 +288,23 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 > [!WARNING]
 > Jan: Lawyer provides **legal information**, not legal advice. Consult a qualified attorney before taking action.
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-policeman/avatar.png" alt="Jan: Policeman" width="24" align="left" style="margin-right: 12px;"> Jan: Policeman
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
 | Role | Public Safety & Law Enforcement Advisor |
 | Tone | Authoritative, procedural, community-oriented |
-| Base model | `deepseek/deepseek-v4-flash` |
+| Base model | `deepseek/deepseek-v4-pro` |
 | Scenarios | Traffic stop procedures, personal safety best practices, reporting crimes, understanding warrants and searches, community policing, emergency preparedness, dispute de-escalation. |
 
 [View system prompt ➦](agents/jan-policeman/system.md)
@@ -263,9 +321,17 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 **Knowledge base:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-politician/avatar.png" alt="Jan: Politician" width="24" align="left" style="margin-right: 12px;"> Jan: Politician
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
@@ -288,15 +354,23 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 **Knowledge base:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-psychologist/avatar.png" alt="Jan: Psychologist" width="24" align="left" style="margin-right: 12px;"> Jan: Psychologist
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
 | Role | Counselor / Psychologist |
 | Tone | Warm, empathetic, accepting |
-| Base model | `deepseek/deepseek-v4-flash` |
+| Base model | `google/gemma-4-26b-a4b-it` |
 | Scenarios | Anxiety and stress management, relationships and communication, self-esteem and self-compassion, grief and loss, life transitions, emotional regulation, boundary setting, personal growth. |
 
 [View system prompt ➦](agents/jan-psychologist/system.md)
@@ -316,15 +390,23 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 > [!WARNING]
 > Jan: Psychologist is an AI support resource, not a licensed mental health professional. For crises, contact emergency services or a crisis line immediately.
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-scientist/avatar.png" alt="Jan: Scientist" width="24" align="left" style="margin-right: 12px;"> Jan: Scientist
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
 | Role | Research Scientist |
 | Tone | Rigorous, evidence-based, intellectually humble |
-| Base model | `deepseek/deepseek-v4-flash` |
+| Base model | `deepseek/deepseek-v4-pro` |
 | Scenarios | Physics and cosmology, biology and medicine (with disclaimers), chemistry, earth science, climate science, research methodology, statistical reasoning, history and philosophy of science, technology explanations. |
 
 [View system prompt ➦](agents/jan-scientist/system.md)
@@ -341,9 +423,17 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 **Knowledge base:** —  
 
+</details>
+
 ---
 
+<details>
+<summary>
+
 ### <img src="agents/jan-trainer/avatar.png" alt="Jan: Trainer" width="24" align="left" style="margin-right: 12px;"> Jan: Trainer
+
+</summary>
+
 
 | Parameter | Value |
 |-----------|-------|
@@ -368,6 +458,8 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 > [!WARNING]
 > Jan: Trainer provides fitness guidance, not medical treatment. Stop exercising and see a professional if you feel pain or suspect an injury.
+
+</details>
 
 ## Project Structure
 
