@@ -67,15 +67,16 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 ---
 
-### Jan: Assistant
+### <img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="24" align="left" style="margin-right: 12px;"> Jan: Assistant
 
-<img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Personal Assistant |
+| Tone | Neutral, business-like, unemotional |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Scheduling, task management, research, data analysis, writing, document formatting, general knowledge queries. |
 
-**Role:** Personal Assistant  
-**Description:** Reliable assistant for research and tasks.  
-**Use cases:** Planning, task management, research, data analysis, writing, document formatting, general knowledge queries.
-
-**System prompt:** [system.md](agents/jan-assistant/system.md) · [system.ru.md](agents/jan-assistant/system.ru.md)
+[View system prompt ➦](agents/jan-assistant/system.md)
 
 **Skills:**
 
@@ -87,20 +88,20 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Writing & Document Editor](agents/jan-assistant/skills/writing-document-editor/skill.en.md) | Draft, edit, rewrite, and format text and documents to match the user's purpose, audience, and tone. |
 | [File & Vision Interpreter](agents/jan-assistant/skills/file-vision-interpreter/skill.en.md) | Extract, summarize, and answer questions about uploaded files, images, screenshots, and documents. |
 
-**Knowledge:** —  
-**Base model:** `deepseek/deepseek-v4-flash`
+**Knowledge base:** —  
 
 ---
 
-### Jan: Constructor
+### <img src="agents/jan-constructor/avatar.png" alt="Jan: Constructor" width="24" align="left" style="margin-right: 12px;"> Jan: Constructor
 
-<img src="agents/jan-constructor/avatar.png" alt="Jan: Constructor" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Construction Engineer |
+| Tone | Technical, practical, hands-on |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Home renovation, woodworking, electrical basics (with disclaimers), plumbing, masonry, tool selection, material comparison, workshop organization. |
 
-**Role:** Construction Engineer  
-**Description:** Construction engineer for renovation and DIY.  
-**Use cases:** Home renovation, woodworking, electrical basics, plumbing, masonry, tool selection, material comparison, workshop organization.
-
-**System prompt:** [system.md](agents/jan-constructor/system.md) · [system.ru.md](agents/jan-constructor/system.ru.md)
+[View system prompt ➦](agents/jan-constructor/system.md)
 
 **Skills:**
 
@@ -113,20 +114,20 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Blueprint & Photo Reader](agents/jan-constructor/skills/blueprint-reader/skill.en.md) | Guide interpretation of uploaded blueprints, sketches, and photos to extract measurements, materials, and actionable guidance. |
 | [Local Price Scanner (Moldova)](agents/jan-constructor/skills/local-price-scanner/skill.en.md) | Efficiently search for material and tool prices in Moldova through local platforms. |
 
-**Knowledge:** —  
-**Base model:** `deepseek/deepseek-v4-flash`
+**Knowledge base:** —  
 
 ---
 
-### Jan: Cook
+### <img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="24" align="left" style="margin-right: 12px;"> Jan: Cook
 
-<img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Chef / Cook |
+| Tone | Warm, precise, encouraging without being saccharine |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Recipe creation and adaptation, cooking techniques (knife skills, braising, fermentation), baking science, ingredient substitution, meal planning, cuisines of the world. |
 
-**Role:** Chef / Cook  
-**Description:** Culinary expert for recipes, techniques, and tips.  
-**Use cases:** Recipe creation and adaptation, cooking techniques, baking science, ingredient substitution, meal planning, cuisines of the world.
-
-**System prompt:** [system.md](agents/jan-cook/system.md) · [system.ru.md](agents/jan-cook/system.ru.md)
+[View system prompt ➦](agents/jan-cook/system.md)
 
 **Skills:**
 
@@ -138,20 +139,20 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Technique Coach](agents/jan-cook/skills/technique-coach/skill.en.md) | Break down cooking techniques step by step, explain the underlying science, and typical failure points. |
 | [Meal Planner](agents/jan-cook/skills/meal-planner/skill.en.md) | Build balanced weekly menus, prep schedules, and shopping lists around dietary needs and time constraints. |
 
-**Knowledge:** —  
-**Base model:** `deepseek/deepseek-v4-flash`
+**Knowledge base:** —  
 
 ---
 
-### Jan: Developer
+### <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="24" align="left" style="margin-right: 12px;"> Jan: Developer
 
-<img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Software Developer |
+| Tone | Technical, precise, pragmatic |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Programming in any language, code review, debugging, system design, algorithm selection, refactoring, testing strategies, CI/CD concepts, version control. |
 
-**Role:** Software Developer  
-**Description:** Software engineer for code, reviews, debugging.  
-**Use cases:** Programming in any language, code review, debugging, system design, algorithm selection, refactoring, testing strategies, CI/CD concepts, version control.
-
-**System prompt:** [system.md](agents/jan-developer/system.md) · [system.ru.md](agents/jan-developer/system.ru.md)
+[View system prompt ➦](agents/jan-developer/system.md)
 
 **Skills:**
 
@@ -164,26 +165,25 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Refactoring Planner](agents/jan-developer/skills/refactoring-planner/skill.en.md) | Plan and execute safe, test-backed refactoring to improve code quality while preserving behavior. |
 | [Technical Dispute Resolver](agents/jan-developer/skills/technical-dispute-resolver/skill.en.md) | Impartial evaluation of conflicting technical opinions and decisions based on evidence, tradeoffs, and a recommended path forward. |
 
-**Knowledge:**
+**Knowledge base:**
 
 | File | Purpose |
 |------|---------|
 | [developer-profile.template-en.md](agents/jan-developer/knowledge/developer-profile.template-en.md) | Template for a personal developer profile (fill and attach as OpenWebUI knowledge). |
 | [developer-profile.template-ru.md](agents/jan-developer/knowledge/developer-profile.template-ru.md) | Russian version of the personal developer profile template. |
 
-**Base model:** `deepseek/deepseek-v4-flash`
-
 ---
 
-### Jan: Doctor
+### <img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="24" align="left" style="margin-right: 12px;"> Jan: Doctor
 
-<img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Lead Medical Consultant and Clinical Analyst |
+| Tone | Confident, professional, direct |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Diagnosis and treatment of symptoms, preventive medical examinations, prescribing and adjusting drug therapy, anatomy and physiology, nutrition science, sleep health, stress physiology, first aid procedures (including emergency). |
 
-**Role:** Lead Medical Consultant and Clinical Analyst  
-**Description:** Medical consultant for diagnosis and treatment.  
-**Use cases:** Diagnosis and treatment of symptoms, preventive medical examinations, prescribing and adjusting drug therapy, anatomy and physiology, nutrition science, sleep health, stress physiology, first aid procedures (including emergency).
-
-**System prompt:** [system.md](agents/jan-doctor/system.md) · [system.ru.md](agents/jan-doctor/system.ru.md)
+[View system prompt ➦](agents/jan-doctor/system.md)
 
 **Skills:**
 
@@ -196,29 +196,28 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Medical Literature Synthesizer](agents/jan-doctor/skills/medical-literature-synthesizer/skill.en.md) | Synthesize medical guidelines, consensus statements, and clinical studies with citations. |
 | [Moldova Healthcare Localizer](agents/jan-doctor/skills/moldova-healthcare-localizer/skill.en.md) | Find and analyze Moldovan hospitals, pharmacies, official health portals, forums, and news. |
 
-**Knowledge:**
+**Knowledge base:**
 
 | File | Purpose |
 |------|---------|
 | [medical-profile.template-en.md](agents/jan-doctor/knowledge/medical-profile.template-en.md) | Template for a personal medical profile (fill and attach as OpenWebUI knowledge). |
 | [medical-profile.template-ru.md](agents/jan-doctor/knowledge/medical-profile.template-ru.md) | Russian version of the personal medical profile template. |
 
-**Base model:** `deepseek/deepseek-v4-flash`
-
 > [!WARNING]
 > Jan: Doctor provides health **information**, not medical advice. Always consult a licensed healthcare professional for personal medical decisions.
 
 ---
 
-### Jan: Lawyer
+### <img src="agents/jan-lawyer/avatar.png" alt="Jan: Lawyer" width="24" align="left" style="margin-right: 12px;"> Jan: Lawyer
 
-<img src="agents/jan-lawyer/avatar.png" alt="Jan: Lawyer" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Legal Information Specialist |
+| Tone | Formal, precise, measured |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Contract clause explanations, legal procedure overviews, rights education, court system structure, intellectual property basics, housing rental legislation overview, employment law concepts. |
 
-**Role:** Legal Information Specialist  
-**Description:** Legal info on concepts, rights, disclaimers.  
-**Use cases:** Contract clause explanations, legal procedure overviews, rights education, court system structure, intellectual property basics, housing rental legislation overview, employment law concepts.
-
-**System prompt:** [system.md](agents/jan-lawyer/system.md) · [system.ru.md](agents/jan-lawyer/system.ru.md)
+[View system prompt ➦](agents/jan-lawyer/system.md)
 
 **Skills:**
 
@@ -230,28 +229,27 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Document Drafter](agents/jan-lawyer/skills/document-drafter/skill.en.md) | Help draft legal documents, applications, and notices intended for use in the Republic of Moldova. |
 | [Moldova Law Fact Checker](agents/jan-lawyer/skills/moldova-law-fact-checker/skill.en.md) | Verify legal claims, citations, and statements against Moldovan legislation and flag outdated or uncertain information. |
 
-**Knowledge:**
+**Knowledge base:**
 
 | Content | Purpose |
 |---------|---------|
 | Collection of Republic of Moldova legal codes and laws (PDF) | Pre-attached legal sources that ground answers in current Moldovan legislation. |
-
-**Base model:** `deepseek/deepseek-v4-flash`
 
 > [!WARNING]
 > Jan: Lawyer provides **legal information**, not legal advice. Consult a qualified attorney before taking action.
 
 ---
 
-### Jan: Policeman
+### <img src="agents/jan-policeman/avatar.png" alt="Jan: Policeman" width="24" align="left" style="margin-right: 12px;"> Jan: Policeman
 
-<img src="agents/jan-policeman/avatar.png" alt="Jan: Policeman" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Public Safety & Law Enforcement Advisor |
+| Tone | Authoritative, procedural, community-oriented |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Traffic stop procedures, personal safety best practices, reporting crimes, understanding warrants and searches, community policing, emergency preparedness, dispute de-escalation. |
 
-**Role:** Public Safety & Law Enforcement Advisor  
-**Description:** Public safety advisor on procedures and rights.  
-**Use cases:** Traffic stop procedures, personal safety best practices, reporting crimes, understanding warrants and searches, community policing, emergency preparedness, dispute de-escalation.
-
-**System prompt:** [system.md](agents/jan-policeman/system.md) · [system.ru.md](agents/jan-policeman/system.ru.md)
+[View system prompt ➦](agents/jan-policeman/system.md)
 
 **Skills:**
 
@@ -263,20 +261,20 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Warrant & Search Explainer](agents/jan-policeman/skills/warrant-and-search-explainer/skill.en.md) | Explain search powers, warrants, and consent during searches of homes, vehicles, or personal inspections in Moldova. |
 | [De-Escalation Coach](agents/jan-policeman/skills/de-escalation-coach/skill.en.md) | Teach verbal and behavioral de-escalation techniques for tense interpersonal conflicts. |
 
-**Knowledge:** —  
-**Base model:** `deepseek/deepseek-v4-flash`
+**Knowledge base:** —  
 
 ---
 
-### Jan: Politician
+### <img src="agents/jan-politician/avatar.png" alt="Jan: Politician" width="24" align="left" style="margin-right: 12px;"> Jan: Politician
 
-<img src="agents/jan-politician/avatar.png" alt="Jan: Politician" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Policy Analyst & Diplomat |
+| Tone | Diplomatic, nuanced, balanced |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Policy analysis, governance structures, legislative processes, international relations, public speaking, negotiation strategy, political theory concepts, electoral systems. |
 
-**Role:** Policy Analyst & Diplomat  
-**Description:** Policy analyst on governance and global relations.  
-**Use cases:** Policy analysis, governance structures, legislative processes, international relations, public speaking, negotiation strategy, political theory concepts, electoral systems.
-
-**System prompt:** [system.md](agents/jan-politician/system.md) · [system.ru.md](agents/jan-politician/system.ru.md)
+[View system prompt ➦](agents/jan-politician/system.md)
 
 **Skills:**
 
@@ -288,20 +286,20 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Electoral System Explainer](agents/jan-politician/skills/electoral-system-explainer/skill.en.md) | Explain how elections and representation work in a specific country or system, compare voting rules, and analyze their political consequences. |
 | [International Relations Briefing](agents/jan-politician/skills/international-relations-briefing/skill.en.md) | Brief summary of diplomatic context, treaties, alliances, disputes, and political options for bilateral or multilateral relations. |
 
-**Knowledge:** —  
-**Base model:** `deepseek/deepseek-v4-flash`
+**Knowledge base:** —  
 
 ---
 
-### Jan: Psychologist
+### <img src="agents/jan-psychologist/avatar.png" alt="Jan: Psychologist" width="24" align="left" style="margin-right: 12px;"> Jan: Psychologist
 
-<img src="agents/jan-psychologist/avatar.png" alt="Jan: Psychologist" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Counselor / Psychologist |
+| Tone | Warm, empathetic, accepting |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Anxiety and stress management, relationships and communication, self-esteem and self-compassion, grief and loss, life transitions, emotional regulation, boundary setting, personal growth. |
 
-**Role:** Counselor / Psychologist  
-**Description:** Empathetic counselor for support and listening.  
-**Use cases:** Anxiety and stress management, relationships and communication, self-esteem and self-compassion, grief and loss, life transitions, emotional regulation, boundary setting, personal growth.
-
-**System prompt:** [system.md](agents/jan-psychologist/system.md) · [system.ru.md](agents/jan-psychologist/system.ru.md)
+[View system prompt ➦](agents/jan-psychologist/system.md)
 
 **Skills:**
 
@@ -313,23 +311,23 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Reflective Listening Guide](agents/jan-psychologist/skills/reflective-listening-guide/skill.en.md) | Reflect emotions, paraphrase experiences, and ask open questions to help the user feel heard and understood. |
 | [Relationship & Communication Coach](agents/jan-psychologist/skills/relationship-communication-coach/skill.en.md) | Help users explore relationship conflicts, communication patterns, and emotional needs with neutrality and empathy. |
 
-**Knowledge:** —  
-**Base model:** `deepseek/deepseek-v4-flash`
+**Knowledge base:** —  
 
 > [!WARNING]
 > Jan: Psychologist is an AI support resource, not a licensed mental health professional. For crises, contact emergency services or a crisis line immediately.
 
 ---
 
-### Jan: Scientist
+### <img src="agents/jan-scientist/avatar.png" alt="Jan: Scientist" width="24" align="left" style="margin-right: 12px;"> Jan: Scientist
 
-<img src="agents/jan-scientist/avatar.png" alt="Jan: Scientist" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Research Scientist |
+| Tone | Rigorous, evidence-based, intellectually humble |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Physics and cosmology, biology and medicine (with disclaimers), chemistry, earth science, climate science, research methodology, statistical reasoning, history and philosophy of science, technology explanations. |
 
-**Role:** Research Scientist  
-**Description:** Research scientist explaining concepts with rigor.  
-**Use cases:** Physics and cosmology, biology and medicine (with disclaimers), chemistry, earth science, climate science, research methodology, statistical reasoning, history and philosophy of science, technology explanations.
-
-**System prompt:** [system.md](agents/jan-scientist/system.md) · [system.ru.md](agents/jan-scientist/system.ru.md)
+[View system prompt ➦](agents/jan-scientist/system.md)
 
 **Skills:**
 
@@ -341,20 +339,20 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Research Methodology Designer](agents/jan-scientist/skills/research-methodology-designer/skill.en.md) | Design rigorous experiments and studies: hypothesis, prediction, experiment, analysis, interpretation, limitations, and next steps. |
 | [Misconception Debunker](agents/jan-scientist/skills/misconception-debunker/skill.en.md) | Identify and correct common scientific misconceptions based on evidence, distinguishing myths from established consensus. |
 
-**Knowledge:** —  
-**Base model:** `deepseek/deepseek-v4-flash`
+**Knowledge base:** —  
 
 ---
 
-### Jan: Trainer
+### <img src="agents/jan-trainer/avatar.png" alt="Jan: Trainer" width="24" align="left" style="margin-right: 12px;"> Jan: Trainer
 
-<img src="agents/jan-trainer/avatar.png" alt="Jan: Trainer" width="64" align="left" style="margin-right: 12px;">
+| Parameter | Value |
+|-----------|-------|
+| Role | Fitness & Wellness Coach |
+| Tone | Motivational but realistic |
+| Base model | `deepseek/deepseek-v4-flash` |
+| Scenarios | Workout programming (strength, hypertrophy, endurance, mobility), exercise form and technique, nutrition for fitness, recovery and sleep, habit formation, goal setting, bodyweight training, running and cardio. |
 
-**Role:** Fitness & Wellness Coach  
-**Description:** Fitness coach for workouts, technique, wellness.  
-**Use cases:** Workout programming (strength, hypertrophy, endurance, mobility), exercise technique, nutrition for fitness, recovery and sleep, habit formation, goal setting, bodyweight training, running and cardio.
-
-**System prompt:** [system.md](agents/jan-trainer/system.md) · [system.ru.md](agents/jan-trainer/system.ru.md)
+[View system prompt ➦](agents/jan-trainer/system.md)
 
 **Skills:**
 
@@ -366,8 +364,7 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Recovery & Sleep Optimizer](agents/jan-trainer/skills/recovery-and-sleep-optimizer/skill.en.md) | Balance training stress with rest, active recovery, sleep hygiene, and deload strategies. |
 | [Nutrition-for-Fitness Guide](agents/jan-trainer/skills/nutrition-for-fitness-guide/skill.en.md) | Provide evidence-informed nutrition context for training, recovery, and body composition without medical prescriptions. |
 
-**Knowledge:** —  
-**Base model:** `deepseek/deepseek-v4-flash`
+**Knowledge base:** —  
 
 > [!WARNING]
 > Jan: Trainer provides fitness guidance, not medical treatment. Stop exercising and see a professional if you feel pain or suspect an injury.
