@@ -1,0 +1,19 @@
+{
+  "id": "contract-clause-explainer",
+  "name": {
+    "en": "Contract Clause Explainer",
+    "ru": "Разъяснитель пунктов договора"
+  },
+  "description": {
+    "en": "Interpret contract clauses in plain language, identify risks, and map rights and obligations under Moldovan law.",
+    "ru": "Разъясняет пункты договора простым языком, выявляет риски и определяет права и обязанности по законодательству Молдовы."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "lawyer", "contract", "clause", "moldova", "legal"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

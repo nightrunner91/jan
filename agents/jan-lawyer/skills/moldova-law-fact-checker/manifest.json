@@ -1,0 +1,19 @@
+{
+  "id": "moldova-law-fact-checker",
+  "name": {
+    "en": "Moldova Law Fact Checker",
+    "ru": "Проверщик юридических фактов Молдовы"
+  },
+  "description": {
+    "en": "Verify legal claims, citations, and statements against Moldovan legislation and flag outdated or uncertain information.",
+    "ru": "Проверяет юридические утверждения, цитаты и высказывания на соответствие законодательству Молдовы и отмечает устаревшую или сомнительную информацию."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "lawyer", "fact-check", "moldova", "citations", "verification"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "rights-educator",
+  "name": {
+    "en": "Rights Educator",
+    "ru": "Образователь по правам"
+  },
+  "description": {
+    "en": "Explain legal rights in everyday contexts under Moldovan law, distinguishing statutory rights from practical limitations.",
+    "ru": "Объясняет правовые права в повседневных ситуациях по законодательству Молдовы, различая права по закону и практические ограничения."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "lawyer", "rights", "moldova", "tenant", "employee", "consumer"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

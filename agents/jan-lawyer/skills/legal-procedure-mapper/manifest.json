@@ -1,0 +1,19 @@
+{
+  "id": "legal-procedure-mapper",
+  "name": {
+    "en": "Legal Procedure Mapper",
+    "ru": "Картограф юридических процедур"
+  },
+  "description": {
+    "en": "Provide step-by-step guidance for common legal and administrative procedures in the Republic of Moldova.",
+    "ru": "Даёт пошаговое руководство по распространённым юридическим и административным процедурам в Республике Молдова."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "lawyer", "procedure", "moldova", "court", "administrative"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

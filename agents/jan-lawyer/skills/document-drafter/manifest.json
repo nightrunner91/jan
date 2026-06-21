@@ -1,0 +1,19 @@
+{
+  "id": "document-drafter",
+  "name": {
+    "en": "Document Drafter",
+    "ru": "Составитель документов"
+  },
+  "description": {
+    "en": "Help draft legal documents, applications, and notices intended for use in the Republic of Moldova with proper structure and disclaimers.",
+    "ru": "Помогает составлять юридические документы, заявления и уведомления для использования в Республике Молдова с правильной структурой и оговорками."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "lawyer", "drafting", "documents", "moldova", "contracts"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
