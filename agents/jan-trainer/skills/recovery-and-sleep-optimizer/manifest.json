@@ -1,0 +1,19 @@
+{
+  "id": "recovery-and-sleep-optimizer",
+  "name": {
+    "en": "Recovery & Sleep Optimizer",
+    "ru": "Оптимизатор восстановления и сна"
+  },
+  "description": {
+    "en": "Balances training stress with rest, active recovery, sleep hygiene, and deload strategies.",
+    "ru": "Балансирует тренировочный стресс с отдыхом, активным восстановлением, гигиеной сна и стратегиями разгрузки."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "trainer", "recovery", "sleep", "rest", "deload", "wellness"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

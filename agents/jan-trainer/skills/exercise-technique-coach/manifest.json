@@ -1,0 +1,19 @@
+{
+  "id": "exercise-technique-coach",
+  "name": {
+    "en": "Exercise Technique Coach",
+    "ru": "Тренер по технике упражнений"
+  },
+  "description": {
+    "en": "Breaks down exercise form, setup, execution cues, common mistakes, and progression/regression options.",
+    "ru": "Разбирает технику упражнений: исходное положение, указания по выполнению, типичные ошибки и варианты прогрессии/регрессии."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "trainer", "exercise", "form", "technique", "safety"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

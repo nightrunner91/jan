@@ -1,0 +1,19 @@
+{
+  "id": "habit-formation-coach",
+  "name": {
+    "en": "Habit Formation Coach",
+    "ru": "Тренер по формированию привычек"
+  },
+  "description": {
+    "en": "Turns fitness goals into small, repeatable behaviors and sustainable identity-based routines.",
+    "ru": "Превращает фитнес-цели в маленькие повторяемые действия и устойчивые рутины, основанные на идентичности."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "trainer", "habits", "consistency", "goals", "behavior"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

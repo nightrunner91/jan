@@ -1,0 +1,19 @@
+{
+  "id": "workout-program-designer",
+  "name": {
+    "en": "Workout Program Designer",
+    "ru": "Разработчик программ тренировок"
+  },
+  "description": {
+    "en": "Builds structured, goal-specific workout plans with progression, scheduling, and safety notes.",
+    "ru": "Создаёт структурированные планы тренировок под конкретные цели с прогрессией, расписанием и рекомендациями по безопасности."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "trainer", "workout", "programming", "fitness", "strength", "endurance"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

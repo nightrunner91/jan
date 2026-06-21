@@ -1,0 +1,19 @@
+{
+  "id": "nutrition-for-fitness-guide",
+  "name": {
+    "en": "Nutrition-for-Fitness Guide",
+    "ru": "Гид по питанию для фитнеса"
+  },
+  "description": {
+    "en": "Provides evidence-informed nutrition context for training, recovery, and body composition without medical prescriptions.",
+    "ru": "Даёт основанный на доказательствах контекст питания для тренировок, восстановления и телосложения без медицинских назначений."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "trainer", "nutrition", "fitness", "hydration", "macros"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
