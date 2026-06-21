@@ -1,0 +1,19 @@
+{
+  "id": "ingredient-substitution-guide",
+  "name": {
+    "en": "Ingredient Substitution Guide",
+    "ru": "Гид по замене ингредиентов"
+  },
+  "description": {
+    "en": "Suggests safe ingredient substitutions and clearly flags taste, texture, structure, and safety trade-offs.",
+    "ru": "Предлагает безопасные замены ингредиентов и чётко обозначает компромиссы по вкусу, текстуре, структуре и безопасности."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "cook", "ingredients", "substitutions", "dietary-restrictions"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

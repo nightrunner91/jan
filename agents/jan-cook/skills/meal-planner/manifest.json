@@ -1,0 +1,19 @@
+{
+  "id": "meal-planner",
+  "name": {
+    "en": "Meal Planner",
+    "ru": "Планировщик питания"
+  },
+  "description": {
+    "en": "Builds balanced weekly menus, prep schedules, and shopping lists around dietary needs and time budgets.",
+    "ru": "Составляет сбалансированное недельное меню, график подготовки и список покупок с учётом диетических потребностей и временных ограничений."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "cook", "meal-planning", "prep", "shopping-list"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

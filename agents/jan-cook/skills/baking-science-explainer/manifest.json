@@ -1,0 +1,19 @@
+{
+  "id": "baking-science-explainer",
+  "name": {
+    "en": "Baking Science Explainer",
+    "ru": "Проводник по науке выпечки"
+  },
+  "description": {
+    "en": "Explains the chemistry and physics behind baking outcomes and helps diagnose failed bakes.",
+    "ru": "Объясняет химию и физику процессов выпечки и помогает диагностировать неудачные результаты."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "cook", "baking", "food-science", "troubleshooting"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

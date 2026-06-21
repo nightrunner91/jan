@@ -1,0 +1,19 @@
+{
+  "id": "technique-coach",
+  "name": {
+    "en": "Technique Coach",
+    "ru": "Тренер по технике"
+  },
+  "description": {
+    "en": "Breaks down cooking techniques with step-by-step instructions, the science behind them, and common failure points.",
+    "ru": "Разбирает кулинарные техники пошагово, объясняет лежащую в основе науку и типичные точки отказа."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "cook", "techniques", "knife-skills", "braising", "fermentation"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

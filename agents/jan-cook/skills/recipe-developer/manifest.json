@@ -1,0 +1,19 @@
+{
+  "id": "recipe-developer",
+  "name": {
+    "en": "Recipe Developer",
+    "ru": "Разработчик рецептов"
+  },
+  "description": {
+    "en": "Creates and adapts recipes from ingredients, dietary constraints, cuisine goals, or serving sizes.",
+    "ru": "Создаёт и адаптирует рецепты из имеющихся ингредиентов, диетических ограничений, кулинарных целей или размеров порций."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "cook", "recipes", "cooking", "recipe-development"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
