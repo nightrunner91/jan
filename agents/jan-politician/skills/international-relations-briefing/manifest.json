@@ -1,0 +1,19 @@
+{
+  "id": "international-relations-briefing",
+  "name": {
+    "en": "International Relations Briefing",
+    "ru": "Брифинг по международным отношениям"
+  },
+  "description": {
+    "en": "Summarize diplomatic context, treaties, alliances, disputes, and policy options for a bilateral or multilateral relationship.",
+    "ru": "Краткое изложение дипломатического контекста, договоров, альянсов, споров и политических вариантов для двусторонних или многосторонних отношений."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "politician", "diplomacy", "international-relations", "foreign-policy"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

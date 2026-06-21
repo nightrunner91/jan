@@ -1,0 +1,19 @@
+{
+  "id": "electoral-system-explainer",
+  "name": {
+    "en": "Electoral System Explainer",
+    "ru": "Объяснение избирательных систем"
+  },
+  "description": {
+    "en": "Explain how elections and representation work in a given country or system, compare voting rules, and analyze their political effects.",
+    "ru": "Объяснение работы выборов и представительства в конкретной стране или системе, сравнение правил голосования и анализ их политических последствий."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "politician", "elections", "voting", "representation"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "stakeholder-position-mapper",
+  "name": {
+    "en": "Stakeholder Position Mapper",
+    "ru": "Карта позиций заинтересованных сторон"
+  },
+  "description": {
+    "en": "Identify relevant actors in a policy or governance issue, map their positions, interests, and influence, and surface areas of alignment or conflict.",
+    "ru": "Выявление участников политического или управленческого вопроса, их позиций, интересов и влияния, а также зон согласия или конфликта."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "politician", "stakeholders", "policy", "governance"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

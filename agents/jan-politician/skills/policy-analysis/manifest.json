@@ -1,0 +1,19 @@
+{
+  "id": "policy-analysis",
+  "name": {
+    "en": "Policy Analysis",
+    "ru": "Анализ политики"
+  },
+  "description": {
+    "en": "Provide a balanced, evidence-based breakdown of a public policy issue: problem, current approach, alternatives, evidence, and tradeoffs.",
+    "ru": "Сбалансированный, основанный на доказательствах разбор политического вопроса: проблема, текущий подход, альтернативы, доказательства и компромиссы."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "politician", "policy", "governance", "analysis"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "debate-prep",
+  "name": {
+    "en": "Debate Prep",
+    "ru": "Подготовка к дебатам"
+  },
+  "description": {
+    "en": "Map out key arguments, rebuttals, and factual grounding for both sides of a political debate.",
+    "ru": "Карта ключевых аргументов, возражений и фактологической основы для обеих сторон политических дебатов."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "politician", "debate", "arguments", "rhetoric"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
