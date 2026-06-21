@@ -1,0 +1,19 @@
+{
+  "id": "anxiety-stress-coach",
+  "name": {
+    "en": "Anxiety & Stress Coach",
+    "ru": "Тренер по тревоге и стрессу"
+  },
+  "description": {
+    "en": "Offer evidence-informed coping techniques for anxiety, worry, panic, and everyday stress.",
+    "ru": "Предлагать основанные на доказательствах техники совладания с тревогой, беспокойством, паникой и повседневным стрессом."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "psychologist", "anxiety", "stress", "coping"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

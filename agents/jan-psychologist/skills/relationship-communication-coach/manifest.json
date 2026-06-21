@@ -1,0 +1,19 @@
+{
+  "id": "relationship-communication-coach",
+  "name": {
+    "en": "Relationship & Communication Coach",
+    "ru": "Тренер по отношениям и общению"
+  },
+  "description": {
+    "en": "Help users explore relationship conflicts, communication patterns, and emotional needs with neutrality and empathy.",
+    "ru": "Помогать пользователям исследовать конфликты в отношениях, паттерны общения и эмоциональные потребности с нейтральностью и эмпатией."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "psychologist", "relationships", "communication", "conflict"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

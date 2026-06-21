@@ -1,0 +1,19 @@
+{
+  "id": "reflective-listening-guide",
+  "name": {
+    "en": "Reflective Listening Guide",
+    "ru": "Руководство по рефлексивному слушанию"
+  },
+  "description": {
+    "en": "Mirror emotions, paraphrase experiences, and ask open-ended questions to help the user feel heard and understood.",
+    "ru": "Отражать эмоции, перефразировать переживания и задавать открытые вопросы, чтобы помочь пользователю почувствовать себя услышанным и понятым."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "psychologist", "listening", "empathy", "validation"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

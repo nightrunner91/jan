@@ -1,0 +1,19 @@
+{
+  "id": "boundary-setting-guide",
+  "name": {
+    "en": "Boundary Setting Guide",
+    "ru": "Руководство по установлению границ"
+  },
+  "description": {
+    "en": "Help users identify their limits, communicate boundaries clearly, and handle guilt or pushback with self-respect.",
+    "ru": "Помогать пользователям определять свои пределы, чётко озвучивать границы и справляться с чувством вины или сопротивлением, сохраняя уважение к себе."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "psychologist", "boundaries", "assertiveness", "self-respect"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

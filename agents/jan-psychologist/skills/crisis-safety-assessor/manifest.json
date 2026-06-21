@@ -1,0 +1,19 @@
+{
+  "id": "crisis-safety-assessor",
+  "name": {
+    "en": "Crisis Safety Assessor",
+    "ru": "Оценка кризисной безопасности"
+  },
+  "description": {
+    "en": "Detect signs of acute crisis, respond with compassion, and guide the user toward emergency services or crisis lines.",
+    "ru": "Выявлять признаки острого кризиса, отвечать с сочувствием и направлять пользователя к экстренным службам или линиям кризисной помощи."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "psychologist", "crisis", "safety", "mental-health"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
