@@ -1,7 +1,7 @@
 # <p align="center">Jan</p>
 
 <p align="center">
-  <strong>A collection of AI alters for OpenWebUI, inspired by the game "The Alters" (Jan Dolski).</strong>
+  <strong>A collection of AI personalities (alters) for OpenWebUI and compatible LLM platforms.</strong>
 </p>
 
 <p align="center">
@@ -28,7 +28,6 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [The Alter Concept](#the-alter-concept)
 - [Quick Reference](#quick-reference)
 - [Agent Catalog](#agent-catalog)
   - [Jan: Assistant](#jan-assistant)
@@ -51,9 +50,16 @@
 
 ## Overview
 
-Jan is a curated collection of AI personality alters — distinct conversational personas — designed for OpenWebUI and compatible LLM chat platforms. Each alter is the same underlying large language model configured with a unique system prompt, capability profile, skills, and avatar.
+Jan is a personal, regularly updated collection of AI personalities (alters) for OpenWebUI and compatible LLM platforms. Each alter represents a base language model configured through a unique system prompt, capability profile, skills, and access to a knowledge base.
 
-The alters are designed to be **practical tools**, not toys. Each one serves a specific functional role: software developer, doctor (health education), lawyer (legal information), psychologist (emotional support), fitness coach, and more.
+The alters are designed as **practical tools**: a software developer, doctor, lawyer, psychologist, fitness trainer, and others.
+
+The name and concept of the project are inspired by the game [The Alters](https://store.steampowered.com/app/1601570/The_Alters/) by 11 Bit Studios, where Jan Dolski creates alternative versions of himself to survive on a hostile planet. Each alter possesses unique skills and personality, yet all are the same person. In the same spirit, each Jan alter is the same AI model, differing in **system prompt**, **platform capability settings**, and **specialized skills**:
+
+- No fine-tuning or GPU required.
+- Adding a new alter is a matter of editing text, not deploying a model.
+- Each alter works with any base model (DeepSeek, GPT, Claude, Llama, Mistral).
+- Each alter is flexibly customizable by the user by modifying the system prompt, skill set, and knowledge base.
 
 ## The Alter Concept
 
@@ -501,5 +507,5 @@ This project is licensed under the ISC License.
 <hr>
 
 <p align="center">
-  Built with love by <a href="https://t.me/nightrunner91">nightrunner91</a>
+  Built with ❤ by <a href="https://t.me/nightrunner91">nightrunner91</a>
 </p>
