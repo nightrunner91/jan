@@ -5,13 +5,13 @@
 </p>
 
 <p align="center">
-  <img src="agents/jan-assistant/avatar.png" alt="Jan Assistant" width="80">
-  <img src="agents/jan-developer/avatar.png" alt="Jan Developer" width="80">
-  <img src="agents/jan-psychologist/avatar.png" alt="Jan Psychologist" width="80">
-  <img src="agents/jan-scientist/avatar.png" alt="Jan Scientist" width="80">
-  <img src="agents/jan-trainer/avatar.png" alt="Jan Trainer" width="80">
-  <img src="agents/jan-doctor/avatar.png" alt="Jan Doctor" width="80">
-  <img src="agents/jan-cook/avatar.png" alt="Jan Cook" width="80">
+  <img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="80">
+  <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="80">
+  <img src="agents/jan-psychologist/avatar.png" alt="Jan: Psychologist" width="80">
+  <img src="agents/jan-scientist/avatar.png" alt="Jan: Scientist" width="80">
+  <img src="agents/jan-trainer/avatar.png" alt="Jan: Trainer" width="80">
+  <img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="80">
+  <img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="80">
 </p>
 
 <p align="center">
@@ -28,19 +28,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Quick Reference](#quick-reference)
 - [Agent Catalog](#agent-catalog)
-  - [Jan: Assistant](#jan-assistant)
-  - [Jan: Constructor](#jan-constructor)
-  - [Jan: Cook](#jan-cook)
-  - [Jan: Developer](#jan-developer)
-  - [Jan: Doctor](#jan-doctor)
-  - [Jan: Lawyer](#jan-lawyer)
-  - [Jan: Policeman](#jan-policeman)
-  - [Jan: Politician](#jan-politician)
-  - [Jan: Psychologist](#jan-psychologist)
-  - [Jan: Scientist](#jan-scientist)
-  - [Jan: Trainer](#jan-trainer)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Portability](#portability)
@@ -50,59 +38,42 @@
 
 ## Overview
 
-Jan is a personal, regularly updated collection of AI personalities (alters) for OpenWebUI and compatible LLM platforms. Each alter represents a base language model configured through a unique system prompt, capability profile, skills, and access to a knowledge base.
+Jan is a personal, regularly updated collection of AI personalities (alters) for [OpenWebUI](https://github.com/open-webui/open-webui) and compatible LLM platforms. Each alter represents a base language model configured through a unique system prompt, capability profile, skills, and access to a knowledge base.
 
-The alters are designed as **practical tools**: a software developer, doctor, lawyer, psychologist, fitness trainer, and others.
+The name and concept of the project are inspired by the game [The Alters](https://store.steampowered.com/app/1601570/The_Alters/) by 11 Bit Studios, where Jan Dolski creates alternative versions of himself to survive on a hostile planet. Each alter possesses unique skills and personality, yet all are the same person.
 
-The name and concept of the project are inspired by the game [The Alters](https://store.steampowered.com/app/1601570/The_Alters/) by 11 Bit Studios, where Jan Dolski creates alternative versions of himself to survive on a hostile planet. Each alter possesses unique skills and personality, yet all are the same person. In the same spirit, each Jan alter is the same AI model, differing in **system prompt**, **platform capability settings**, and **specialized skills**:
+In the same spirit, each Jan alter is the same AI model, differing in **system prompt**, **platform capability settings**, and **specialized skills**. The alters are created as **practical tools**: assistant, psychologist, developer, doctor, lawyer, and others. Each has its own character and communication style, working methods, and abilities.
 
 - No fine-tuning or GPU required.
 - Adding a new alter is a matter of editing text, not deploying a model.
-- Each alter works with any base model (DeepSeek, GPT, Claude, Llama, Mistral).
+- Each alter works with any base model (DeepSeek, GPT, Gemini, Claude, Llama, Mistral).
 - Each alter is flexibly customizable by the user by modifying the system prompt, skill set, and knowledge base.
-
-## The Alter Concept
-
-The project takes its name and inspiration from "The Alters," a game by 11 Bit Studios about Jan Dolski, a worker who creates alternate versions of himself to survive on a hostile planet. Each alter embodies a different skill set, temperament, and identity — yet they all share the same origin.
-
-In the same spirit, each Jan alter is the same AI model beneath the surface, differentiated entirely by **prompt engineering**, **platform feature toggles**, and **specialized skills**. This means:
-
-- No fine-tuning or GPU training required.
-- Adding a new alter is a text edit, not a model deployment.
-- Every alter works with any base model (DeepSeek, GPT, Claude, Llama, Mistral).
-
-## Quick Reference
-
-| Alter | Role | Base Model | Best For |
-|-------|------|------------|----------|
-| [Assistant](#jan-assistant) | Personal Assistant | DeepSeek V4 Flash | Research, task management, data analysis, writing |
-| [Constructor](#jan-constructor) | Construction Engineer | DeepSeek V4 Flash | Renovation, woodworking, DIY, material selection |
-| [Cook](#jan-cook) | Chef / Cook | DeepSeek V4 Flash | Recipes, baking science, meal planning |
-| [Developer](#jan-developer) | Software Developer | DeepSeek V4 Flash | Code review, debugging, system design, refactoring |
-| [Doctor](#jan-doctor) | Medical Consultant | DeepSeek V4 Flash | Symptom education, diagnosis guidance, medication info |
-| [Lawyer](#jan-lawyer) | Legal Information Specialist | DeepSeek V4 Flash | Contract clauses, rights, Moldovan legal procedures |
-| [Policeman](#jan-policeman) | Public Safety Advisor | DeepSeek V4 Flash | Safety procedures, law enforcement protocols, de-escalation |
-| [Politician](#jan-politician) | Policy Analyst & Diplomat | DeepSeek V4 Flash | Policy analysis, governance, international relations |
-| [Psychologist](#jan-psychologist) | Counselor / Psychologist | DeepSeek V4 Flash | Anxiety, relationships, self-esteem, grief, personal growth |
-| [Scientist](#jan-scientist) | Research Scientist | DeepSeek V4 Flash | Physics, biology, research methodology, evidence evaluation |
-| [Trainer](#jan-trainer) | Fitness & Wellness Coach | DeepSeek V4 Flash | Workout programming, exercise form, habit building |
-
-> [!NOTE]
-> All alters default to **DeepSeek V4 Flash** for immediate usability. The system prompts are provider-agnostic and work with GPT-4o, Claude, Llama, or any capable model.
 
 ## Agent Catalog
 
-Each alter below is a self-contained configuration: system prompt, skills, optional knowledge, and an avatar.
+| Alter | Role | Base Model | Best For |
+|-------|------|------------|----------|
+| [Jan: Assistant](#jan-assistant) | Personal Assistant | DeepSeek V4 Flash | Research, tasks, data analysis, writing |
+| [Jan: Constructor](#jan-constructor) | Construction Engineer | DeepSeek V4 Flash | Renovation, woodworking, DIY, material selection |
+| [Jan: Cook](#jan-cook) | Chef / Cook | DeepSeek V4 Flash | Recipes, baking science, meal planning |
+| [Jan: Developer](#jan-developer) | Software Developer | DeepSeek V4 Flash | Code review, debugging, system design, refactoring |
+| [Jan: Doctor](#jan-doctor) | Medical Consultant | DeepSeek V4 Flash | Symptom interpretation, diagnosis, medication information |
+| [Jan: Lawyer](#jan-lawyer) | Legal Information Specialist | DeepSeek V4 Flash | Contract clauses, rights, Moldovan legal procedures |
+| [Jan: Policeman](#jan-policeman) | Public Safety Advisor | DeepSeek V4 Flash | Safety procedures, law enforcement protocols, de-escalation |
+| [Jan: Politician](#jan-politician) | Policy Analyst & Diplomat | DeepSeek V4 Flash | Policy analysis, governance, international relations |
+| [Jan: Psychologist](#jan-psychologist) | Counselor / Psychologist | DeepSeek V4 Flash | Anxiety, relationships, self-esteem, grief, personal growth |
+| [Jan: Scientist](#jan-scientist) | Research Scientist | DeepSeek V4 Flash | Physics, biology, research methodology, evidence evaluation |
+| [Jan: Trainer](#jan-trainer) | Fitness & Wellness Coach | DeepSeek V4 Flash | Workout programs, exercise technique, habit formation |
 
 ---
 
 ### Jan: Assistant
 
-<img src="agents/jan-assistant/avatar.png" alt="Jan Assistant" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Personal Assistant  
 **Description:** Reliable assistant for research and tasks.  
-**Use cases:** Scheduling, task management, research, data analysis, writing, document formatting, general knowledge queries.
+**Use cases:** Planning, task management, research, data analysis, writing, document formatting, general knowledge queries.
 
 **System prompt:** [system.md](agents/jan-assistant/system.md) · [system.ru.md](agents/jan-assistant/system.ru.md)
 
@@ -114,7 +85,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 | [Data Analysis Guide](agents/jan-assistant/skills/data-analysis-guide/skill.en.md) | Inspect, clean, analyze, and visualize datasets using the code interpreter, then explain results and caveats in plain language. |
 | [Schedule & Task Planner](agents/jan-assistant/skills/schedule-task-planner/skill.en.md) | Build realistic schedules, prioritize tasks, estimate effort, and sequence work around the user's constraints. |
 | [Writing & Document Editor](agents/jan-assistant/skills/writing-document-editor/skill.en.md) | Draft, edit, rewrite, and format text and documents to match the user's purpose, audience, and tone. |
-| [File & Vision Interpreter](agents/jan-assistant/skills/file-vision-interpreter/skill.en.md) | Extract, summarize, and answer questions about uploaded files, images, screenshots, and documents using vision and file context. |
+| [File & Vision Interpreter](agents/jan-assistant/skills/file-vision-interpreter/skill.en.md) | Extract, summarize, and answer questions about uploaded files, images, screenshots, and documents. |
 
 **Knowledge:** —  
 **Base model:** `deepseek/deepseek-v4-flash`
@@ -123,7 +94,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 ### Jan: Constructor
 
-<img src="agents/jan-constructor/avatar.png" alt="Jan Constructor" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-constructor/avatar.png" alt="Jan: Constructor" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Construction Engineer  
 **Description:** Construction engineer for renovation and DIY.  
@@ -140,7 +111,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 | [Safety & Code Checker](agents/jan-constructor/skills/safety-code-checker/skill.en.md) | Flag hazards, separate DIY-safe work from licensed-professional work, and reference building codes or GOSTs with citations. |
 | [Tool Selector](agents/jan-constructor/skills/tool-selector/skill.en.md) | Recommend the right tools for a task, explain safe setup and operation, and provide maintenance and buying guidance. |
 | [Blueprint & Photo Reader](agents/jan-constructor/skills/blueprint-reader/skill.en.md) | Guide interpretation of uploaded blueprints, sketches, and photos to extract measurements, materials, and actionable guidance. |
-| [Local Price Scanner (Moldova)](agents/jan-constructor/skills/local-price-scanner/skill.en.md) | Use web search to scan local suppliers for material and tool prices in Moldova. |
+| [Local Price Scanner (Moldova)](agents/jan-constructor/skills/local-price-scanner/skill.en.md) | Efficiently search for material and tool prices in Moldova through local platforms. |
 
 **Knowledge:** —  
 **Base model:** `deepseek/deepseek-v4-flash`
@@ -149,7 +120,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 ### Jan: Cook
 
-<img src="agents/jan-cook/avatar.png" alt="Jan Cook" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Chef / Cook  
 **Description:** Culinary expert for recipes, techniques, and tips.  
@@ -161,11 +132,11 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 | Skill | Description |
 |-------|-------------|
-| [Recipe Developer](agents/jan-cook/skills/recipe-developer/skill.en.md) | Create and adapt recipes from ingredients, dietary constraints, cuisine goals, or serving sizes. |
+| [Recipe Developer](agents/jan-cook/skills/recipe-developer/skill.en.md) | Create and adapt recipes from available ingredients, dietary constraints, cuisine goals, or serving sizes. |
 | [Baking Science Explainer](agents/jan-cook/skills/baking-science-explainer/skill.en.md) | Explain the chemistry and physics behind baking outcomes and help diagnose failed bakes. |
-| [Ingredient Substitution Guide](agents/jan-cook/skills/ingredient-substitution-guide/skill.en.md) | Suggest safe ingredient substitutions and flag taste, texture, structure, and safety trade-offs. |
-| [Technique Coach](agents/jan-cook/skills/technique-coach/skill.en.md) | Break down cooking techniques with step-by-step instructions, the science behind them, and common failure points. |
-| [Meal Planner](agents/jan-cook/skills/meal-planner/skill.en.md) | Build balanced weekly menus, prep schedules, and shopping lists around dietary needs and time budgets. |
+| [Ingredient Substitution Guide](agents/jan-cook/skills/ingredient-substitution-guide/skill.en.md) | Suggest safe ingredient substitutions and clearly flag taste, texture, structure, and safety trade-offs. |
+| [Technique Coach](agents/jan-cook/skills/technique-coach/skill.en.md) | Break down cooking techniques step by step, explain the underlying science, and typical failure points. |
+| [Meal Planner](agents/jan-cook/skills/meal-planner/skill.en.md) | Build balanced weekly menus, prep schedules, and shopping lists around dietary needs and time constraints. |
 
 **Knowledge:** —  
 **Base model:** `deepseek/deepseek-v4-flash`
@@ -174,7 +145,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 ### Jan: Developer
 
-<img src="agents/jan-developer/avatar.png" alt="Jan Developer" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Software Developer  
 **Description:** Software engineer for code, reviews, debugging.  
@@ -188,10 +159,10 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 |-------|-------------|
 | [Code Reviewer](agents/jan-developer/skills/code-reviewer/skill.en.md) | Systematic code review for correctness, readability, maintainability, performance, security, and test coverage. |
 | [Debugger](agents/jan-developer/skills/debugger/skill.en.md) | Structured root-cause analysis and fix verification for bugs, errors, and unexpected behavior. |
-| [System Designer](agents/jan-developer/skills/system-designer/skill.en.md) | Pragmatic architecture and API design guidance with tradeoffs, data flow, and scalability considerations. |
+| [System Designer](agents/jan-developer/skills/system-designer/skill.en.md) | Pragmatic architecture and API design with tradeoffs, data flow, and scalability considerations. |
 | [Security Vulnerability Scanner](agents/jan-developer/skills/security-vulnerability-scanner/skill.en.md) | Identify security flaws, anti-patterns, unsafe defaults, and deployment risks in code and architecture. |
 | [Refactoring Planner](agents/jan-developer/skills/refactoring-planner/skill.en.md) | Plan and execute safe, test-backed refactoring to improve code quality while preserving behavior. |
-| [Technical Dispute Resolver](agents/jan-developer/skills/technical-dispute-resolver/skill.en.md) | Impartial evaluation of conflicting technical opinions and decisions with evidence, tradeoffs, and a recommended path forward. |
+| [Technical Dispute Resolver](agents/jan-developer/skills/technical-dispute-resolver/skill.en.md) | Impartial evaluation of conflicting technical opinions and decisions based on evidence, tradeoffs, and a recommended path forward. |
 
 **Knowledge:**
 
@@ -206,7 +177,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 ### Jan: Doctor
 
-<img src="agents/jan-doctor/avatar.png" alt="Jan Doctor" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Lead Medical Consultant and Clinical Analyst  
 **Description:** Medical consultant for diagnosis and treatment.  
@@ -219,9 +190,9 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 | Skill | Description |
 |-------|-------------|
 | [Differential Diagnosis](agents/jan-doctor/skills/differential-diagnosis/skill.en.md) | Build a structured differential diagnosis from symptoms, rank likely causes, flag red flags, and request missing clinical data. |
-| [Medication Guide](agents/jan-doctor/skills/medication-guide/skill.en.md) | Provide structured medication guidance including mechanism, indications, dosing, course, side effects, contraindications, and interactions. |
+| [Medication Guide](agents/jan-doctor/skills/medication-guide/skill.en.md) | Provide structured medication guidance including mechanism of action, indications, dosing, course, side effects, contraindications, and interactions. |
 | [Lab & Imaging Interpreter](agents/jan-doctor/skills/lab-imaging-interpreter/skill.en.md) | Interpret uploaded lab reports and imaging descriptions, flag abnormal findings, and connect results to differential diagnoses. |
-| [Emergency Triage](agents/jan-doctor/skills/emergency-triage/skill.en.md) | Recognize emergency symptoms and provide immediate first-aid instructions while urging emergency services contact. |
+| [Emergency Triage](agents/jan-doctor/skills/emergency-triage/skill.en.md) | Recognize emergency symptoms and provide immediate first-aid instructions with a recommendation to contact emergency services. |
 | [Medical Literature Synthesizer](agents/jan-doctor/skills/medical-literature-synthesizer/skill.en.md) | Synthesize medical guidelines, consensus statements, and clinical studies with citations. |
 | [Moldova Healthcare Localizer](agents/jan-doctor/skills/moldova-healthcare-localizer/skill.en.md) | Find and analyze Moldovan hospitals, pharmacies, official health portals, forums, and news. |
 
@@ -241,7 +212,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 ### Jan: Lawyer
 
-<img src="agents/jan-lawyer/avatar.png" alt="Jan Lawyer" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-lawyer/avatar.png" alt="Jan: Lawyer" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Legal Information Specialist  
 **Description:** Legal info on concepts, rights, disclaimers.  
@@ -253,7 +224,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 | Skill | Description |
 |-------|-------------|
-| [Contract Clause Explainer](agents/jan-lawyer/skills/contract-clause-explainer/skill.en.md) | Interpret contract clauses in plain language, identify risks, and map rights and obligations under Moldovan law. |
+| [Contract Clause Explainer](agents/jan-lawyer/skills/contract-clause-explainer/skill.en.md) | Interpret contract clauses in plain language, identify risks, and define rights and obligations under Moldovan law. |
 | [Legal Procedure Mapper](agents/jan-lawyer/skills/legal-procedure-mapper/skill.en.md) | Provide step-by-step guidance for common legal and administrative procedures in the Republic of Moldova. |
 | [Rights Educator](agents/jan-lawyer/skills/rights-educator/skill.en.md) | Explain legal rights in everyday contexts under Moldovan law, distinguishing statutory rights from practical limitations. |
 | [Document Drafter](agents/jan-lawyer/skills/document-drafter/skill.en.md) | Help draft legal documents, applications, and notices intended for use in the Republic of Moldova. |
@@ -263,7 +234,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 | Content | Purpose |
 |---------|---------|
-| Collection of Republic of Moldova legal codes and laws (PDF) | Grounds legal answers in current Moldovan legislation. |
+| Collection of Republic of Moldova legal codes and laws (PDF) | Pre-attached legal sources that ground answers in current Moldovan legislation. |
 
 **Base model:** `deepseek/deepseek-v4-flash`
 
@@ -274,7 +245,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 ### Jan: Policeman
 
-<img src="agents/jan-policeman/avatar.png" alt="Jan Policeman" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-policeman/avatar.png" alt="Jan: Policeman" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Public Safety & Law Enforcement Advisor  
 **Description:** Public safety advisor on procedures and rights.  
@@ -286,11 +257,11 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 | Skill | Description |
 |-------|-------------|
-| [Traffic Stop Advisor](agents/jan-policeman/skills/traffic-stop-advisor/skill.en.md) | Guide users through roadside traffic stops, required documents, and their rights while keeping the encounter calm and lawful. |
-| [Personal Safety Planner](agents/jan-policeman/skills/personal-safety-planner/skill.en.md) | Assess risks and build practical personal safety plans for home, travel, and public situations. |
-| [Crime Reporting Guide](agents/jan-policeman/skills/crime-reporting-guide/skill.en.md) | Explain how to report crimes, what information to prepare, and what to expect from the process. |
-| [Warrant & Search Explainer](agents/jan-policeman/skills/warrant-and-search-explainer/skill.en.md) | Clarify warrant and search rules, rights during searches, and practical considerations. |
-| [De-Escalation Coach](agents/jan-policeman/skills/de-escalation-coach/skill.en.md) | Teach de-escalation techniques for tense interpersonal and public encounters. |
+| [Traffic Stop Advisor](agents/jan-policeman/skills/traffic-stop-advisor/skill.en.md) | Help users behave during a traffic stop, explain required documents and rights, and keep the encounter calm and lawful. |
+| [Personal Safety Planner](agents/jan-policeman/skills/personal-safety-planner/skill.en.md) | Build a personal safety and situational awareness plan for public places, transport, or home. |
+| [Crime Reporting Guide](agents/jan-policeman/skills/crime-reporting-guide/skill.en.md) | Explain how to safely report a crime or incident in Moldova, what to record, and how to get a response. |
+| [Warrant & Search Explainer](agents/jan-policeman/skills/warrant-and-search-explainer/skill.en.md) | Explain search powers, warrants, and consent during searches of homes, vehicles, or personal inspections in Moldova. |
+| [De-Escalation Coach](agents/jan-policeman/skills/de-escalation-coach/skill.en.md) | Teach verbal and behavioral de-escalation techniques for tense interpersonal conflicts. |
 
 **Knowledge:** —  
 **Base model:** `deepseek/deepseek-v4-flash`
@@ -299,7 +270,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 ### Jan: Politician
 
-<img src="agents/jan-politician/avatar.png" alt="Jan Politician" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-politician/avatar.png" alt="Jan: Politician" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Policy Analyst & Diplomat  
 **Description:** Policy analyst on governance and global relations.  
@@ -311,11 +282,11 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 | Skill | Description |
 |-------|-------------|
-| [Policy Analysis](agents/jan-politician/skills/policy-analysis/skill.en.md) | Structured policy issue breakdowns with background, alternatives, evidence, and tradeoffs. |
-| [Debate Prep](agents/jan-politician/skills/debate-prep/skill.en.md) | Map arguments and rebuttals on contested topics with factual grounding. |
-| [Stakeholder Position Mapper](agents/jan-politician/skills/stakeholder-position-mapper/skill.en.md) | Identify actors, positions, and interests in policy or political disputes. |
-| [Electoral System Explainer](agents/jan-politician/skills/electoral-system-explainer/skill.en.md) | Explain voting and representation systems across different jurisdictions. |
-| [International Relations Briefing](agents/jan-politician/skills/international-relations-briefing/skill.en.md) | Provide diplomatic context and foreign-policy options. |
+| [Policy Analysis](agents/jan-politician/skills/policy-analysis/skill.en.md) | Balanced, evidence-based breakdown of a policy issue: problem, current approach, alternatives, evidence, and tradeoffs. |
+| [Debate Prep](agents/jan-politician/skills/debate-prep/skill.en.md) | Map key arguments, objections, and factual grounding for both sides of political debates. |
+| [Stakeholder Position Mapper](agents/jan-politician/skills/stakeholder-position-mapper/skill.en.md) | Identify actors in a political or governance issue, their positions, interests, and influence, as well as areas of agreement or conflict. |
+| [Electoral System Explainer](agents/jan-politician/skills/electoral-system-explainer/skill.en.md) | Explain how elections and representation work in a specific country or system, compare voting rules, and analyze their political consequences. |
+| [International Relations Briefing](agents/jan-politician/skills/international-relations-briefing/skill.en.md) | Brief summary of diplomatic context, treaties, alliances, disputes, and political options for bilateral or multilateral relations. |
 
 **Knowledge:** —  
 **Base model:** `deepseek/deepseek-v4-flash`
@@ -324,7 +295,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 ### Jan: Psychologist
 
-<img src="agents/jan-psychologist/avatar.png" alt="Jan Psychologist" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-psychologist/avatar.png" alt="Jan: Psychologist" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Counselor / Psychologist  
 **Description:** Empathetic counselor for support and listening.  
@@ -336,11 +307,11 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 | Skill | Description |
 |-------|-------------|
-| [Anxiety & Stress Coach](agents/jan-psychologist/skills/anxiety-stress-coach/skill.en.md) | Provide evidence-informed coping strategies for anxiety and stress. |
-| [Boundary Setting Guide](agents/jan-psychologist/skills/boundary-setting-guide/skill.en.md) | Help formulate, communicate, and maintain healthy personal boundaries. |
-| [Crisis Safety Assessor](agents/jan-psychologist/skills/crisis-safety-assessor/skill.en.md) | Recognize crisis signals and guide users toward professional or emergency help. |
-| [Reflective Listening Guide](agents/jan-psychologist/skills/reflective-listening-guide/skill.en.md) | Model and teach reflective listening for better conversations. |
-| [Relationship & Communication Coach](agents/jan-psychologist/skills/relationship-communication-coach/skill.en.md) | Support relationship and communication challenges with practical frameworks. |
+| [Anxiety & Stress Coach](agents/jan-psychologist/skills/anxiety-stress-coach/skill.en.md) | Provide evidence-based coping strategies for anxiety, worry, panic, and everyday stress. |
+| [Boundary Setting Guide](agents/jan-psychologist/skills/boundary-setting-guide/skill.en.md) | Help users define their limits, clearly voice boundaries, and cope with guilt or resistance while maintaining self-respect. |
+| [Crisis Safety Assessor](agents/jan-psychologist/skills/crisis-safety-assessor/skill.en.md) | Identify signs of acute crisis, respond with compassion, and guide the user to emergency services or crisis helplines. |
+| [Reflective Listening Guide](agents/jan-psychologist/skills/reflective-listening-guide/skill.en.md) | Reflect emotions, paraphrase experiences, and ask open questions to help the user feel heard and understood. |
+| [Relationship & Communication Coach](agents/jan-psychologist/skills/relationship-communication-coach/skill.en.md) | Help users explore relationship conflicts, communication patterns, and emotional needs with neutrality and empathy. |
 
 **Knowledge:** —  
 **Base model:** `deepseek/deepseek-v4-flash`
@@ -352,7 +323,7 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 ### Jan: Scientist
 
-<img src="agents/jan-scientist/avatar.png" alt="Jan Scientist" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-scientist/avatar.png" alt="Jan: Scientist" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Research Scientist  
 **Description:** Research scientist explaining concepts with rigor.  
@@ -364,11 +335,11 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 | Skill | Description |
 |-------|-------------|
-| [Evidence Hierarchy Evaluator](agents/jan-scientist/skills/evidence-hierarchy-evaluator/skill.en.md) | Evaluate the strength of scientific evidence and explain confidence limits. |
-| [Scientific Literature Synthesizer](agents/jan-scientist/skills/scientific-literature-synthesizer/skill.en.md) | Synthesize findings across papers and map consensus and debate. |
-| [Statistical Reasoning Checker](agents/jan-scientist/skills/statistical-reasoning-checker/skill.en.md) | Check statistical claims and reasoning errors. |
-| [Research Methodology Designer](agents/jan-scientist/skills/research-methodology-designer/skill.en.md) | Design rigorous experiments and studies. |
-| [Misconception Debunker](agents/jan-scientist/skills/misconception-debunker/skill.en.md) | Correct common scientific misconceptions with evidence. |
+| [Evidence Hierarchy Evaluator](agents/jan-scientist/skills/evidence-hierarchy-evaluator/skill.en.md) | Evaluate and rank scientific evidence by quality: from meta-analyses to expert opinions and anecdotes. |
+| [Scientific Literature Synthesizer](agents/jan-scientist/skills/scientific-literature-synthesizer/skill.en.md) | Synthesize results from multiple papers, identify consensus and disagreement, and summarize controversial or emerging science with citations. |
+| [Statistical Reasoning Checker](agents/jan-scientist/skills/statistical-reasoning-checker/skill.en.md) | Check statistical claims, interpret p-values, confidence intervals, effect sizes, biases, and identify typical reasoning errors. |
+| [Research Methodology Designer](agents/jan-scientist/skills/research-methodology-designer/skill.en.md) | Design rigorous experiments and studies: hypothesis, prediction, experiment, analysis, interpretation, limitations, and next steps. |
+| [Misconception Debunker](agents/jan-scientist/skills/misconception-debunker/skill.en.md) | Identify and correct common scientific misconceptions based on evidence, distinguishing myths from established consensus. |
 
 **Knowledge:** —  
 **Base model:** `deepseek/deepseek-v4-flash`
@@ -377,11 +348,11 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 ### Jan: Trainer
 
-<img src="agents/jan-trainer/avatar.png" alt="Jan Trainer" width="64" align="left" style="margin-right: 12px;">
+<img src="agents/jan-trainer/avatar.png" alt="Jan: Trainer" width="64" align="left" style="margin-right: 12px;">
 
 **Role:** Fitness & Wellness Coach  
 **Description:** Fitness coach for workouts, technique, wellness.  
-**Use cases:** Workout programming (strength, hypertrophy, endurance, mobility), exercise form and technique, nutrition for fitness, recovery and sleep, habit formation, goal setting, bodyweight training, running and cardio.
+**Use cases:** Workout programming (strength, hypertrophy, endurance, mobility), exercise technique, nutrition for fitness, recovery and sleep, habit formation, goal setting, bodyweight training, running and cardio.
 
 **System prompt:** [system.md](agents/jan-trainer/system.md) · [system.ru.md](agents/jan-trainer/system.ru.md)
 
@@ -389,11 +360,11 @@ Each alter below is a self-contained configuration: system prompt, skills, optio
 
 | Skill | Description |
 |-------|-------------|
-| [Workout Program Designer](agents/jan-trainer/skills/workout-program-designer/skill.en.md) | Build structured, goal-specific workout plans with progression and safety notes. |
-| [Exercise Technique Coach](agents/jan-trainer/skills/exercise-technique-coach/skill.en.md) | Break down exercise form, setup, execution cues, and progression/regression options. |
-| [Habit Formation Coach](agents/jan-trainer/skills/habit-formation-coach/skill.en.md) | Turn fitness goals into small, repeatable behaviors and sustainable routines. |
+| [Workout Program Designer](agents/jan-trainer/skills/workout-program-designer/skill.en.md) | Build structured workout plans for specific goals with progression, schedule, and safety recommendations. |
+| [Exercise Technique Coach](agents/jan-trainer/skills/exercise-technique-coach/skill.en.md) | Break down exercise technique: starting position, execution cues, typical errors, and progression/regression options. |
+| [Habit Formation Coach](agents/jan-trainer/skills/habit-formation-coach/skill.en.md) | Turn fitness goals into small, repeatable actions and sustainable routines based on identity. |
 | [Recovery & Sleep Optimizer](agents/jan-trainer/skills/recovery-and-sleep-optimizer/skill.en.md) | Balance training stress with rest, active recovery, sleep hygiene, and deload strategies. |
-| [Nutrition-for-Fitness Guide](agents/jan-trainer/skills/nutrition-for-fitness-guide/skill.en.md) | Provide evidence-informed nutrition context that supports training and recovery. |
+| [Nutrition-for-Fitness Guide](agents/jan-trainer/skills/nutrition-for-fitness-guide/skill.en.md) | Provide evidence-informed nutrition context for training, recovery, and body composition without medical prescriptions. |
 
 **Knowledge:** —  
 **Base model:** `deepseek/deepseek-v4-flash`
@@ -410,8 +381,8 @@ jan/
       avatar.png            # Avatar image
       system.md             # English system prompt (source of truth)
       system.ru.md          # Russian system prompt
-      openwebui.json        # OpenWebUI export (English)
-      openwebui.ru.json     # OpenWebUI export (Russian)
+      openwebui.json        # OpenWebUI export (English UI)
+      openwebui.ru.json     # OpenWebUI export (Russian UI)
       skills/               # Per-agent skills (optional)
         {skill-slug}/
           manifest.json
@@ -437,21 +408,25 @@ jan/
 ### Import into OpenWebUI
 
 1. Open your OpenWebUI instance.
-2. Navigate to **Workspace > Models**.
+2. Navigate to **Workspace > Skills**.
 3. Click the import button (upload icon).
-4. Select any `agents/jan-{alter}/openwebui.json` (English) or `openwebui.ru.json` (Russian) file.
-5. The model appears in your model list with all capabilities, tools, and skills pre-configured.
+4. Upload the required skill set for the selected model.
+5. Navigate to **Workspace > Models**.
+6. Click the import button (upload icon).
+7. Select any `agents/jan-{alter}/openwebui.json` (English UI) or `openwebui.ru.json` (Russian UI) file.
+8. The model appears in your model list with all capabilities, tools, and skills pre-configured.
 
-You can import all 11 models at once. Duplicate IDs are updated automatically.
+> [!NOTE]
+> If a knowledge base is available and/or required, upload it via **Workspace > Knowledge**, then attach it in the model settings. A knowledge base is not always required and is not for all alters; moreover, it is personalized.
 
 ### Use a Model
 
 1. Start a new chat.
 2. Select the desired Jan alter from the model selector.
-3. The system prompt is already applied — the alter will respond in its defined role.
+3. The system prompt, skills, and knowledge are applied — the alter is ready to respond in its role.
 
 > [!NOTE]
-> Capabilities (web search, code interpreter, image generation, file upload) vary by alter. Check the model description in OpenWebUI for details.
+> Capabilities (web search, code interpreter, image generation, file upload) vary by alter. Details are in the model description in OpenWebUI. In addition, capabilities and tools can be customized to your preference.
 
 ## Portability
 
@@ -459,8 +434,8 @@ Each alter is defined by these files inside `agents/jan-{alter}/`:
 
 | File | Purpose | Portable to |
 |------|---------|-------------|
-| `system.md` | System prompt (plain text, English) | All platforms |
-| `system.ru.md` | System prompt (Russian) | All platforms |
+| `system.md` | System prompt in English (source of truth) | All platforms |
+| `system.ru.md` | System prompt in Russian | All platforms |
 | `openwebui.json` | OpenWebUI export (English UI) | OpenWebUI only |
 | `openwebui.ru.json` | OpenWebUI export (Russian UI) | OpenWebUI only |
 
@@ -477,20 +452,20 @@ See `docs/portability-guide.md` for detailed instructions, including temperature
 Some alters include optional knowledge-base templates you can fill out and attach in OpenWebUI:
 
 - **Jan: Developer** — `developer-profile.template-en.md` / `developer-profile.template-ru.md`  
-  Store your tech stack, conventions, current projects, code-review preferences, and communication style. Attach it as Full Context knowledge so the alter respects your setup.
+  Store your tech stack, conventions, current projects, code-review preferences, and communication style. Attach it as Full Context knowledge so the alter respects your environment.
 
 - **Jan: Doctor** — `medical-profile.template-en.md` / `medical-profile.template-ru.md`  
   Store your medical history, medications, allergies, baseline vitals, and doctors. Attach it as Full Context knowledge for personalized health information discussions.
 
-- **Jan: Lawyer** — Moldovan legal code PDF collection  
-  Pre-attached legal references that ground answers in Republic of Moldova legislation.
+- **Jan: Lawyer** — Republic of Moldova legal code PDF collection  
+  Pre-attached legal sources that ground answers in Republic of Moldova legislation.
 
 Filled personal profiles are ignored by Git (see `.gitignore`) to keep sensitive data out of the repository.
 
 ## Adding a New Alter
 
 1. Copy an existing alter folder (e.g. `agents/jan-trainer/`).
-2. Edit `system.md` — change role, tone, behavior, trigger topics, and skills list.
+2. Edit `system.md` — change role, tone, behavior rules, topics, and skills list.
 3. Edit `system.ru.md` — update the Russian translation.
 4. Edit `openwebui.json` and `openwebui.ru.json` — update id, name, description, capabilities, toolIds, and skillIds.
 5. Add per-agent skills under `skills/{skill-slug}/` with `manifest.json`, `skill.en.md`, and `skill.ru.md`.
