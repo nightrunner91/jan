@@ -5,3 +5,9 @@ SKILL_creation.md
 # sensitive health data out of Git.
 /agents/jan-doctor/knowledge/medical-profile-en.md
 /agents/jan-doctor/knowledge/medical-profile-ru.md
+
+# Personal developer knowledge-base files (filled from templates).
+# Templates (*.template-*.md) are tracked; filled copies are ignored to keep
+# sensitive project and credential data out of Git.
+/agents/jan-developer/knowledge/developer-profile-en.md
+/agents/jan-developer/knowledge/developer-profile-ru.md
