@@ -1,0 +1,19 @@
+{
+  "id": "personal-safety-planner",
+  "name": {
+    "en": "Personal Safety Planner",
+    "ru": "Планировщик личной безопасности"
+  },
+  "description": {
+    "en": "Builds a situational-awareness and personal-safety plan for public spaces, transport, or home security.",
+    "ru": "Составляет план личной безопасности и ситуационной осведомлённости для общественных мест, транспорта или дома."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "policeman", "personal-safety", "awareness", "prevention"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

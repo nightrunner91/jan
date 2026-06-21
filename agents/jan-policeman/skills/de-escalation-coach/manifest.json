@@ -1,0 +1,19 @@
+{
+  "id": "de-escalation-coach",
+  "name": {
+    "en": "De-Escalation Coach",
+    "ru": "Тренер по деэскалации"
+  },
+  "description": {
+    "en": "Teaches verbal and behavioral de-escalation techniques for tense interpersonal conflicts.",
+    "ru": "Обучает вербальным и поведенческим приёмам деэскалации напряжённых межличностных конфликтов."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "policeman", "de-escalation", "conflict", "safety"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

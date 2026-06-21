@@ -1,0 +1,19 @@
+{
+  "id": "crime-reporting-guide",
+  "name": {
+    "en": "Crime Reporting Guide",
+    "ru": "Руководство по сообщению о преступлении"
+  },
+  "description": {
+    "en": "Explains how to safely report a crime or incident in Moldova, what to document, and how to follow up.",
+    "ru": "Объясняет, как безопасно сообщить о преступлении или инциденте в Молдове, что зафиксировать и как получить ответ."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "policeman", "crime-reporting", "moldova", "procedure"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

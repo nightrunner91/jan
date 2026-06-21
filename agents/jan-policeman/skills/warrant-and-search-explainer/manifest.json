@@ -1,0 +1,19 @@
+{
+  "id": "warrant-and-search-explainer",
+  "name": {
+    "en": "Warrant & Search Explainer",
+    "ru": "Разъяснитель ордеров и обысков"
+  },
+  "description": {
+    "en": "Clarifies search authority, warrants, and consent during home, vehicle, or person searches under Moldovan practice.",
+    "ru": "Разъясняет полномочия на обыск, ордера и согласие при обыске дома, транспорта или личного досмотра в Молдове."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "policeman", "warrant", "search", "rights", "moldova"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

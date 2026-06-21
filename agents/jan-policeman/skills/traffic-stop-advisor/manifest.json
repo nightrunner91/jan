@@ -1,0 +1,19 @@
+{
+  "id": "traffic-stop-advisor",
+  "name": {
+    "en": "Traffic Stop Advisor",
+    "ru": "Советник при остановке транспорта"
+  },
+  "description": {
+    "en": "Guides users through roadside traffic stops, required documents, and their rights while keeping the encounter calm and lawful.",
+    "ru": "Помогает пользователям вести себя при остановке транспорта, объясняет необходимые документы и права, сохраняя спокойствие и законность."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "policeman", "traffic-stop", "rights", "moldova", "safety"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
