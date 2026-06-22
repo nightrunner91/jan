@@ -5,13 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="80">
-  <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="80">
-  <img src="agents/jan-psychologist/avatar.png" alt="Jan: Psychologist" width="80">
-  <img src="agents/jan-scientist/avatar.png" alt="Jan: Scientist" width="80">
-  <img src="agents/jan-trainer/avatar.png" alt="Jan: Trainer" width="80">
-  <img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="80">
-  <img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="80">
+  <img src="assets/logo.png" alt="Jan" width="609">
 </p>
 
 <p align="center">
