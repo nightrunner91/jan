@@ -33,6 +33,10 @@
       {
         "content": "Healthy meal prep ideas",
         "title": ["Meal prep", "Plan nutritious meals for the week"]
+      },
+      {
+        "content": "Substitute ingredients I'm missing",
+        "title": ["Ingredient swap", "Replace what you don't have"]
       }
     ],
     "tags": ["jan", "cook", "culinary", "recipes"],

@@ -31,11 +31,15 @@
           "content": "Which wood should I use?",
           "title": ["Choose wood", "Compare materials for your project"]
         },
-        {
-          "content": "DIY wiring safety tips",
-          "title": ["Electrical safety", "Basic precautions before working with wiring"]
-        }
-      ],
+      {
+        "content": "DIY wiring safety tips",
+        "title": ["Electrical safety", "Basic precautions before working with wiring"]
+      },
+      {
+        "content": "How do I hang heavy shelves?",
+        "title": ["Mount shelves", "Secure mounting and weight limits"]
+      }
+    ],
       "tags": [
         "jan",
         "constructor",

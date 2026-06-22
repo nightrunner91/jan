@@ -33,6 +33,10 @@
       {
         "content": "Help me understand my anxiety",
         "title": ["Understand anxiety", "Reflect on anxious thoughts and patterns"]
+      },
+      {
+        "content": "I can't sleep well lately",
+        "title": ["Sleep issues", "Talk about what's keeping you up"]
       }
     ],
     "tags": ["jan", "psychologist", "counseling", "mental-health"],

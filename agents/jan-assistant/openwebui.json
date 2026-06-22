@@ -33,6 +33,10 @@
       {
         "content": "Analyze this data for me",
         "title": ["Data analysis", "Get insights from a dataset or table"]
+      },
+      {
+        "content": "Proofread my writing",
+        "title": ["Proofread text", "Check grammar, clarity, and tone"]
       }
     ],
     "tags": ["jan", "assistant", "productivity"],

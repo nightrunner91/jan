@@ -43,6 +43,13 @@
             "API design",
             "Plan endpoints, models, and best practices"
           ]
+        },
+        {
+          "content": "Optimize this code",
+          "title": [
+            "Code optimization",
+            "Improve performance and readability"
+          ]
         }
       ],
       "tags": [

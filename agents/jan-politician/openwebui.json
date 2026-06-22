@@ -33,6 +33,10 @@
       {
         "content": "How do elections work here?",
         "title": ["Election systems", "Understand how voting and representation work"]
+      },
+      {
+        "content": "What is lobbying and why does it matter?",
+        "title": ["Lobbying explained", "How interest groups influence policy"]
       }
     ],
     "tags": ["jan", "politician", "policy", "governance"],

@@ -34,6 +34,10 @@
         {
           "content": "Is this symptom serious?",
           "title": ["Symptom check", "Assess whether you need urgent care"]
+        },
+        {
+          "content": "What foods should I avoid?",
+          "title": ["Diet restrictions", "Find out what to cut from your diet"]
         }
       ],
       "tags": [

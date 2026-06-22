@@ -34,6 +34,10 @@
         {
           "content": "What do we know about sleep?",
           "title": ["Sleep science", "Explore research on sleep and health"]
+        },
+        {
+          "content": "Is this news article accurate?",
+          "title": ["Fact-check news", "Verify claims against scientific evidence"]
         }
       ],
       "tags": [
