@@ -13,12 +13,13 @@
 
 ---
 
-## Basic Information
+## Agent-Specific Details
 
-- **Full name:**
+> Fill in your **User Profile** (`user-profile-en.md`) for name and language.
+> Provide additional details below for this agent only.
+
 - **Country of residence:**
 - **Region / state / district:**
-- **Primary language(s):**
 
 ## Political Context
 

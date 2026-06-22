@@ -13,12 +13,13 @@
 
 ---
 
-## Basic Information
+## Agent-Specific Details
 
-- **Full name:**
+> Fill in your **User Profile** (`user-profile-en.md`) for name and language.
+> Provide additional details below for this agent only.
+
 - **Household size:**
 - **Children (ages):**
-- **Primary language(s):**
 
 ## Dietary Restrictions & Allergies
 

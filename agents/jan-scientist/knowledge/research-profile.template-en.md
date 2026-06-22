@@ -13,13 +13,14 @@
 
 ---
 
-## Basic Information
+## Agent-Specific Details
 
-- **Full name / alias:**
+> Fill in your **User Profile** (`user-profile-en.md`) for name and language.
+> Provide additional details below for this agent only.
+
 - **Role (student, researcher, professor, industry, hobbyist):**
 - **Institution / organization:**
 - **Country:**
-- **Primary language(s):**
 
 ## Field of Study
 

@@ -1,5 +1,10 @@
 SKILL_creation.md
 
+# Shared user profile (filled from template).
+# Template is tracked; filled copy is ignored to keep sensitive personal data out of Git.
+/agents/user-profile-en.md
+/agents/user-profile-ru.md
+
 # Personal medical knowledge-base files (filled from templates).
 # Templates (*.template-*.md) are tracked; filled copies are ignored to keep
 # sensitive health data out of Git.
@@ -59,3 +64,9 @@ SKILL_creation.md
 # sensitive health and fitness data out of Git.
 /agents/jan-trainer/knowledge/fitness-profile-en.md
 /agents/jan-trainer/knowledge/fitness-profile-ru.md
+
+# Personal lawyer knowledge-base files (filled from templates).
+# Templates (*.template-*.md) are tracked; filled copies are ignored to keep
+# sensitive personal and legal data out of Git.
+/agents/jan-lawyer/knowledge/legal-profile-en.md
+/agents/jan-lawyer/knowledge/legal-profile-ru.md

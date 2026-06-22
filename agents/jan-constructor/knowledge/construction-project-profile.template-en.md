@@ -13,12 +13,12 @@
 
 ---
 
-## Basic Information
+## Agent-Specific Details
 
-- **Full name:**
-- **Location (city / region / country):**
+> Fill in your **User Profile** (`user-profile-en.md`) for name, language, and location.
+> Provide additional details below for this agent only.
+
 - **Climate zone:**
-- **Primary language(s):**
 
 ## Skill Level & Experience
 

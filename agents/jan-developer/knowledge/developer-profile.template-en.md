@@ -14,13 +14,13 @@
 
 ---
 
-## Basic Information
+## Agent-Specific Details
 
-- **Name / alias:**
+> Fill in your **User Profile** (`user-profile-en.md`) for name, language, and time zone.
+> Provide additional details below for this agent only.
+
 - **Role / title:**
 - **Experience level:**
-- **Primary language(s) for communication:**
-- **Time zone / working hours:**
 
 ## Work Context
 

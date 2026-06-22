@@ -15,10 +15,8 @@
 
 ## Basic Information
 
-- **Preferred name:**
-- **Age range:**
-- **Primary language(s):**
-- **Pronouns (optional):**
+> Fill in your **User Profile** (`user-profile-en.md`) — it contains your name, preferred
+> name, language, time zone, and location. This agent inherits that context automatically.
 
 ## Communication Preferences
 
