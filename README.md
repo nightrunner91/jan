@@ -69,8 +69,6 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 > [!NOTE]
 > * The base model for each alter is chosen based on personal experience. Use any other model at your discretion.
 
----
-
 <details>
 <summary>
 

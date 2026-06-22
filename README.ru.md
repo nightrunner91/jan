@@ -69,12 +69,10 @@
 > [!NOTE]
 > * Базовая модель для каждого альтера подобрана исходя из личного  опыта пользования. Используйте любую иную на своё усмотрение.
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-assistant/avatar.png" alt="Ян: Ассистент" width="24" align="left" style="margin-right: 12px;"> Ян: Ассистент
+### <img src="agents/jan-assistant/avatar.png" alt="Ян: Ассистент" width="30" align="left"> Ян: Ассистент
 
 </summary>
 
@@ -102,12 +100,10 @@
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-constructor/avatar.png" alt="Ян: Конструктор" width="24" align="left" style="margin-right: 12px;"> Ян: Конструктор
+### <img src="agents/jan-constructor/avatar.png" alt="Ян: Конструктор" width="30" align="left"> Ян: Конструктор
 
 </summary>
 
@@ -136,12 +132,10 @@
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-cook/avatar.png" alt="Ян: Повар" width="24" align="left" style="margin-right: 12px;"> Ян: Повар
+### <img src="agents/jan-cook/avatar.png" alt="Ян: Повар" width="30" align="left"> Ян: Повар
 
 </summary>
 
@@ -169,12 +163,10 @@
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-developer/avatar.png" alt="Ян: Разработчик" width="24" align="left" style="margin-right: 12px;"> Ян: Разработчик
+### <img src="agents/jan-developer/avatar.png" alt="Ян: Разработчик" width="30" align="left"> Ян: Разработчик
 
 </summary>
 
@@ -183,7 +175,7 @@
 |---------|----------|
 | Роль | Разработчик программного обеспечения |
 | Тон | Технический, точный, прагматичный |
-| Базовая модель | `deepseek/deepseek-v4-flash` |
+| Базовая модель | `qwen/qwen3.6-plus` |
 | Сценарии | Программирование на любых языках, рецензирование кода, отладка, проектирование систем, выбор алгоритмов, рефакторинг, стратегии тестирования, концепции CI/CD, системы контроля версий. |
 
 [Посмотреть системый промпт ➦](agents/jan-developer/system.ru.md)
@@ -208,12 +200,10 @@
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-doctor/avatar.png" alt="Ян: Доктор" width="24" align="left" style="margin-right: 12px;"> Ян: Доктор
+### <img src="agents/jan-doctor/avatar.png" alt="Ян: Доктор" width="30" align="left"> Ян: Доктор
 
 </summary>
 
@@ -222,7 +212,7 @@
 |---------|----------|
 | Роль | Ведущий медицинский консультант и клинический аналитик |
 | Тон | Уверенный, профессиональный, прямой |
-| Базовая модель | `deepseek/deepseek-v4-flash` |
+| Базовая модель | `google/gemma-4-26b-a4b-it` |
 | Сценарии | Диагностика и лечение симптомов, профилактические медицинские осмотры, назначение и коррекция лекарственной терапии, анатомия и физиология, наука о питании, здоровый сон, физиология стресса, процедуры первой помощи (включая экстренные). |
 
 [Посмотреть системый промпт ➦](agents/jan-doctor/system.ru.md)
@@ -250,12 +240,10 @@
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-lawyer/avatar.png" alt="Ян: Юрист" width="24" align="left" style="margin-right: 12px;"> Ян: Юрист
+### <img src="agents/jan-lawyer/avatar.png" alt="Ян: Юрист" width="30" align="left"> Ян: Юрист
 
 </summary>
 
@@ -264,7 +252,7 @@
 |---------|----------|
 | Роль | Специалист по правовой информации |
 | Тон | Официальный, точный, взвешенный |
-| Базовая модель | `deepseek/deepseek-v4-flash` |
+| Базовая модель | `deepseek/deepseek-v4-pro` |
 | Сценарии | Объяснение пунктов договоров, обзор юридических процедур, образование в области прав, структура судебной системы, основы интеллектуальной собственности, обзор законодательства об аренде жилья, концепции трудового права. |
 
 [Посмотреть системый промпт ➦](agents/jan-lawyer/system.ru.md)
@@ -290,12 +278,10 @@
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-policeman/avatar.png" alt="Ян: Полицейский" width="24" align="left" style="margin-right: 12px;"> Ян: Полицейский
+### <img src="agents/jan-policeman/avatar.png" alt="Ян: Полицейский" width="30" align="left"> Ян: Полицейский
 
 </summary>
 
@@ -304,7 +290,7 @@
 |---------|----------|
 | Роль | Советник по общественной безопасности и правопорядку |
 | Тон | Авторитетный, процедурный, ориентированный на общество |
-| Базовая модель | `deepseek/deepseek-v4-flash` |
+| Базовая модель | `deepseek/deepseek-v4-pro` |
 | Сценарии | Процедуры при остановке транспортного средства, лучшие практики личной безопасности, заявление о преступлениях, понимание ордеров и обысков, общественное патрулирование, готовность к чрезвычайным ситуациям, деэскалация конфликтов. |
 
 [Посмотреть системый промпт ➦](agents/jan-policeman/system.ru.md)
@@ -323,12 +309,10 @@
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-politician/avatar.png" alt="Ян: Политик" width="24" align="left" style="margin-right: 12px;"> Ян: Политик
+### <img src="agents/jan-politician/avatar.png" alt="Ян: Политик" width="30" align="left"> Ян: Политик
 
 </summary>
 
@@ -356,12 +340,10 @@
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-psychologist/avatar.png" alt="Ян: Психолог" width="24" align="left" style="margin-right: 12px;"> Ян: Психолог
+### <img src="agents/jan-psychologist/avatar.png" alt="Ян: Психолог" width="30" align="left"> Ян: Психолог
 
 </summary>
 
@@ -370,7 +352,7 @@
 |---------|----------|
 | Роль | Психолог |
 | Тон | Тёплый, эмпатичный, принимающий |
-| Базовая модель | `deepseek/deepseek-v4-flash` |
+| Базовая модель | `google/gemma-4-26b-a4b-it` |
 | Сценарии | Управление тревогой и стрессом, отношения и общение, самооценка и самосострадание, горе и утрата, жизненные переходы, эмоциональная регуляция, установление границ, личностный рост. |
 
 [Посмотреть системый промпт ➦](agents/jan-psychologist/system.ru.md)
@@ -392,12 +374,10 @@
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-scientist/avatar.png" alt="Ян: Учёный" width="24" align="left" style="margin-right: 12px;"> Ян: Учёный
+### <img src="agents/jan-scientist/avatar.png" alt="Ян: Учёный" width="30" align="left"> Ян: Учёный
 
 </summary>
 
@@ -406,7 +386,7 @@
 |---------|----------|
 | Роль | Учёный-исследователь |
 | Тон | Строгий, основанный на доказательствах, интеллектуально скромный |
-| Базовая модель | `deepseek/deepseek-v4-flash` |
+| Базовая модель | `deepseek/deepseek-v4-pro` |
 | Сценарии | Физика и космология, биология и медицина (с оговорками), химия, науки о Земле, климатология, методология исследований, статистическое мышление, история и философия науки, объяснение технологий. |
 
 [Посмотреть системый промпт ➦](agents/jan-scientist/system.ru.md)
@@ -425,12 +405,10 @@
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-trainer/avatar.png" alt="Ян: Тренер" width="24" align="left" style="margin-right: 12px;"> Ян: Тренер
+### <img src="agents/jan-trainer/avatar.png" alt="Ян: Тренер" width="30" align="left"> Ян: Тренер
 
 </summary>
 
@@ -511,7 +489,7 @@ jan/
 ### Использование модели
 
 1. Начни новый чат.
-2. Выбери нужный альтер Ян из списка моделей.
+2. Выбери нужного альтера из списка моделей.
 3. Системный промпт, скиллы и знания применены — альтер готов отвечать в своей роли.
 
 > [!NOTE]
