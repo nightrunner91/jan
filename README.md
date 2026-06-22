@@ -74,7 +74,7 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 <details>
 <summary>
 
-### <img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="24" align="left" style="margin-right: 12px;"> Jan: Assistant
+### <img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="30" align="left"> Jan: Assistant
 
 </summary>
 
@@ -102,12 +102,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-constructor/avatar.png" alt="Jan: Constructor" width="24" align="left" style="margin-right: 12px;"> Jan: Constructor
+### <img src="agents/jan-constructor/avatar.png" alt="Jan: Constructor" width="30" align="left"> Jan: Constructor
 
 </summary>
 
@@ -136,12 +134,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="24" align="left" style="margin-right: 12px;"> Jan: Cook
+### <img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="30" align="left"> Jan: Cook
 
 </summary>
 
@@ -169,12 +165,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="24" align="left" style="margin-right: 12px;"> Jan: Developer
+### <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="30" align="left"> Jan: Developer
 
 </summary>
 
@@ -208,12 +202,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="24" align="left" style="margin-right: 12px;"> Jan: Doctor
+### <img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="30" align="left"> Jan: Doctor
 
 </summary>
 
@@ -250,12 +242,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-lawyer/avatar.png" alt="Jan: Lawyer" width="24" align="left" style="margin-right: 12px;"> Jan: Lawyer
+### <img src="agents/jan-lawyer/avatar.png" alt="Jan: Lawyer" width="30" align="left"> Jan: Lawyer
 
 </summary>
 
@@ -290,12 +280,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-policeman/avatar.png" alt="Jan: Policeman" width="24" align="left" style="margin-right: 12px;"> Jan: Policeman
+### <img src="agents/jan-policeman/avatar.png" alt="Jan: Policeman" width="30" align="left"> Jan: Policeman
 
 </summary>
 
@@ -323,12 +311,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-politician/avatar.png" alt="Jan: Politician" width="24" align="left" style="margin-right: 12px;"> Jan: Politician
+### <img src="agents/jan-politician/avatar.png" alt="Jan: Politician" width="30" align="left"> Jan: Politician
 
 </summary>
 
@@ -356,12 +342,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-psychologist/avatar.png" alt="Jan: Psychologist" width="24" align="left" style="margin-right: 12px;"> Jan: Psychologist
+### <img src="agents/jan-psychologist/avatar.png" alt="Jan: Psychologist" width="30" align="left"> Jan: Psychologist
 
 </summary>
 
@@ -392,12 +376,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-scientist/avatar.png" alt="Jan: Scientist" width="24" align="left" style="margin-right: 12px;"> Jan: Scientist
+### <img src="agents/jan-scientist/avatar.png" alt="Jan: Scientist" width="30" align="left"> Jan: Scientist
 
 </summary>
 
@@ -425,12 +407,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 </details>
 
----
-
 <details>
 <summary>
 
-### <img src="agents/jan-trainer/avatar.png" alt="Jan: Trainer" width="24" align="left" style="margin-right: 12px;"> Jan: Trainer
+### <img src="agents/jan-trainer/avatar.png" alt="Jan: Trainer" width="30" align="left"> Jan: Trainer
 
 </summary>
 
