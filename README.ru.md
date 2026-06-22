@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Версия-1.1.0-blue?style=for-the-badge" alt="Версия">
+  <img src="https://img.shields.io/badge/Версия-1.2.0-blue?style=for-the-badge" alt="Версия">
   <img src="https://img.shields.io/badge/Модели-11-green?style=for-the-badge" alt="Модели">
   <img src="https://img.shields.io/badge/Лицензия-ISC-purple?style=for-the-badge" alt="Лицензия">
   <img src="https://img.shields.io/badge/Платформа-OpenWebUI-orange?style=for-the-badge" alt="Платформа">
