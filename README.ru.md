@@ -61,7 +61,7 @@
 
 
 > [!NOTE]
-> * Базовая модель для каждого альтера подобрана исходя из личного  опыта пользования. Используйте любую иную на своё усмотрение.
+> Базовая модель для каждого альтера подобрана исходя из личного опыта пользования. Используйте любую иную на своё усмотрение.
 
 <details>
 <summary>
@@ -90,7 +90,12 @@
 | [Редактор текстов и документов](agents/jan-assistant/skills/writing-document-editor/skill.ru.md) | Написание, редактирование, переписывание и форматирование текстов и документов в соответствии с целью, аудиторией и тоном пользователя. |
 | [Интерпретатор файлов и изображений](agents/jan-assistant/skills/file-vision-interpreter/skill.ru.md) | Извлечение, суммирование и ответы на вопросы по загруженным файлам, изображениям, скриншотам и документам. |
 
-**База знаний:** —  
+**База знаний:**
+
+| Файл | Назначение |
+|------|------------|
+| [personal-context-profile.template-en.md](agents/jan-assistant/knowledge/personal-context-profile.template-en.md) | Шаблон профиля личного контекста (заполни и прикрепи как базу знаний OpenWebUI). |
+| [personal-context-profile.template-ru.md](agents/jan-assistant/knowledge/personal-context-profile.template-ru.md) | Русская версия шаблона профиля личного контекста. |
 
 </details>
 
@@ -122,7 +127,12 @@
 | [Чтение чертежей и фото](agents/jan-constructor/skills/blueprint-reader/skill.ru.md) | Помощь в интерпретации загруженных чертежей, эскизов и фотографий для извлечения размеров, материалов и практических рекомендаций. |
 | [Сканер локальных цен (Молдова)](agents/jan-constructor/skills/local-price-scanner/skill.ru.md) | Эффективный поиск цен на материалы и инструменты в Молдове через локальные площадки. |
 
-**База знаний:** —  
+**База знаний:**
+
+| Файл | Назначение |
+|------|------------|
+| [construction-project-profile.template-en.md](agents/jan-constructor/knowledge/construction-project-profile.template-en.md) | Шаблон профиля строительного проекта (заполни и прикрепи как базу знаний OpenWebUI). |
+| [construction-project-profile.template-ru.md](agents/jan-constructor/knowledge/construction-project-profile.template-ru.md) | Русская версия шаблона профиля строительного проекта. |
 
 </details>
 
@@ -153,7 +163,12 @@
 | [Тренер по технике](agents/jan-cook/skills/technique-coach/skill.ru.md) | Разбор кулинарных техник пошагово, объяснение лежащей в основе науки и типичных точек отказа. |
 | [Планировщик питания](agents/jan-cook/skills/meal-planner/skill.ru.md) | Составление сбалансированного недельного меню, графика подготовки и списка покупок с учётом диетических потребностей и временных ограничений. |
 
-**База знаний:** —  
+**База знаний:**
+
+| Файл | Назначение |
+|------|------------|
+| [kitchen-profile.template-en.md](agents/jan-cook/knowledge/kitchen-profile.template-en.md) | Шаблон профиля кухни (заполни и прикрепи как базу знаний OpenWebUI). |
+| [kitchen-profile.template-ru.md](agents/jan-cook/knowledge/kitchen-profile.template-ru.md) | Русская версия шаблона профиля кухни. |
 
 </details>
 
@@ -299,7 +314,12 @@
 | [Разъяснитель ордеров и обысков](agents/jan-policeman/skills/warrant-and-search-explainer/skill.ru.md) | Разъясняет полномочия на обыск, ордера и согласие при обыске дома, транспорта или личного досмотра в Молдове. |
 | [Тренер по деэскалации](agents/jan-policeman/skills/de-escalation-coach/skill.ru.md) | Обучает вербальным и поведенческим приёмам деэскалации напряжённых межличностных конфликтов. |
 
-**База знаний:** —  
+**База знаний:**
+
+| Файл | Назначение |
+|------|------------|
+| [safety-profile.template-en.md](agents/jan-policeman/knowledge/safety-profile.template-en.md) | Шаблон профиля безопасности (заполни и прикрепи как базу знаний OpenWebUI). |
+| [safety-profile.template-ru.md](agents/jan-policeman/knowledge/safety-profile.template-ru.md) | Русская версия шаблона профиля безопасности. |
 
 </details>
 
@@ -330,7 +350,12 @@
 | [Объяснение избирательных систем](agents/jan-politician/skills/electoral-system-explainer/skill.ru.md) | Объяснение работы выборов и представительства в конкретной стране или системе, сравнение правил голосования и анализ их политических последствий. |
 | [Брифинг по международным отношениям](agents/jan-politician/skills/international-relations-briefing/skill.ru.md) | Краткое изложение дипломатического контекста, договоров, альянсов, споров и политических вариантов для двусторонних или многосторонних отношений. |
 
-**База знаний:** —  
+**База знаний:**
+
+| Файл | Назначение |
+|------|------------|
+| [political-context-profile.template-en.md](agents/jan-politician/knowledge/political-context-profile.template-en.md) | Шаблон профиля политического контекста (заполни и прикрепи как базу знаний OpenWebUI). |
+| [political-context-profile.template-ru.md](agents/jan-politician/knowledge/political-context-profile.template-ru.md) | Русская версия шаблона профиля политического контекста. |
 
 </details>
 
@@ -361,7 +386,12 @@
 | [Руководство по рефлексивному слушанию](agents/jan-psychologist/skills/reflective-listening-guide/skill.ru.md) | Отражать эмоции, перефразировать переживания и задавать открытые вопросы, чтобы помочь пользователю почувствовать себя услышанным и понятым. |
 | [Тренер по отношениям и общению](agents/jan-psychologist/skills/relationship-communication-coach/skill.ru.md) | Помогать пользователям исследовать конфликты в отношениях, паттерны общения и эмоциональные потребности с нейтральностью и эмпатией. |
 
-**База знаний:** —  
+**База знаний:**
+
+| Файл | Назначение |
+|------|------------|
+| [mental-health-context-profile.template-en.md](agents/jan-psychologist/knowledge/mental-health-context-profile.template-en.md) | Шаблон профиля контекста психического здоровья (заполни и прикрепи как базу знаний OpenWebUI). |
+| [mental-health-context-profile.template-ru.md](agents/jan-psychologist/knowledge/mental-health-context-profile.template-ru.md) | Русская версия шаблона профиля контекста психического здоровья. |
 
 > [!WARNING]
 > Ян: Психолог — это ИИ-ресурс поддержки, а не лицензированный специалист по психическому здоровью. В кризисной ситуации немедленно обратись в экстренные службы или на линию кризисной помощи.
@@ -395,7 +425,12 @@
 | [Проектировщик исследовательской методологии](agents/jan-scientist/skills/research-methodology-designer/skill.ru.md) | Проектирование строгих экспериментов и исследований: гипотеза, предсказание, эксперимент, анализ, интерпретация, ограничения и следующие шаги. |
 | [Разоблачитель заблуждений](agents/jan-scientist/skills/misconception-debunker/skill.ru.md) | Выявление и исправление распространённых научных заблуждений на основе доказательств, разграничение мифов и установленного консенсуса. |
 
-**База знаний:** —  
+**База знаний:**
+
+| Файл | Назначение |
+|------|------------|
+| [research-profile.template-en.md](agents/jan-scientist/knowledge/research-profile.template-en.md) | Шаблон профиля исследований (заполни и прикрепи как базу знаний OpenWebUI). |
+| [research-profile.template-ru.md](agents/jan-scientist/knowledge/research-profile.template-ru.md) | Русская версия шаблона профиля исследований. |
 
 </details>
 
@@ -426,7 +461,12 @@
 | [Оптимизатор восстановления и сна](agents/jan-trainer/skills/recovery-and-sleep-optimizer/skill.ru.md) | Балансирует тренировочный стресс с отдыхом, активным восстановлением, гигиеной сна и стратегиями разгрузки. |
 | [Гид по питанию для фитнеса](agents/jan-trainer/skills/nutrition-for-fitness-guide/skill.ru.md) | Даёт основанный на доказательствах контекст питания для тренировок, восстановления и телосложения без медицинских назначений. |
 
-**База знаний:** —  
+**База знаний:**
+
+| Файл | Назначение |
+|------|------------|
+| [fitness-profile.template-en.md](agents/jan-trainer/knowledge/fitness-profile.template-en.md) | Шаблон профиля физической формы (заполни и прикрепи как базу знаний OpenWebUI). |
+| [fitness-profile.template-ru.md](agents/jan-trainer/knowledge/fitness-profile.template-ru.md) | Русская версия шаблона профиля физической формы. |
 
 > [!WARNING]
 > Ян: Тренер даёт рекомендации по фитнесу, а не медицинское лечение. Прекрати тренировку и обратись к специалисту, если чувствуешь боль или подозреваешь травму.
@@ -510,7 +550,16 @@ jan/
 
 ## Шаблоны баз знаний
 
-Некоторые альтеры включают опциональные шаблоны баз знаний, которые можно заполнить и прикрепить в OpenWebUI:
+Большинство альтеров включают опциональные шаблоны баз знаний, которые можно заполнить и прикрепить в OpenWebUI:
+
+- **Ян: Ассистент** — `personal-context-profile.template-en.md` / `personal-context-profile.template-ru.md`  
+  Сохраняй своё рабочее расписание, предпочтения по коммуникации, проекты и приоритеты. Прикрепи как базу знаний в режиме Full Context, чтобы альтер учитывал твой рабочий процесс.
+
+- **Ян: Конструктор** — `construction-project-profile.template-en.md` / `construction-project-profile.template-ru.md`  
+  Сохраняй текущие проекты, имеющиеся инструменты, уровень навыков, региональные строительные нормы и бюджет. Прикрепи как базу знаний в режиме Full Context для персонализированного строительного руководства.
+
+- **Ян: Повар** — `kitchen-profile.template-en.md` / `kitchen-profile.template-ru.md`  
+  Сохраняй диетические ограничения, предпочтительные кухни, кухонное оборудование и уровень кулинарных навыков. Прикрепи как базу знаний в режиме Full Context для персонализированных рекомендаций по рецептам.
 
 - **Ян: Разработчик** — `developer-profile.template-en.md` / `developer-profile.template-ru.md`  
   Сохраняй свой технологический стек, соглашения, текущие проекты, предпочтения в код-ревью и стиль общения. Прикрепи как базу знаний в режиме Full Context, чтобы альтер учитывал твою среду.
@@ -520,6 +569,21 @@ jan/
 
 - **Ян: Юрист** — сборник кодексов и законов Республики Молдовы (PDF)  
   Предварительно прикреплённые правовые источники, на которых основываются ответы.
+
+- **Ян: Полицейский** — `safety-profile.template-en.md` / `safety-profile.template-ru.md`  
+  Сохраняй своё местоположение, экстренные контакты, информацию о транспортном средстве и известные риски. Прикрепи как базу знаний в режиме Full Context для персонализированного руководства по безопасности.
+
+- **Ян: Политик** — `political-context-profile.template-en.md` / `political-context-profile.template-ru.md`  
+  Сохраняй регион интереса, области политики и текущие политические вопросы. Прикрепи как базу знаний в режиме Full Context для релевантного анализа политики.
+
+- **Ян: Психолог** — `mental-health-context-profile.template-en.md` / `mental-health-context-profile.template-ru.md`  
+  Сохраняй текущие проблемы, цели терапии и предпочтения по коммуникации. Прикрепи как базу знаний в режиме Full Context для персонализированной поддержки.
+
+- **Ян: Учёный** — `research-profile.template-en.md` / `research-profile.template-ru.md`  
+  Сохраняй свою область исследований, текущие проекты, методологию и сеть сотрудничества. Прикрепи как базу знаний в режиме Full Context для релевантного научного руководства.
+
+- **Ян: Тренер** — `fitness-profile.template-en.md` / `fitness-profile.template-ru.md`  
+  Сохраняй свой уровень физической формы, цели, травмы, доступное оборудование и расписание. Прикрепи как базу знаний в режиме Full Context для персонализированных рекомендаций по тренировкам.
 
 Заполненные личные профили игнорируются Git (см. `.gitignore`), чтобы чувствительные данные не попадали в репозиторий.
 

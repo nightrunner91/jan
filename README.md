@@ -61,7 +61,7 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 
 > [!NOTE]
-> * The base model for each alter is chosen based on personal experience. Use any other model at your discretion.
+> The base model for each alter is chosen based on personal experience. Use any other model at your discretion.
 
 <details>
 <summary>
@@ -90,7 +90,12 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Writing & Document Editor](agents/jan-assistant/skills/writing-document-editor/skill.en.md) | Draft, edit, rewrite, and format text and documents to match the user's purpose, audience, and tone. |
 | [File & Vision Interpreter](agents/jan-assistant/skills/file-vision-interpreter/skill.en.md) | Extract, summarize, and answer questions about uploaded files, images, screenshots, and documents. |
 
-**Knowledge base:** —  
+**Knowledge base:**
+
+| File | Purpose |
+|------|---------|
+| [personal-context-profile.template-en.md](agents/jan-assistant/knowledge/personal-context-profile.template-en.md) | Template for a personal context profile (fill and attach as OpenWebUI knowledge). |
+| [personal-context-profile.template-ru.md](agents/jan-assistant/knowledge/personal-context-profile.template-ru.md) | Russian version of the personal context profile template. |
 
 </details>
 
@@ -122,7 +127,12 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Blueprint & Photo Reader](agents/jan-constructor/skills/blueprint-reader/skill.en.md) | Guide interpretation of uploaded blueprints, sketches, and photos to extract measurements, materials, and actionable guidance. |
 | [Local Price Scanner (Moldova)](agents/jan-constructor/skills/local-price-scanner/skill.en.md) | Efficiently search for material and tool prices in Moldova through local platforms. |
 
-**Knowledge base:** —  
+**Knowledge base:**
+
+| File | Purpose |
+|------|---------|
+| [construction-project-profile.template-en.md](agents/jan-constructor/knowledge/construction-project-profile.template-en.md) | Template for a construction project profile (fill and attach as OpenWebUI knowledge). |
+| [construction-project-profile.template-ru.md](agents/jan-constructor/knowledge/construction-project-profile.template-ru.md) | Russian version of the construction project profile template. |
 
 </details>
 
@@ -153,7 +163,12 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Technique Coach](agents/jan-cook/skills/technique-coach/skill.en.md) | Break down cooking techniques step by step, explain the underlying science, and typical failure points. |
 | [Meal Planner](agents/jan-cook/skills/meal-planner/skill.en.md) | Build balanced weekly menus, prep schedules, and shopping lists around dietary needs and time constraints. |
 
-**Knowledge base:** —  
+**Knowledge base:**
+
+| File | Purpose |
+|------|---------|
+| [kitchen-profile.template-en.md](agents/jan-cook/knowledge/kitchen-profile.template-en.md) | Template for a kitchen profile (fill and attach as OpenWebUI knowledge). |
+| [kitchen-profile.template-ru.md](agents/jan-cook/knowledge/kitchen-profile.template-ru.md) | Russian version of the kitchen profile template. |
 
 </details>
 
@@ -299,7 +314,12 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Warrant & Search Explainer](agents/jan-policeman/skills/warrant-and-search-explainer/skill.en.md) | Explain search powers, warrants, and consent during searches of homes, vehicles, or personal inspections in Moldova. |
 | [De-Escalation Coach](agents/jan-policeman/skills/de-escalation-coach/skill.en.md) | Teach verbal and behavioral de-escalation techniques for tense interpersonal conflicts. |
 
-**Knowledge base:** —  
+**Knowledge base:**
+
+| File | Purpose |
+|------|---------|
+| [safety-profile.template-en.md](agents/jan-policeman/knowledge/safety-profile.template-en.md) | Template for a safety profile (fill and attach as OpenWebUI knowledge). |
+| [safety-profile.template-ru.md](agents/jan-policeman/knowledge/safety-profile.template-ru.md) | Russian version of the safety profile template. |
 
 </details>
 
@@ -330,7 +350,12 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Electoral System Explainer](agents/jan-politician/skills/electoral-system-explainer/skill.en.md) | Explain how elections and representation work in a specific country or system, compare voting rules, and analyze their political consequences. |
 | [International Relations Briefing](agents/jan-politician/skills/international-relations-briefing/skill.en.md) | Brief summary of diplomatic context, treaties, alliances, disputes, and political options for bilateral or multilateral relations. |
 
-**Knowledge base:** —  
+**Knowledge base:**
+
+| File | Purpose |
+|------|---------|
+| [political-context-profile.template-en.md](agents/jan-politician/knowledge/political-context-profile.template-en.md) | Template for a political context profile (fill and attach as OpenWebUI knowledge). |
+| [political-context-profile.template-ru.md](agents/jan-politician/knowledge/political-context-profile.template-ru.md) | Russian version of the political context profile template. |
 
 </details>
 
@@ -361,7 +386,12 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Reflective Listening Guide](agents/jan-psychologist/skills/reflective-listening-guide/skill.en.md) | Reflect emotions, paraphrase experiences, and ask open questions to help the user feel heard and understood. |
 | [Relationship & Communication Coach](agents/jan-psychologist/skills/relationship-communication-coach/skill.en.md) | Help users explore relationship conflicts, communication patterns, and emotional needs with neutrality and empathy. |
 
-**Knowledge base:** —  
+**Knowledge base:**
+
+| File | Purpose |
+|------|---------|
+| [mental-health-context-profile.template-en.md](agents/jan-psychologist/knowledge/mental-health-context-profile.template-en.md) | Template for a mental health context profile (fill and attach as OpenWebUI knowledge). |
+| [mental-health-context-profile.template-ru.md](agents/jan-psychologist/knowledge/mental-health-context-profile.template-ru.md) | Russian version of the mental health context profile template. |
 
 > [!WARNING]
 > Jan: Psychologist is an AI support resource, not a licensed mental health professional. For crises, contact emergency services or a crisis line immediately.
@@ -395,7 +425,12 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Research Methodology Designer](agents/jan-scientist/skills/research-methodology-designer/skill.en.md) | Design rigorous experiments and studies: hypothesis, prediction, experiment, analysis, interpretation, limitations, and next steps. |
 | [Misconception Debunker](agents/jan-scientist/skills/misconception-debunker/skill.en.md) | Identify and correct common scientific misconceptions based on evidence, distinguishing myths from established consensus. |
 
-**Knowledge base:** —  
+**Knowledge base:**
+
+| File | Purpose |
+|------|---------|
+| [research-profile.template-en.md](agents/jan-scientist/knowledge/research-profile.template-en.md) | Template for a research profile (fill and attach as OpenWebUI knowledge). |
+| [research-profile.template-ru.md](agents/jan-scientist/knowledge/research-profile.template-ru.md) | Russian version of the research profile template. |
 
 </details>
 
@@ -426,7 +461,12 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | [Recovery & Sleep Optimizer](agents/jan-trainer/skills/recovery-and-sleep-optimizer/skill.en.md) | Balance training stress with rest, active recovery, sleep hygiene, and deload strategies. |
 | [Nutrition-for-Fitness Guide](agents/jan-trainer/skills/nutrition-for-fitness-guide/skill.en.md) | Provide evidence-informed nutrition context for training, recovery, and body composition without medical prescriptions. |
 
-**Knowledge base:** —  
+**Knowledge base:**
+
+| File | Purpose |
+|------|---------|
+| [fitness-profile.template-en.md](agents/jan-trainer/knowledge/fitness-profile.template-en.md) | Template for a fitness profile (fill and attach as OpenWebUI knowledge). |
+| [fitness-profile.template-ru.md](agents/jan-trainer/knowledge/fitness-profile.template-ru.md) | Russian version of the fitness profile template. |
 
 > [!WARNING]
 > Jan: Trainer provides fitness guidance, not medical treatment. Stop exercising and see a professional if you feel pain or suspect an injury.
@@ -510,7 +550,16 @@ See `docs/portability-guide.md` for detailed instructions, including temperature
 
 ## Knowledge Templates
 
-Some alters include optional knowledge-base templates you can fill out and attach in OpenWebUI:
+Most alters include optional knowledge-base templates you can fill out and attach in OpenWebUI:
+
+- **Jan: Assistant** — `personal-context-profile.template-en.md` / `personal-context-profile.template-ru.md`  
+  Store your work schedule, communication preferences, projects, and priorities. Attach it as Full Context knowledge so the alter respects your workflow.
+
+- **Jan: Constructor** — `construction-project-profile.template-en.md` / `construction-project-profile.template-ru.md`  
+  Store your current projects, tools owned, skill level, regional building codes, and budget. Attach it as Full Context knowledge for personalized construction guidance.
+
+- **Jan: Cook** — `kitchen-profile.template-en.md` / `kitchen-profile.template-ru.md`  
+  Store your dietary restrictions, preferred cuisines, kitchen equipment, and cooking skill level. Attach it as Full Context knowledge for personalized recipe recommendations.
 
 - **Jan: Developer** — `developer-profile.template-en.md` / `developer-profile.template-ru.md`  
   Store your tech stack, conventions, current projects, code-review preferences, and communication style. Attach it as Full Context knowledge so the alter respects your environment.
@@ -520,6 +569,21 @@ Some alters include optional knowledge-base templates you can fill out and attac
 
 - **Jan: Lawyer** — Republic of Moldova legal code PDF collection  
   Pre-attached legal sources that ground answers in Republic of Moldova legislation.
+
+- **Jan: Policeman** — `safety-profile.template-en.md` / `safety-profile.template-ru.md`  
+  Store your location, emergency contacts, vehicle information, and known risks. Attach it as Full Context knowledge for personalized safety guidance.
+
+- **Jan: Politician** — `political-context-profile.template-en.md` / `political-context-profile.template-ru.md`  
+  Store your region of interest, policy areas, and current political issues. Attach it as Full Context knowledge for relevant policy analysis.
+
+- **Jan: Psychologist** — `mental-health-context-profile.template-en.md` / `mental-health-context-profile.template-ru.md`  
+  Store your current concerns, therapy goals, and communication preferences. Attach it as Full Context knowledge for personalized support.
+
+- **Jan: Scientist** — `research-profile.template-en.md` / `research-profile.template-ru.md`  
+  Store your field of study, current research, methodologies, and collaboration network. Attach it as Full Context knowledge for relevant scientific guidance.
+
+- **Jan: Trainer** — `fitness-profile.template-en.md` / `fitness-profile.template-ru.md`  
+  Store your fitness level, goals, injuries, available equipment, and schedule. Attach it as Full Context knowledge for personalized workout recommendations.
 
 Filled personal profiles are ignored by Git (see `.gitignore`) to keep sensitive data out of the repository.
 

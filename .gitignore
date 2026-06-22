@@ -11,3 +11,51 @@ SKILL_creation.md
 # sensitive project and credential data out of Git.
 /agents/jan-developer/knowledge/developer-profile-en.md
 /agents/jan-developer/knowledge/developer-profile-ru.md
+
+# Personal assistant knowledge-base files (filled from templates).
+# Templates (*.template-*.md) are tracked; filled copies are ignored to keep
+# sensitive personal and professional data out of Git.
+/agents/jan-assistant/knowledge/personal-context-profile-en.md
+/agents/jan-assistant/knowledge/personal-context-profile-ru.md
+
+# Personal constructor knowledge-base files (filled from templates).
+# Templates (*.template-*.md) are tracked; filled copies are ignored to keep
+# sensitive project and property data out of Git.
+/agents/jan-constructor/knowledge/construction-project-profile-en.md
+/agents/jan-constructor/knowledge/construction-project-profile-ru.md
+
+# Personal cook knowledge-base files (filled from templates).
+# Templates (*.template-*.md) are tracked; filled copies are ignored to keep
+# sensitive dietary and health data out of Git.
+/agents/jan-cook/knowledge/kitchen-profile-en.md
+/agents/jan-cook/knowledge/kitchen-profile-ru.md
+
+# Personal policeman knowledge-base files (filled from templates).
+# Templates (*.template-*.md) are tracked; filled copies are ignored to keep
+# sensitive personal safety data out of Git.
+/agents/jan-policeman/knowledge/safety-profile-en.md
+/agents/jan-policeman/knowledge/safety-profile-ru.md
+
+# Personal politician knowledge-base files (filled from templates).
+# Templates (*.template-*.md) are tracked; filled copies are ignored to keep
+# sensitive political views and affiliations data out of Git.
+/agents/jan-politician/knowledge/political-context-profile-en.md
+/agents/jan-politician/knowledge/political-context-profile-ru.md
+
+# Personal psychologist knowledge-base files (filled from templates).
+# Templates (*.template-*.md) are tracked; filled copies are ignored to keep
+# sensitive personal and emotional data out of Git.
+/agents/jan-psychologist/knowledge/mental-health-context-profile-en.md
+/agents/jan-psychologist/knowledge/mental-health-context-profile-ru.md
+
+# Personal scientist knowledge-base files (filled from templates).
+# Templates (*.template-*.md) are tracked; filled copies are ignored to keep
+# sensitive professional and research data out of Git.
+/agents/jan-scientist/knowledge/research-profile-en.md
+/agents/jan-scientist/knowledge/research-profile-ru.md
+
+# Personal trainer knowledge-base files (filled from templates).
+# Templates (*.template-*.md) are tracked; filled copies are ignored to keep
+# sensitive health and fitness data out of Git.
+/agents/jan-trainer/knowledge/fitness-profile-en.md
+/agents/jan-trainer/knowledge/fitness-profile-ru.md
