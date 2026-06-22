@@ -1,0 +1,19 @@
+{
+  "id": "tech-debt-strategist",
+  "name": {
+    "en": "Tech Debt Strategist",
+    "ru": "Стратег технического долга"
+  },
+  "description": {
+    "en": "Reframe technical debt as a business problem — prioritize what to fix, plan legacy migrations, and make the case to management.",
+    "ru": "Переосмысление технического долга как бизнес-задачи — приоритизация того, что исправлять, планирование миграций с легаси и обоснование перед руководством."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "developer", "tech-debt", "legacy-migration", "prioritization", "management"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

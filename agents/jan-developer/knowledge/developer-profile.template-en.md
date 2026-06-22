@@ -14,132 +14,63 @@
 
 ---
 
-## Agent-Specific Details
+## About You
 
-> Fill in your **User Profile** (`user-profile-en.md`) for name, language, and time zone.
-> Provide additional details below for this agent only.
-
+- **Name / handle:**
 - **Role / title:**
 - **Experience level:**
+- **Location / time zone:**
 
 ## Work Context
 
 - **Company / organization:**
-- **Team:**
+- **Team size and structure:**
 - **Domain / industry:**
 - **Main responsibilities:**
 - **Current focus:**
 
-## Daily Tools & Environment
-
-- **Operating system(s):**
-- **IDE / editor:**
-- **Terminal / shell:**
-- **Version control:**
-- **Browser / extensions:**
-- **Notes / knowledge base:**
-- **Communication tools:**
-
 ## Tech Stack
 
-### Languages
+### Primary stack
 
-- **Language | Proficiency | Preferred use cases:**
+- **Languages:**
+- **Frontend frameworks / libraries:**
+- **Backend frameworks / services:**
+- **Databases:**
+- **Infrastructure / cloud:**
 
-### Frameworks & libraries
+### Tools you love
 
-- **Framework / library | Version | Used for:**
+- **Tools or technologies you'd choose again:**
+- **Tools you'd drop if you could:**
 
-### Databases
+## Engineering Culture
 
-- **Database | Engine | Role:**
+- **Team practices (agile, async-first, pair programming, etc.):**
+- **Code review culture:**
+- **On-call / incident response:**
+- **Remote / hybrid / office:**
 
-### Infrastructure & platforms
+## Hot Takes
 
-- **Cloud provider(s):**
-- **Containerization / orchestration:**
-- **CI/CD platform:**
-- **Monitoring / logging:**
-- **Hosting / deployment:**
+- **Technologies you're skeptical about:**
+- **Technologies you're bullish on:**
+- **Opinions you hold that others disagree with:**
+- **Trends you think are overhyped or underhyped:**
 
-### APIs & external services
+## Current Interests
 
-- **Service | Purpose | Authentication method:**
-
-## Project Context
-
-### Active projects
-
-- **Project | Repo URL | Description | Tech stack | Status:**
-
-### Project conventions
-
-- **Folder structure / monorepo layout:**
-- **Branching strategy:**
-- **Commit message format:**
-- **Release process:**
-
-## Coding Standards & Preferences
-
-- **Style guide(s):**
-- **Linters / formatters:**
-- **Naming conventions:**
-- **Code organization principles:**
-- **Preferred patterns:**
-- **Anti-patterns to avoid:**
-- **Documentation expectations:**
-
-## Testing & Quality Practices
-
-- **Testing frameworks:**
-- **Test coverage target:**
-- **Types of tests used:**
-- **Quality gates:**
-- **Code review requirements:**
-
-## CI/CD & DevOps
-
-- **Pipeline steps:**
-- **Deployment environments:**
-- **Rollback strategy:**
-- **Feature flags / toggles:**
-
-## Security & Secrets
-
-- **Secrets management tool:**
-- **Encryption / hashing preferences:**
-- **Authentication / authorization patterns:**
-- **Sensitive data handling rules:**
-
-> Do not paste real secrets, passwords, or private keys into this file.
-> Use placeholder names or references to your secrets manager.
-
-## Current Tasks / Backlog
-
-- **Task | Priority | Deadline | Notes:**
-
-## Known Issues / Technical Debt
-
-- **Issue | Impact | Proposed solution | Status:**
-
-## Learning Goals
-
-- **Topic | Why | Target depth:**
-
-## Code Review Preferences
-
-- **What to focus on:**
-- **What to ignore / be lenient about:**
-- **Tone / feedback style:**
-- **Common mistakes I want flagged:**
+- **What you're learning or exploring:**
+- **What you want to discuss:**
+- **Industry topics you care about:**
 
 ## Communication Preferences
 
 - **Preferred explanation depth:**
 - **Preferred output format:**
-- **Things to avoid (e.g. excessive examples, jargon):**
+- **Things to avoid (e.g., excessive examples, jargon):**
 - **How to correct me:**
 
 ## Notes for Jan Developer
 
-- **Specific instructions for the AI assistant (e.g. always suggest tests, prefer functional style, mention security implications, default to TypeScript strict mode, etc.):**
+- **Specific instructions for the AI assistant (e.g., prefer frontend topics, skip DevOps details, challenge me on my opinions, etc.):**

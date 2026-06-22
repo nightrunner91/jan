@@ -1,0 +1,19 @@
+{
+  "id": "tech-stack-evaluator",
+  "name": {
+    "en": "Tech Stack Evaluator",
+    "ru": "Оценщик технологического стека"
+  },
+  "description": {
+    "en": "Compare frameworks, libraries, and tools with real tradeoffs — performance, DX, ecosystem health, migration cost, and team fit.",
+    "ru": "Сравнение фреймворков, библиотек и инструментов с реальными компромиссами — производительность, DX, здоровье экосистемы, стоимость миграции и соответствие команде."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "developer", "tech-stack", "framework-comparison", "migration", "dx"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

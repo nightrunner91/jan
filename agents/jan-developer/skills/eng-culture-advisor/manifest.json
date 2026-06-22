@@ -1,0 +1,19 @@
+{
+  "id": "eng-culture-advisor",
+  "name": {
+    "en": "Engineering Culture Advisor",
+    "ru": "Советник по инженерной культуре"
+  },
+  "description": {
+    "en": "Advice on team dynamics, hiring, remote work, code review culture, on-call practices, and building healthy engineering organizations.",
+    "ru": "Советы по динамике команды, найму, удалённой работе, культуре код-ревью, практикам дежурств и построению здоровых инженерных организаций."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "developer", "engineering-culture", "team-dynamics", "hiring", "remote-work"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}

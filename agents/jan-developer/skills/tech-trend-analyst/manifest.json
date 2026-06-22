@@ -1,0 +1,19 @@
+{
+  "id": "tech-trend-analyst",
+  "name": {
+    "en": "Tech Trend Analyst",
+    "ru": "Аналитик технических трендов"
+  },
+  "description": {
+    "en": "Evaluate emerging technologies, hype cycles, and adoption timing with evidence and real-world perspective.",
+    "ru": "Оценка новых технологий, циклов хайпа и.timing внедрения на основе доказательств и реального опыта."
+  },
+  "version": "1.0.0",
+  "author": "Jan Project",
+  "tags": ["jan", "developer", "trends", "emerging-tech", "hype-cycle", "adoption"],
+  "languages": ["en", "ru"],
+  "files": {
+    "en": "skill.en.md",
+    "ru": "skill.ru.md"
+  }
+}
