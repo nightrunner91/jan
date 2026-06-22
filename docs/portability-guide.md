@@ -145,7 +145,7 @@ curl http://localhost:11434/api/chat -d '{
 | Assistant | `deepseek-v4-flash`, `llama3.1:70b` |
 | Constructor | `qwen2.5:32b`, `llama3.1:70b` |
 | Cook | `llama3.1:70b`, `mistral:latest` |
-| Developer | `deepseek-coder-v2:16b`, `qwen2.5-coder:32b` |
+| Developer | `qwen2.5:32b`, `llama3.1:70b` |
 | Doctor | `llama3.1:70b`, `claude-sonnet` (if available via Ollama) |
 | Lawyer | `llama3.1:70b`, `mixtral:8x22b` |
 | Policeman | `llama3.1:70b`, `qwen2.5:32b` |
