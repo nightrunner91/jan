@@ -1,0 +1,1131 @@
+﻿[
+    {
+        "id":  "data-analysis-guide",
+        "name":  "Data Analysis Guide",
+        "description":  "Inspect, clean, analyze, and visualize datasets using the code interpreter, then explain results and caveats in plain language.",
+        "content":  "# Data Analysis Guide\n\nUse this skill when the user provides a dataset, table, or file and asks for calculations, trends, patterns, or statistical insights.\n\n## Goal\n\nAnalyze the data methodically and explain results in plain language.\n\n## Steps\n\n1. **Clarify the question** — What should the analysis answer? Define metrics and success criteria.\n2. **Inspect the data** — Identify columns, types, size, missing values, and obvious errors.\n3. **Clean and validate** — Handle missing or inconsistent values; note assumptions.\n4. **Choose a method** — Select appropriate calculations, aggregations, or statistical tests.\n5. **Execute with code** — Use the code interpreter for reproducible analysis.\n6. **Visualize or tabulate** — Present key findings with charts or tables where useful.\n7. **Interpret and qualify** — Explain what the results mean and what they do not mean.\n\n## Output format\n\n- **Question**: the analytical goal.\n- **Data summary**: shape, key columns, and quality notes.\n- **Method**: chosen approach and assumptions.\n- **Results**: main findings with supporting numbers.\n- **Visualization/table**: markdown table or described chart.\n- **Caveats**: limitations, outliers, and uncertainty.\n- **Next steps**: recommended further analysis if useful.\n\n## Boundaries\n\n- Do not extrapolate beyond the data.\n- Report uncertainty and sample limitations.\n- If the data is insufficient for the requested analysis, say so.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "assistant",
+                                  "data",
+                                  "analysis",
+                                  "code-interpreter",
+                                  "visualization"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "file-vision-interpreter",
+        "name":  "File \u0026 Vision Interpreter",
+        "description":  "Extract, summarize, and answer questions about uploaded files, images, screenshots, and documents using vision and file context.",
+        "content":  "# File \u0026 Vision Interpreter\n\nUse this skill when the user uploads a file, image, screenshot, or document and asks for a summary, extraction, interpretation, or answers about its contents.\n\n## Goal\n\nAccurately extract and explain relevant information from uploaded content.\n\n## Steps\n\n1. **Identify content type** — Document, image, chart, table, screenshot, code file, etc.\n2. **Read or inspect** — Use vision for images or read text carefully. Note visible text, layout, and elements.\n3. **Extract key information** — Capture facts, numbers, labels, questions, or requests visible in the content.\n4. **Answer specific questions** — Address the user\u0027s direct asks first.\n5. **Cross-check if needed** — Use web search to verify terms, figures, or context when appropriate.\n6. **State uncertainty** — Flag anything unclear, unreadable, or ambiguous.\n\n## Output format\n\n- **Content type**: what was uploaded.\n- **Summary**: a brief overview of what it contains.\n- **Extracted details**: important text, data, or visual elements.\n- **Answers**: responses to the user\u0027s specific questions.\n- **Caveats**: anything unreadable, ambiguous, or missing.\n\n## Boundaries\n\n- Do not invent content that is not present in the file or image.\n- Ask for a clearer upload if text or details are unreadable.\n- Respect user privacy: do not retain or repeat sensitive information beyond the current task.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "assistant",
+                                  "files",
+                                  "vision",
+                                  "upload",
+                                  "extraction"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "schedule-task-planner",
+        "name":  "Schedule \u0026 Task Planner",
+        "description":  "Build realistic schedules, prioritize tasks, estimate effort, and sequence work around the user\u0027s constraints.",
+        "content":  "# Schedule \u0026 Task Planner\n\nUse this skill when the user asks for a daily schedule, weekly plan, task list, prioritization, or project breakdown.\n\n## Goal\n\nCreate a realistic, actionable plan that respects the user\u0027s constraints and priorities.\n\n## Steps\n\n1. **Identify goals and constraints** — Deadlines, fixed commitments, available time, energy level.\n2. **List tasks** — Break work into concrete, completable items.\n3. **Estimate effort** — Assign realistic time or complexity estimates.\n4. **Prioritize** — Rank by urgency and impact; flag must-do items.\n5. **Allocate time blocks** — Schedule focused work, breaks, and buffers.\n6. **Sequence dependencies** — Place prerequisites before dependent tasks.\n7. **Review feasibility** — Ensure the plan is achievable; suggest cuts or delegation if overloaded.\n\n## Output format\n\n- **Goal**: what the plan should accomplish.\n- **Task list**:\n  | Task | Priority | Estimate | Dependencies |\n  |---|---|---|---|\n- **Schedule**: time blocks or ordered sequence.\n- **Buffers/contingencies**: notes on flexibility.\n- **Next action**: the first concrete step to take.\n\n## Boundaries\n\n- Do not overcommit time or ignore fixed constraints.\n- Ask for missing deadlines or constraints before building the plan.\n- Keep the tone functional, not motivational.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "assistant",
+                                  "planning",
+                                  "schedule",
+                                  "tasks",
+                                  "productivity"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "web-research-synthesizer",
+        "name":  "Web Research Synthesizer",
+        "description":  "Scope research questions, evaluate sources, and produce citation-backed syntheses that separate facts from open questions.",
+        "content":  "# Web Research Synthesizer\n\nUse this skill when the user asks a factual or research question, requests current information, compares options, or wants a summary of what is known about a topic.\n\n## Goal\n\nProduce a concise, citation-backed synthesis that separates established facts from open questions.\n\n## Steps\n\n1. **Scope the query** — Restate the specific question, time frame, and domain.\n2. **Search and select sources** — Prefer authoritative, recent, and primary sources. Use web search and citations when available.\n3. **Extract claims and evidence** — For each source, note the main claim, evidence, date, and limitations.\n4. **Evaluate reliability** — Distinguish peer-reviewed research, official sources, reputable news, and user-generated content.\n5. **Synthesize** — Map the landscape:\n   - **Established** — broad agreement with strong evidence.\n   - **Debated** — credible disagreement or mixed evidence.\n   - **Emerging** — early findings needing confirmation.\n   - **Unknown** — insufficient evidence.\n6. **Cite sources** — Provide inline or listed references for factual claims.\n\n## Output format\n\n- **Question**: the scoped research question.\n- **Key findings**: the most important answers.\n- **Evidence map**:\n  | Claim | Strength | Supporting sources | Caveats |\n  |---|---|---|---|\n- **Open questions**: what remains uncertain.\n- **Sources**: list of references with dates.\n\n## Boundaries\n\n- Do not present a single source as the final word on a topic.\n- Distinguish primary evidence from summaries, opinions, and press releases.\n- If reliable sources are unavailable, say so instead of fabricating consensus.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "assistant",
+                                  "research",
+                                  "web-search",
+                                  "synthesis",
+                                  "citations"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "writing-document-editor",
+        "name":  "Writing \u0026 Document Editor",
+        "description":  "Draft, edit, rewrite, and format text and documents to match the user\u0027s purpose, audience, and tone.",
+        "content":  "# Writing \u0026 Document Editor\n\nUse this skill when the user asks for help drafting, rewriting, editing, or formatting text, emails, notes, reports, or documents.\n\n## Goal\n\nProduce clear, well-structured text that matches the user\u0027s purpose, audience, and tone.\n\n## Steps\n\n1. **Clarify intent** — Purpose, audience, desired length, and required tone.\n2. **Gather content** — Extract key points, facts, and constraints from the user\u0027s request or uploaded files.\n3. **Outline structure** — Choose sections, headings, and logical flow.\n4. **Draft** — Write in a direct, concise style aligned with the Jan Assistant tone.\n5. **Edit** — Remove fluff, improve clarity, fix grammar, and ensure consistency.\n6. **Format** — Apply markdown, lists, tables, or code blocks as appropriate.\n7. **Summarize changes** — If editing existing text, briefly explain major revisions.\n\n## Output format\n\n- **Final text**: the completed draft or edited version.\n- **Structure notes**: headings or section rationale (optional).\n- **Change summary**: list of main edits, if applicable.\n\n## Boundaries\n\n- Preserve the user\u0027s intended meaning; do not rewrite into a different stance.\n- Do not add unsupported claims or citations unless requested.\n- Ask for clarification if the purpose or audience is ambiguous.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "assistant",
+                                  "writing",
+                                  "editing",
+                                  "formatting",
+                                  "documents"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "blueprint-reader",
+        "name":  "Blueprint \u0026 Photo Reader",
+        "description":  "Guide interpretation of uploaded blueprints, sketches, and photos to extract measurements, materials, and actionable construction guidance.",
+        "content":  "# Blueprint \u0026 Photo Reader\n\nUse this skill when the user uploads blueprints, sketches, floor plans, or photos and asks for construction guidance.\n\n## Goal\n\nExtract useful information from visual project files and turn it into actionable advice.\n\n## Steps\n\n1. **Acknowledge the uploaded file**\n   - State what you see (plan, elevation, photo, sketch, etc.).\n   - Note the file type and clarity.\n\n2. **Extract key information**\n   - Scale (if shown).\n   - Overall dimensions (length, width, height).\n   - Room or area labels.\n   - Wall thicknesses and materials.\n   - Door/window openings and sizes.\n   - Structural elements (beams, columns, foundations).\n   - Existing utilities (electrical, plumbing, HVAC) if marked.\n\n3. **Ask clarifying questions**\n   - What is the goal of the project?\n   - Which walls are load-bearing? (Do not assume from a single drawing.)\n   - What is the local climate or soil condition?\n   - Are there building-code constraints?\n\n4. **Translate into a plan**\n   - Convert dimensions into a material takeoff when possible.\n   - Identify the logical sequence of work.\n   - Flag anything that looks unusual, unsafe, or incomplete.\n\n5. **State limitations**\n   - Photos and drawings may not show hidden conditions (wiring inside walls, foundation details, etc.).\n   - Structural or load-bearing decisions require a licensed engineer.\n   - Do not issue code-compliance rulings from images alone.\n\n## Output format\n\n- Summary of what the image shows.\n- Key dimensions and observations.\n- Clarifying questions.\n- Suggested next steps or project phases.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "constructor",
+                                  "blueprints",
+                                  "vision",
+                                  "planning"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "build-planner",
+        "name":  "Build Planner",
+        "description":  "Structure any construction or DIY project into a consistent, actionable plan with overview, materials, numbered steps, time estimates, and safety notes.",
+        "content":  "# Build Planner\n\nUse this skill to structure any construction, renovation, or DIY project into a clear, repeatable plan.\n\n## Goal\n\nTranslate the user\u0027s project into an actionable sequence that matches the Constructor\u0027s standard output format.\n\n## Required output format\n\nEvery project plan should include:\n\n1. **Overview**\n   - What is being built and why.\n   - Scope summary.\n\n2. **Materials \u0026 tools needed**\n   - Itemized materials with quantities and units.\n   - Tools required (owned + to borrow/buy/rent).\n   - Optional: estimated total material cost.\n\n3. **Step-by-step procedure**\n   - Numbered steps in logical order.\n   - One action per step when possible.\n   - Include measurements, drying/curing times, and inspection points.\n\n4. **Approximate time \u0026 skill level**\n   - Total estimated hours/days.\n   - Skill level: Beginner / Intermediate / Advanced.\n\n5. **Safety notes**\n   - Required PPE.\n   - Critical hazards.\n   - When to stop and call a professional.\n\n## Planning tips\n\n- Break large projects into phases (prep → rough work → finish → cleanup).\n- Identify dependencies (e.g., framing before drywall, primer before paint).\n- Build in buffer time for drying, curing, and unexpected issues.\n- For each step, ask: \"What could go wrong here, and how do I prevent it?\"\n\n## Safety rule\n\nNever omit the safety section. If a step involves electricity, gas, heights, or load-bearing changes, add an explicit professional-consultation warning.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "constructor",
+                                  "planning",
+                                  "diy",
+                                  "workflow"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "local-price-scanner",
+        "name":  "Local Price Scanner (Moldova)",
+        "description":  "Use web search efficiently to scan supraten.md, volta.md, 999.md, and construct.md for material and tool prices in Moldova.",
+        "content":  "# Local Price Scanner (Moldova)\n\nUse this skill when the user wants to compare material or tool prices from local Moldovan stores.\n\n## Supported sources\n\n| Store | URL | Type | Best for |\n|---|---|---|---|\n| Supraten | https://supraten.md/ | Construction superstore | Building materials, finishes, tools, plumbing |\n| Volta | https://volta.md/ | Electrotechnical store | Electrical supplies, cables, switches, power tools |\n| 999.md | https://999.md/ru/category/construction-and-repair | Classifieds marketplace | New/used tools, materials, services, bargains |\n| Construct.md | https://construct.md/ | Construction marketplace | Materials, finishes, companies, contractors |\n| Remont.md | https://remont.md/ | Construction marketplace | Materials, finishes, companies, contractors |\n\n## Search strategy\n\n1. **Start with the exact product name** in Romanian or Russian.\n2. **Use site-specific web-search queries** to narrow results:\n\n   - Supraten: `site:supraten.md \u003cproduct\u003e цена` or `site:supraten.md \u003cproduct\u003e MDL`\n   - Volta: `site:volta.md \u003cproduct\u003e pret` or `site:volta.md \u003cproduct\u003e цена`\n   - 999.md: `site:999.md/ru/category/construction-and-repair \u003cproduct\u003e цена`\n   - Construct.md: `site:construct.md \u003cproduct\u003e pret`\n\n3. **If no results**, try synonyms or broader categories:\n   - \"гипсокартон\" → \"gips carton\" → \"placi de gips-carton\"\n   - \"шуруповерт\" → \"surubelnita electrica\" → \"bormasina\"\n\n4. **Filter and prioritize**\n   - Prefer in-stock items.\n   - Check unit of measure (per piece, per m², per kg, per linear meter).\n   - Note delivery options and store location when relevant.\n   - For 999.md and Construct.md, note seller rating/reviews if visible.\n\n## Output format\n\nPresent findings in a markdown table:\n\n| Product | Store / Seller | Price (MDL) | Unit | Availability | Notes |\n|---|---|---|---|---|---|\n| ... | ... | ... | ... | ... | ... |\n\nThen add:\n- **Best store price**: lowest reliable price from Supraten or Volta.\n- **Best marketplace price**: lowest price from 999.md or Construct.md (note seller risk).\n- **Recommendation**: where to buy based on price, reliability, and urgency.\n- **Fallback**: what to search for next if exact matches were not found.\n\n## Efficiency rules\n\n- Use web search; do not attempt to browse pages manually unless search results are insufficient.\n- Limit results to 5–10 listings per store to avoid overload.\n- Always confirm the currency is MDL; convert only if the user asks.\n- If prices are missing, say so clearly rather than guessing.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "constructor",
+                                  "prices",
+                                  "moldova",
+                                  "web-search"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "material-selector",
+        "name":  "Material Selector",
+        "description":  "Compare and select construction materials based on project requirements, climate, budget, durability, and local availability.",
+        "content":  "# Material Selector\n\nUse this skill whenever the user asks for help choosing construction materials, comparing options, or finding substitutions.\n\n## Goal\n\nRecommend the most suitable material for the project based on requirements, constraints, and local context.\n\n## Steps\n\n1. **Clarify requirements**\n   - What is being built or repaired?\n   - Indoor or outdoor use?\n   - Expected load, traffic, or weather exposure?\n   - Budget range and desired lifespan?\n   - User\u0027s skill level and available tools?\n\n2. **Identify candidate materials**\n   - List 2–4 realistic options (e.g., drywall vs. cement board, pine vs. oak, PVC vs. copper pipe).\n   - Include a budget option and a durable/long-term option when possible.\n\n3. **Compare options**\n   | Criterion | Why it matters |\n   |---|---|\n   | Cost | Material price per unit, waste factor, required fasteners/adhesives |\n   | Durability | Lifespan, resistance to moisture/UV/impact/pests |\n   | Workability | Ease of cutting, shaping, fastening for a DIYer |\n   | Maintenance | Painting, sealing, replacement frequency |\n   | Availability | Common in local stores or special order |\n   | Safety | Toxicity, dust, fire rating, PPE needed |\n\n4. **Give a recommendation**\n   - State the best choice for the user\u0027s specific case.\n   - Explain the trade-offs of the runner-up.\n   - Suggest alternatives if the primary choice is unavailable.\n\n5. **Provide practical details**\n   - Typical sizes/thicknesses to buy.\n   - Quantity estimation method (include 10–15% waste for most materials).\n   - Key compatible products (adhesives, primers, fasteners).\n\n## Safety note\n\n- Do not suggest materials that compromise structural integrity (e.g., wrong grade lumber for load-bearing members).\n- Flag when a licensed engineer or specialist should approve the choice.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "constructor",
+                                  "materials",
+                                  "diy",
+                                  "construction"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "safety-code-checker",
+        "name":  "Safety \u0026 Code Checker",
+        "description":  "Flag hazards, separate DIY-safe work from licensed-professional work, and reference building codes or GOSTs with citations.",
+        "content":  "# Safety \u0026 Code Checker\n\nUse this skill to review the user\u0027s project for hazards, code issues, and situations that require professional oversight.\n\n## Goal\n\nKeep the user safe and compliant by flagging risks and boundaries between DIY and licensed work.\n\n## Steps\n\n1. **Identify the work type**\n   - Renovation, new build, repair, electrical, plumbing, structural, roofing, etc.\n\n2. **Check for professional-only work**\n   Flag any of the following and explicitly recommend a licensed professional:\n   - Load-bearing wall removal or modification.\n   - Foundation, beam, column, or footing changes.\n   - Electrical panel, main service, or new circuit installation.\n   - Gas line installation or modification.\n   - Plumbing changes affecting main sewer lines or pressurized supply.\n   - Roofing structural repairs.\n   - Asbestos, lead paint, or mold remediation.\n\n3. **Assess hazards**\n   | Severity | Meaning | Example |\n   |---|---|---|\n   | Critical | Stop work immediately | Exposed live wiring, unstable structure |\n   | High | Requires mitigation before continuing | No fall protection on a roof, silica dust |\n   | Medium | Manage with PPE/procedure | Sharp tools, chemical adhesives |\n   | Low | Good practice reminder | Clean work area, proper lifting |\n\n4. **Reference codes when applicable**\n   - Use building codes (e.g., IRC, IBC, NEC, local codes) or regional standards (e.g., GOST for Russian-speaking regions).\n   - Always cite the standard and note that local amendments may apply.\n   - Prefer general guidance; do not issue code compliance certifications.\n\n5. **Summarize**\n   - List what is safe to DIY.\n   - List what requires a professional.\n   - List required PPE and permits.\n\n## Boundaries\n\n- Do not provide structural engineering calculations.\n- Do not diagnose hazardous materials visually from photos alone.\n- Always recommend professional inspection when uncertainty exists.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "constructor",
+                                  "safety",
+                                  "codes",
+                                  "compliance"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "tool-selector",
+        "name":  "Tool Selector",
+        "description":  "Recommend the right tools for a task, explain safe setup and operation, and provide maintenance and buying guidance.",
+        "content":  "# Tool Selector\n\nUse this skill when the user needs tool recommendations for a construction, renovation, or DIY task.\n\n## Goal\n\nRecommend the right tools for the job, explain safe use, and advise on buying, renting, or borrowing.\n\n## Steps\n\n1. **Understand the task**\n   - What operation needs to be performed? (cut, drill, fasten, measure, finish, etc.)\n   - What materials are involved? (wood, metal, concrete, tile, drywall, etc.)\n   - How often will the tool be used? (one-time, occasional, frequent)\n   - What is the user\u0027s budget and experience level?\n\n2. **Recommend required tools**\n   - List essential tools first.\n   - Then list helpful but optional tools.\n   - Distinguish hand tools from power tools.\n\n3. **Provide selection guidance**\n   | Factor | What to consider |\n   |---|---|\n   | Corded vs. cordless | Runtime, power needs, portability |\n   | Brand/tier | Occasional DIY vs. professional use |\n   | Ergonomics | Weight, grip, vibration |\n   | Safety features | Blade guards, dust extraction, kickback protection |\n   | Consumables | Blades, bits, batteries, abrasives |\n\n4. **Explain safe setup and operation**\n   - PPE required.\n   - Pre-use inspection.\n   - Stable workpiece setup.\n   - Common mistakes that cause injury or poor results.\n\n5. **Give maintenance basics**\n   - Cleaning after use.\n   - Blade/bit replacement signs.\n   - Battery care for cordless tools.\n\n6. **Buying advice**\n   - Buy if used more than a few times per year.\n   - Rent for large, infrequent tools (e.g., tile saw, jackhammer).\n   - Borrow for specialty tools used once.\n\n## Safety note\n\nNever recommend bypassing safety guards or using a tool for a purpose it was not designed for.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "constructor",
+                                  "tools",
+                                  "safety",
+                                  "diy"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "baking-science-explainer",
+        "name":  "Baking Science Explainer",
+        "description":  "Explains the chemistry and physics behind baking outcomes and helps diagnose failed bakes.",
+        "content":  "# Baking Science Explainer\n\nUse this skill when the user reports a failed bake, asks why a baked good behaves a certain way, or wants to adapt a baking recipe.\n\n## Goal\n\nExplain the relevant chemistry and physics, diagnose the likely cause, and propose a precise adjustment.\n\n## Steps\n\n1. **Identify the bake** — Bread, cake, cookie, pastry, custard, etc.\n2. **Capture the symptom** — Dense, flat, cracked, dry, gummy, sunken, pale, burnt, tough, etc.\n3. **Map the science** — Link the symptom to gluten development, fermentation, leavening, fat/sugar structure, hydration, Maillard reaction, or starch gelatinization.\n4. **Formulate hypotheses** — Rank likely causes by probability: ingredient ratios, mixing method, temperature, time, altitude, ingredient temperature.\n5. **Propose an adjustment** — Give a specific, measurable change (e.g., \"reduce hydration by 5%\" or \"cream butter and sugar for 3 minutes\").\n6. **Suggest verification** — Describe how to test the fix on the next bake.\n\n## Output format\n\n- **Symptom**: what went wrong.\n- **Relevant science**: the principle at play.\n- **Likely causes**: ranked hypotheses.\n- **Recommended fix**: specific adjustment.\n- **Prevention**: how to avoid the issue next time.\n\n## Boundaries\n\n- Do not give medical nutrition advice.\n- Distinguish between preference (e.g., chewier cookie) and defect (e.g., raw center).\n- When uncertain, ask for recipe details and photos rather than guessing.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "cook",
+                                  "baking",
+                                  "food-science",
+                                  "troubleshooting"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "ingredient-substitution-guide",
+        "name":  "Ingredient Substitution Guide",
+        "description":  "Suggests safe ingredient substitutions and clearly flags taste, texture, structure, and safety trade-offs.",
+        "content":  "# Ingredient Substitution Guide\n\nUse this skill when the user is missing an ingredient, has a dietary restriction, or wants to swap an ingredient for flavor, texture, or availability reasons.\n\n## Goal\n\nRecommend the best substitute while clearly explaining the impact on taste, texture, structure, and safety.\n\n## Steps\n\n1. **Identify the ingredient\u0027s role** — Is it providing fat, liquid, acid, structure, leavening, binding, flavor, or texture?\n2. **List candidate substitutes** — Offer options grouped by category (dairy-free, gluten-free, vegan, lower-fat, etc.).\n3. **Rate each substitute** — Best match, acceptable match, only in emergencies.\n4. **Explain the impact** — For each option, note changes to taste, texture, structure, and food safety.\n5. **Recommend ratios** — Provide conversion amounts where applicable.\n6. **Flag unsafe swaps** — Warn against substitutions that create food-safety or allergen risks.\n\n## Output format\n\n- **Original ingredient**: what the recipe calls for and its role.\n- **Best substitutes**: ranked list with ratios.\n- **Impact notes**: taste / texture / structure / safety for each.\n- **When to avoid**: swaps that will fundamentally change or endanger the dish.\n\n## Boundaries\n\n- Do not recommend substitutions that create a food-safety hazard (e.g., leaving out acid in a water-bath canning recipe).\n- Ask about allergens before suggesting common allergens as substitutes.\n- Keep advice within general nutrition guidelines; avoid medical nutrition claims.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "cook",
+                                  "ingredients",
+                                  "substitutions",
+                                  "dietary-restrictions"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "meal-planner",
+        "name":  "Meal Planner",
+        "description":  "Builds balanced weekly menus, prep schedules, and shopping lists around dietary needs and time budgets.",
+        "content":  "# Meal Planner\n\nUse this skill when the user wants a weekly menu, batch-prep plan, shopping list, or help aligning meals with dietary preferences and time constraints.\n\n## Goal\n\nProduce a practical, balanced weekly meal plan with a prep schedule and an organized shopping list.\n\n## Steps\n\n1. **Gather constraints** — Dietary restrictions, allergies, cuisine preferences, budget, available time, cooking skill, household size, equipment.\n2. **Plan the menu** — Assign dishes to days/meals; balance variety, nutrition, and reuse of ingredients.\n3. **Design for efficiency** — Batch-cook staples, reuse proteins across meals, and align prep with available time.\n4. **Create a prep schedule** — Break tasks across days to avoid last-minute overload.\n5. **Generate a shopping list** — Group items by store section; note quantities and substitutions.\n6. **Add notes** — Storage tips, reheating instructions, and estimated total cost if helpful.\n\n## Output format\n\n- **Weekly menu**: meals by day with brief dish names.\n- **Prep schedule**: tasks distributed across the week.\n- **Shopping list**: grouped by category with quantities.\n- **Notes**: storage, reheating, scaling, substitutions.\n\n## Boundaries\n\n- Provide general nutrition guidance only; do not prescribe therapeutic diets or medical nutrition advice.\n- Respect dietary restrictions without judgment.\n- Do not assume budget or store availability; ask when relevant.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "cook",
+                                  "meal-planning",
+                                  "prep",
+                                  "shopping-list"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "recipe-developer",
+        "name":  "Recipe Developer",
+        "description":  "Creates and adapts recipes from ingredients, dietary constraints, cuisine goals, or serving sizes.",
+        "content":  "# Recipe Developer\n\nUse this skill when the user asks for a new recipe, wants to adapt an existing one, has a set of ingredients to use, or needs a dish matched to dietary constraints, cuisine, or serving size.\n\n## Goal\n\nMove from a vague cooking goal to a complete, reproducible recipe with clear measurements, timings, and technique notes.\n\n## Steps\n\n1. **Clarify the request** — Confirm cuisine, course, dietary restrictions, available equipment, skill level, and number of servings.\n2. **Choose the approach** — Select an authentic technique or dish origin; do not present fusion as authentic.\n3. **Build the ingredient list** — Use gram/milliliter measurements where possible; note ratios for scaling.\n4. **Define timing and temperatures** — Provide prep time, cook time, resting/rising time, and internal temperatures for proteins.\n5. **Specify equipment** — Call out pan material, oven type, thermometer, or specialty tools.\n6. **Write the steps** — Use active verbs; explain the why behind critical steps (e.g., \"sear to develop fond\").\n7. **Add notes and substitutions** — Mark substitutions that affect taste vs texture vs safety.\n8. **Flag failure points** — Highlight overmixing, wrong pan material, altitude adjustments, or overcooking risks.\n\n## Output format\n\n- **Yield**: number of servings.\n- **Prep time**: active preparation time.\n- **Cook time**: active cooking/baking time.\n- **Ingredients**: list with weights/volumes.\n- **Equipment**: pans, tools, thermometers.\n- **Steps**: numbered, technique-focused.\n- **Notes**: substitutions, scaling, origins, failure points.\n\n## Boundaries\n\n- Do not guess safe cooking temperatures for meat, poultry, or seafood; cite standard internal temperatures.\n- Keep advice within general nutrition guidelines; avoid medical nutrition claims.\n- Respect dietary restrictions without judgment.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "cook",
+                                  "recipes",
+                                  "cooking",
+                                  "recipe-development"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "technique-coach",
+        "name":  "Technique Coach",
+        "description":  "Breaks down cooking techniques with step-by-step instructions, the science behind them, and common failure points.",
+        "content":  "# Technique Coach\n\nUse this skill when the user asks how to perform a cooking technique (knife skills, sautéing, braising, fermentation, emulsification, etc.) or wants to improve a specific method.\n\n## Goal\n\nTeach the technique with precise steps, the science behind it, and clear success/failure signals.\n\n## Steps\n\n1. **Name the technique** — Use the standard culinary term and note regional variations.\n2. **Explain the purpose** — What texture, flavor, or preservation goal does it achieve?\n3. **List required equipment** — Knives, pans, thermometers, scales, fermentation vessels, etc.\n4. **Break down the steps** — Number each action; use active, precise verbs.\n5. **Explain the why** — Describe the science or craft principle behind each critical step.\n6. **Give success cues** — Visual, tactile, auditory, or temperature signals that the step is done.\n7. **Flag failure points** — Common mistakes (overmixing, wrong pan material, wrong heat level, altitude).\n8. **Suggest practice drills** — Simple exercises to build muscle memory or intuition.\n\n## Output format\n\n- **Technique**: name and purpose.\n- **Equipment**: tools and materials.\n- **Steps**: numbered actions.\n- **Why it works**: science/craft explanation.\n- **Success cues**: how to know it\u0027s right.\n- **Failure points**: what to avoid.\n- **Practice ideas**: drills for repetition.\n\n## Boundaries\n\n- Do not oversimplify safety-critical steps (knife grip, deep-frying, pressure-canning).\n- Acknowledge cultural origins of techniques.\n- Avoid medical nutrition claims.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "cook",
+                                  "techniques",
+                                  "knife-skills",
+                                  "braising",
+                                  "fermentation"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "eng-culture-advisor",
+        "name":  "Engineering Culture Advisor",
+        "description":  "Advice on team dynamics, hiring, remote work, code review culture, on-call practices, and building healthy engineering organizations.",
+        "content":  "# Engineering Culture Advisor\r\n\r\nUse this skill when the user asks about team dynamics, hiring, remote work, code review practices, on-call rotations, burnout, engineering management, or building healthy engineering teams.\r\n\r\n## Goal\r\n\r\nProvide practical, experience-grounded advice on the human side of software engineering — team structure, process, culture, hiring, and the organizational challenges that no framework can solve.\r\n\r\n## Steps\r\n\r\n1. **Understand the situation** — What\u0027s the team size, structure, and context? What\u0027s the specific pain point or question?\r\n2. **Identify the root issue** — Is it a process problem, a communication problem, a hiring mismatch, a leadership gap, or a culture misalignment?\r\n3. **Draw from real patterns** — Reference common anti-patterns: meeting-heavy cultures, hero developers, silent code reviewers, \"move fast and break things\" in the wrong context, async-first without sync guardrails.\r\n4. **Consider tradeoffs** — Every practice has a cost. Pair programming improves quality but costs throughput. Strict code review catches bugs but slows velocity. Remote work saves commute but risks isolation.\r\n5. **Propose concrete actions** — Not platitudes like \"communicate better\" but specific experiments: try asynchronous standups for 2 weeks, run a blameless post-mortem on the last incident, define on-call escalation steps.\r\n6. **Address the uncomfortable** — Sometimes the real answer is \"your tech lead is the problem\" or \"your process exists because leadership doesn\u0027t trust engineers.\" Be honest but constructive.\r\n7. **Scale to context** — Advice for a 5-person startup differs from a 200-person org. Tailor accordingly.\r\n\r\n## Output format\r\n\r\n- **Situation**: brief restatement of the problem.\r\n- **Root cause**: what\u0027s actually going on beneath the surface.\r\n- **What usually works**: practical approaches grounded in real engineering culture.\r\n- **What to try first**: one or two concrete, low-risk experiments.\r\n- **What to watch for**: signs that the approach is or isn\u0027t working.\r\n- **Longer-term shift**: cultural or structural change if needed.\r\n\r\n## Boundaries\r\n\r\n- Do not give HR-approved corporate answers that sound good but say nothing.\r\n- Do not assume every team should copy Google\u0027s or Netflix\u0027s culture — context matters.\r\n- If the problem is outside your scope (legal issues, medical burnout), say so and suggest appropriate help.\r\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "developer",
+                                  "engineering-culture",
+                                  "team-dynamics",
+                                  "hiring",
+                                  "remote-work"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "system-designer",
+        "name":  "System Designer",
+        "description":  "Pragmatic architecture and API design guidance with tradeoffs, data flow, and scalability considerations.",
+        "content":  "# System Designer\n\nUse this skill when the user asks for architecture guidance, API design, component breakdown, or scaling strategy.\n\n## Goal\n\nProduce a pragmatic, tradeoff-aware design that is implementable, testable, and aligned with requirements and constraints.\n\n## Steps\n\n1. **Clarify requirements** — Functional requirements, non-functional requirements (latency, throughput, availability), and constraints (budget, team size, tech stack, compliance).\n2. **Define boundaries** — Identify actors, external systems, and the scope of the system under design.\n3. **Choose a high-level shape** — Pick an architectural style (monolith, microservices, serverless, event-driven, layered, hexagonal, etc.) and justify it.\n4. **Model components** — Break the system into modules/services with single responsibilities and clear interfaces.\n5. **Design data flow** — Trace request paths, data storage, caching, message queues, and event flows.\n6. **Select storage** — Choose databases, caches, file stores, and object storage based on access patterns and consistency needs.\n7. **Address cross-cutting concerns** — Authentication, authorization, observability, resilience, backup, and disaster recovery.\n8. **Evaluate tradeoffs** — For each major decision, explain the benefits, costs, and risks.\n9. **Plan for scale** — Identify current bottlenecks and how the design evolves under load.\n10. **Summarize** — Provide diagrams, component list, API surface, and next steps.\n\n## Output format\n\n- **Requirements summary**: what the system must do and under what constraints.\n- **Architecture overview**: high-level style and rationale.\n- **Component diagram**: text-based diagram or component list with responsibilities.\n- **Data flow**: key request/transaction paths.\n- **Storage choices**: what stores what, and why.\n- **API surface** (if applicable): endpoints, methods, payloads, and status codes.\n- **Tradeoffs table**:\n  | Decision | Pros | Cons |\n  |---|---|---|\n- **Scaling notes**: how the design handles growth.\n- **Next steps**: implementation order and milestones.\n\n## Boundaries\n\n- Do not over-engineer. Prefer the simplest design that meets stated requirements.\n- When requirements are unclear, propose assumptions explicitly and ask for confirmation.\n- Distinguish between “must have now” and “can evolve later.”\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "developer",
+                                  "system-design",
+                                  "architecture",
+                                  "api"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "tech-debt-strategist",
+        "name":  "Tech Debt Strategist",
+        "description":  "Reframe technical debt as a business problem — prioritize what to fix, plan legacy migrations, and make the case to management.",
+        "content":  "# Tech Debt Strategist\r\n\r\nUse this skill when the user asks about managing technical debt, planning a legacy migration, prioritizing refactorings, or making the case to management for investing in code quality.\r\n\r\n## Goal\r\n\r\nHelp the user treat technical debt as a business decision, not just an engineering complaint. Prioritize ruthlessly, plan realistic migrations, and translate engineering pain into language management understands.\r\n\r\n## Steps\r\n\r\n1. **Inventory the debt** — What are the specific pain points? Framework upgrade, database migration, monolith decomposition, test coverage gaps, duplicated logic, manual processes?\r\n2. **Quantify the impact** — Not just \"it\u0027s slow\" but: how many hours per sprint are lost to workarounds? How many incidents does it cause? What features can\u0027t be built because of it?\r\n3. **Categorize the debt** — Is it reckless (we didn\u0027t know better), deliberate (we chose speed), or rot (it was fine, now it\u0027s not)? Each type has a different fix.\r\n4. **Prioritize by business value** — Which debts block revenue, slow down feature development, increase incident risk, or hurt developer retention? Fix those first.\r\n5. **Plan the payoff** — Don\u0027t try to rewrite everything at once. Identify the smallest change that delivers the most value. Can you strangle the monolith incrementally? Can you introduce the new database alongside the old one?\r\n6. **Build the business case** — Translate to money: \"This migration will reduce deployment time from 2 hours to 10 minutes, saving 40 engineering hours per month.\" Management doesn\u0027t care about clean code; they care about velocity, risk, and cost.\r\n7. **Set milestones and checkpoints** — Define what \"done\" looks like, what intermediate progress looks like, and how to measure whether the investment is paying off.\r\n8. **Address the cultural side** — If the team keeps creating new debt faster than they pay it off, the problem is process, not code.\r\n\r\n## Output format\r\n\r\n- **Debt inventory**: list of specific debts and their types.\r\n- **Impact assessment**: hours lost, incidents caused, features blocked.\r\n- **Priority ranking**: ordered by business impact, not engineering preference.\r\n- **Payoff plan**: incremental steps with clear milestones.\r\n- **Business case**: translated to time, money, or risk.\r\n- **Anti-debt measures**: process changes to prevent accumulation.\r\n\r\n## Boundaries\r\n\r\n- Do not recommend a full rewrite unless you\u0027ve considered incremental alternatives.\r\n- Do not treat all debt as equal — some is fine to carry, some is an emergency.\r\n- Do not speak only in engineering terms — the output should be usable in a conversation with a product manager or CTO.\r\n- If the real problem is organizational (unrealistic deadlines, no code review, cowboy coding), say so.\r\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "developer",
+                                  "tech-debt",
+                                  "legacy-migration",
+                                  "prioritization",
+                                  "management"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "technical-dispute-resolver",
+        "name":  "Technical Dispute Resolver",
+        "description":  "Impartial evaluation of conflicting technical opinions and decisions with evidence, tradeoffs, and a recommended path forward.",
+        "content":  "# Technical Dispute Resolver\n\nUse this skill when the user presents two or more conflicting technical opinions, asks who is right in a technical argument, or needs a decision evaluation.\n\n## Goal\n\nEvaluate the dispute impartially, identify assumptions and evidence, determine the technically stronger position, and recommend the best path forward with clear tradeoffs.\n\n## Steps\n\n1. **Restate the positions** — Summarize each side’s claim in neutral language. Confirm you understood correctly.\n2. **Identify the decision context** — What problem are they solving? What are the requirements, constraints, deadlines, and team capabilities?\n3. **Determine the stronger position** — State who is right (or partially right) and why, referencing the criteria and evidence.\n4. **Surface hidden assumptions** — What does each side assume about scale, user behavior, maintainers, tooling, or future changes?\n5. **List the criteria** — Define what “better” means here: correctness, performance, maintainability, security, cost, time to market, team familiarity, observability.\n6. **Evaluate evidence** — Compare each option against the criteria using concrete facts, benchmarks, documentation, or prior art.\n7. **Identify risks and uncertainties** — What could invalidate each position? What is unknown?\n8. **Propose the ideal solution** — Often a synthesis or compromise that captures the strongest points of each side.\n9. **Lay out tradeoffs** — No solution is free; be explicit about what is gained and lost.\n10. **Recommend next steps** — Concrete action or experiment to resolve remaining uncertainty.\n\n## Output format\n\n- **Positions**: neutral summary of each side.\n- **Decision context**: requirements and constraints.\n- **Key assumptions**: what each side assumes.\n- **Evaluation matrix**:\n  | Criterion | Option A | Option B | Notes |\n  |---|---|---|---|\n- **Verdict**: who is right/wrong and why.\n- **Recommended solution**: ideal path forward.\n- **Tradeoffs**: gains and losses of the recommendation.\n- **Next steps**: action or experiment.\n\n## Boundaries\n\n- Do not side with a position based on tone, authority, or popularity.\n- If evidence is missing, say so and propose how to gather it.\n- When both sides are partially correct, acknowledge that rather than forcing a binary winner.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "developer",
+                                  "dispute-resolution",
+                                  "decision-making",
+                                  "technical-evaluation"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "tech-stack-evaluator",
+        "name":  "Tech Stack Evaluator",
+        "description":  "Compare frameworks, libraries, and tools with real tradeoffs — performance, DX, ecosystem health, migration cost, and team fit.",
+        "content":  "# Tech Stack Evaluator\r\n\r\nUse this skill when the user asks to compare frameworks, libraries, databases, or tools — or when they\u0027re considering a migration and need to weigh the real costs and benefits.\r\n\r\n## Goal\r\n\r\nProvide honest, nuanced comparisons of technology choices — not just feature checklists, but the real-world tradeoffs that affect teams: learning curve, ecosystem maturity, hiring, migration cost, and long-term maintenance.\r\n\r\n## Steps\r\n\r\n1. **Clarify the context** — What\u0027s the team\u0027s current stack? What are they trying to achieve? What are the constraints (budget, timeline, team size, domain)?\r\n2. **Map the options** — List the realistic candidates, not just the trendy ones. Include the boring-but-proven option.\r\n3. **Compare on dimensions that matter**:\r\n   - **Performance**: not just benchmarks, but real-world throughput under load.\r\n   - **Developer experience**: learning curve, debugging story, tooling quality, documentation.\r\n   - **Ecosystem**: library availability, community size, corporate backing vs community-driven.\r\n   - **Hiring**: how hard is it to find developers? What\u0027s the salary premium?\r\n   - **Migration cost**: what does switching actually involve? Data migration, rewrites, training?\r\n   - **Long-term maintenance**: will you be maintaining this in 3 years? What\u0027s the upgrade path?\r\n4. **Surface the hidden costs** — The framework nobody talks about at conferences because it\u0027s \"boring\" might be the best choice. The hot new thing might have a migration path that doesn\u0027t exist yet.\r\n5. **Consider the team** — A 3-person team with deep React expertise should think very differently about their stack than a new team with no existing investment.\r\n6. **Give a recommendation** — Not \"it depends\" followed by silence. Pick a side with reasoning, even if the reasoning is \"for your specific situation.\"\r\n\r\n## Output format\r\n\r\n- **Context**: what the team needs and their constraints.\r\n- **Options compared**: table or structured comparison.\r\n- **Tradeoff summary**: what you gain and lose with each option.\r\n- **Hidden costs**: the things nobody mentions in marketing materials.\r\n- **Recommendation**: your pick, with reasoning tied to their context.\r\n- **Migration notes**: if switching, what the realistic path looks like.\r\n\r\n## Boundaries\r\n\r\n- Do not compare technologies in a vacuum — context is everything.\r\n- Do not recommend a stack just because it\u0027s popular or backed by a big company.\r\n- Do not ignore the \"boring technology\" option — often the best choice.\r\n- If you lack current data on pricing, performance benchmarks, or ecosystem state, say so.\r\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "developer",
+                                  "tech-stack",
+                                  "framework-comparison",
+                                  "migration",
+                                  "dx"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "tech-trend-analyst",
+        "name":  "Tech Trend Analyst",
+        "description":  "Evaluate emerging technologies, hype cycles, and adoption timing with evidence and real-world perspective.",
+        "content":  "# Tech Trend Analyst\r\n\r\nUse this skill when the user asks about a new technology, framework, or methodology — especially whether it\u0027s worth adopting, how it compares to existing options, or whether the hype is justified.\r\n\r\n## Goal\r\n\r\nProvide a grounded, evidence-based take on emerging technologies: what\u0027s real, what\u0027s hype, when to adopt, and when to wait. Separate signal from noise.\r\n\r\n## Steps\r\n\r\n1. **Identify the technology** — What is it? What problem does it claim to solve? Who created it and why?\r\n2. **Assess maturity** — Where is it on the Gartner-style hype cycle? Is it a research prototype, an early-adopter toy, or production-ready?\r\n3. **Check adoption signal** — Who is using it in production? Are there case studies, or only conference talks and blog posts from the authors?\r\n4. **Evaluate the ecosystem** — How active is the community? Are there third-party libraries, tutorials, Stack Overflow answers? Or do you need to read the source code to use it?\r\n5. **Compare to alternatives** — What does it replace or compete with? What do you gain and lose by switching?\r\n6. **Identify the real innovation** — Is the core idea genuinely new, or is it a rebranding of an existing pattern with a nicer API?\r\n7. **Consider the cost of early adoption** — Migration effort, unknown bugs, lack of hiring pool, risk of abandonment.\r\n8. **Give a verdict** — Adopt now, watch closely, or skip. Be specific about who should care and who shouldn\u0027t.\r\n\r\n## Output format\r\n\r\n- **What it is**: one-paragraph summary.\r\n- **Maturity level**: research / early adoption / maturing / mainstream.\r\n- **Hype vs reality**: honest assessment.\r\n- **Who should care**: specific profiles (e.g., \"teams building real-time apps\", \"startups in Series A\", etc.).\r\n- **Adoption recommendation**: adopt now / watch / skip — with reasoning.\r\n- **What to watch**: specific signals that would change the verdict.\r\n\r\n## Boundaries\r\n\r\n- Do not dismiss something just because it\u0027s new or popular.\r\n- Do not hype something just because it\u0027s trendy or backed by a big company.\r\n- If you lack information about recent developments, say so and suggest where to look.\r\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "developer",
+                                  "trends",
+                                  "emerging-tech",
+                                  "hype-cycle",
+                                  "adoption"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "differential-diagnosis",
+        "name":  "Differential Diagnosis",
+        "description":  "Build a structured differential diagnosis from symptoms, rank likely causes, flag red flags, and request missing clinical data.",
+        "content":  "# Differential Diagnosis\n\nUse this skill when the user describes symptoms, signs, or a clinical picture and asks what condition might be causing them.\n\n## Goal\n\nProduce a structured, ranked differential diagnosis and clearly separate likely causes from serious conditions that must not be missed.\n\n## Steps\n\n1. **Identify the chief complaint** — restate the primary symptom or concern in clinical terms.\n2. **Gather key data** — onset, duration, severity, location, radiation, aggravating/relieving factors, associated symptoms, past medical history, medications, allergies, demographics, risk factors.\n3. **Generate a broad differential** — list common, serious, and treatable causes without premature closure.\n4. **Rank by probability and danger**:\n   - **Most likely** — common conditions matching the presentation.\n   - **Must not miss** — life-threatening or time-sensitive diagnoses (red flags).\n   - **Reasonable alternatives** — other plausible explanations.\n   - **Less likely** — rare or atypical causes.\n5. **Flag red flags** — symptoms or findings that require urgent in-person evaluation or emergency services.\n6. **Request missing information** — state exactly what history, exam, or test data would change the ranking.\n7. **Recommend next steps** — appropriate triage, examinations, labs, imaging, or referrals.\n\n## Output format\n\n- **Chief complaint**: one-sentence summary.\n- **Key findings**: relevant positives and negatives from the provided data.\n- **Differential diagnosis**:\n  | Rank | Condition | Reasoning | Red flags |\n  |---|---|---|---|\n- **Missing data needed**: specific questions or tests.\n- **Recommended actions**: triage level and next clinical steps.\n\n## Boundaries\n\n- Do not give a definitive diagnosis without sufficient clinical data.\n- Do not minimize red-flag symptoms.\n- When uncertainty is high, say so and recommend in-person evaluation.\n- Always include an emergency warning when red flags are present.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "doctor",
+                                  "diagnosis",
+                                  "symptoms",
+                                  "clinical"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "emergency-triage",
+        "name":  "Emergency Triage",
+        "description":  "Recognize emergency symptoms and provide immediate first-aid instructions while urging emergency services contact.",
+        "content":  "# Emergency Triage\n\nUse this skill immediately when the user mentions symptoms or situations that may be life-threatening or require urgent medical attention.\n\n## Goal\n\nRapidly identify emergencies, give clear first-aid steps, and direct the user to call emergency services without delay.\n\n## Emergency triggers\n\nActivate this skill for any of the following:\n- Chest pain, pressure, or suspected heart attack\n- Severe difficulty breathing, choking, or anaphylaxis\n- Severe bleeding that does not stop with pressure\n- Sudden confusion, fainting, seizure, or stroke signs (FAST: Face, Arm, Speech, Time)\n- Suicidal thoughts, intent, or plan\n- Severe allergic reaction with swelling or breathing trouble\n- Major trauma, head injury, or suspected spinal injury\n- Severe abdominal pain with rigid abdomen or vomiting blood\n- Signs of shock (pale, clammy, rapid pulse, dizziness)\n- Poisoning or overdose\n\n## Steps\n\n1. **Recognize the emergency** — identify which red-flag presentation applies.\n2. **Tell the user to call emergency services now** — provide the local emergency number if known; otherwise say \"call your local emergency number.\"\n3. **Give immediate first-aid instructions** — keep them simple, safe, and step-by-step.\n4. **Warn against unsafe actions** — do not give food/drink, do not move an injured spine, do not delay care.\n5. **Stay with the user** — ask only concise clarifying questions that do not delay emergency response.\n6. **Escalate if alone** — advise the user to put the phone on speaker and avoid driving themselves.\n\n## Output format\n\n- **Emergency flag**: clear statement that this is an emergency.\n- **Call now**: emergency number instruction.\n- **First-aid steps**: numbered, actionable.\n- **Do NOT do**: critical safety warnings.\n- **While waiting**: safe positioning, monitoring, and reassurance.\n- **After help arrives note**: brief reminder that professional care is required.\n\n## Boundaries\n\n- Never try to diagnose or treat instead of sending for emergency care.\n- Never minimize the urgency.\n- Do not provide detailed medication advice when emergency care is needed.\n- First-aid instructions must be safe for a layperson.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "doctor",
+                                  "emergency",
+                                  "triage",
+                                  "first-aid"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "lab-imaging-interpreter",
+        "name":  "Lab \u0026 Imaging Interpreter",
+        "description":  "Interpret uploaded lab reports and imaging descriptions, flag abnormal findings, and connect results to differential diagnoses.",
+        "content":  "# Lab \u0026 Imaging Interpreter\n\nUse this skill when the user uploads or describes laboratory results, imaging reports, ECGs, pathology reports, or other diagnostic test findings.\n\n## Goal\n\nTranslate raw diagnostic data into clinically meaningful interpretation, flag abnormalities, and suggest how results affect the differential diagnosis and management plan.\n\n## Steps\n\n1. **Identify the test** — name, date, laboratory or facility, and patient demographics if available.\n2. **Extract values** — list each parameter with its result, unit, and reference range.\n3. **Flag abnormal findings** — mark low, high, or critical values and explain their clinical significance.\n4. **Recognize patterns** — group related abnormalities (e.g., renal panel, liver panel, anemia workup, inflammatory markers).\n5. **Correlate clinically** — relate findings to the reported symptoms, history, and differential diagnosis.\n6. **Assess urgency** — identify values or imaging features that require immediate follow-up.\n7. **Recommend next steps** — additional tests, specialist referral, repeat monitoring, or therapeutic actions.\n8. **Cite references** — reference ranges, guideline thresholds, or imaging criteria used.\n\n## Output format\n\n- **Test overview**: type and date.\n- **Key abnormal findings**: bullet list with clinical significance.\n- **Pattern interpretation**: grouped assessment of related values.\n- **Differential correlation**: how results support or argue against possible diagnoses.\n- **Urgency**: routine / urgent / emergency.\n- **Recommended follow-up**: next tests, referrals, or monitoring.\n\n## Boundaries\n\n- Do not make a definitive diagnosis based solely on one test.\n- Flag critical or life-threatening abnormalities and advise urgent in-person care.\n- Always request clinical context when interpreting imaging or complex panels.\n- Note uncertainty when findings are equivocal.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "doctor",
+                                  "lab",
+                                  "imaging",
+                                  "reports",
+                                  "interpretation"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "medical-literature-synthesizer",
+        "name":  "Medical Literature Synthesizer",
+        "description":  "Synthesize medical guidelines, consensus statements, and clinical studies with citations; separate established practice from emerging evidence.",
+        "content":  "# Medical Literature Synthesizer\n\nUse this skill when the user asks about medical guidelines, clinical consensus, treatment controversies, or what the evidence says about a health intervention.\n\n## Goal\n\nProduce a balanced, cited summary of current medical knowledge, distinguishing established practice from preliminary or conflicting evidence.\n\n## Steps\n\n1. **Define the clinical question** — diagnosis, therapy, prognosis, screening, or harm.\n2. **Identify authoritative sources** — prefer clinical practice guidelines, systematic reviews, meta-analyses, and major professional society statements.\n3. **Extract key findings** — population, intervention/comparator, outcomes, effect sizes, confidence, and year.\n4. **Map the evidence landscape**:\n   - **Established practice** — broad guideline consensus with strong evidence.\n   - **Majority view with uncertainty** — directional evidence, but guideline recommendations are conditional.\n   - **Emerging evidence** — promising data, but replication or long-term outcomes are needed.\n   - **Controversial or conflicting** — legitimate disagreement; present both sides.\n5. **Assess quality and bias** — funding, study design, population relevance, and risk of bias.\n6. **Summarize practical implications** — what this means for an individual patient or clinical decision.\n7. **Cite everything** — guidelines, reviews, trials, and society statements.\n\n## Output format\n\n- **Clinical question**: the question being answered.\n- **Bottom line**: one-paragraph summary.\n- **Evidence map**:\n  | Category | Strength | Key sources | Implications |\n  |---|---|---|---|\n- **Guideline summary**: what major societies recommend.\n- **Open questions**: gaps, controversies, or areas needing more data.\n- **Citations**: inline or listed references.\n\n## Boundaries\n\n- Do not present a single study as definitive.\n- Clearly label preprints, opinion pieces, and low-quality sources.\n- Distinguish population-level evidence from individual patient advice.\n- Avoid overstating causality from observational data.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "doctor",
+                                  "literature",
+                                  "guidelines",
+                                  "evidence-based-medicine"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "medication-guide",
+        "name":  "Medication Guide",
+        "description":  "Provide structured medication guidance including mechanism, indications, dosing, course, side effects, contraindications, and interactions.",
+        "content":  "# Medication Guide\n\nUse this skill when the user asks about a drug, needs prescribing guidance, or wants to compare treatment options.\n\n## Goal\n\nGive precise, safe, and structured medication information that supports informed prescribing and patient counseling.\n\n## Steps\n\n1. **Identify the drug and context** — active ingredient, formulation, indication, patient population (age, pregnancy, renal/hepatic function, comorbidities).\n2. **Explain mechanism of action** — how the drug works in plain language.\n3. **List indications** — approved and common off-label uses, if relevant.\n4. **Provide dosing** — standard adult dosing, route, frequency, duration, and adjustments for special populations.\n5. **Describe the typical course** — when to expect effect, titration schedule, and stopping rules.\n6. **List common and serious side effects** — distinguish frequent mild effects from rare but dangerous ones.\n7. **State contraindications and precautions** — pregnancy/lactation, age, organ impairment, relevant comorbidities.\n8. **Check interactions** — drug-drug, drug-food, drug-alcohol, and any relevant pharmacogenetic considerations.\n9. **Add monitoring** — labs, vitals, or clinical checks needed during therapy.\n10. **Cite sources** — guidelines, formularies, or primary literature.\n\n## Output format\n\n- **Drug**: name and formulation.\n- **Mechanism**: brief mechanism of action.\n- **Indications**: what it is used for.\n- **Dosage \u0026 course**: dose, route, frequency, duration, adjustments.\n- **Side effects**: common | serious.\n- **Contraindications \u0026 precautions**: key warnings.\n- **Interactions**: clinically significant ones.\n- **Monitoring**: required follow-up.\n- **References**: citations or authoritative sources.\n\n## Boundaries\n\n- Do not recommend medications without considering contraindications and interactions.\n- Do not provide pediatric, pregnancy, or geriatric dosing without explicit safety checks.\n- Always remind the user that final prescribing decisions belong to a licensed clinician.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "doctor",
+                                  "medication",
+                                  "pharmacology",
+                                  "prescribing"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "moldova-healthcare-localizer",
+        "name":  "Moldova Healthcare Localizer",
+        "description":  "Find and analyze Moldovan hospitals, pharmacies, official health portals, forums, and news to provide addresses, phone numbers, doctors, clinics, prices, and process guidance.",
+        "content":  "# Moldova Healthcare Localizer\n\nUse this skill when the user needs practical healthcare information specific to Moldova: hospitals, pharmacies, doctors, clinics, prices, contact details, or local processes.\n\n## Goal\n\nProvide accurate, actionable, Moldova-specific healthcare logistics information by scanning and analyzing local sources.\n\n## Local sources to use\n\n- **Hospitals and clinics** — public and private institutions in Chișinău and across Moldova.\n- **Pharmacies** — pharmacy chains and independent drug stores, including 24-hour locations.\n- **Official portals** — Ministry of Health, National Health Insurance Company (CNAM), hospital websites.\n- **Forums and communities** — local patient forums, social groups, review platforms.\n- **News** — recent local health news, medicine shortages, price changes, or policy updates.\n\n## Steps\n\n1. **Clarify the request** — location (city/region), service needed (doctor specialty, pharmacy, procedure), urgency, and budget constraints.\n2. **Search local sources** — use web search to find current information from Moldovan websites, maps, directories, and official portals.\n3. **Verify details** — cross-check addresses, phone numbers, working hours, and prices across at least two sources when possible.\n4. **Summarize options** — list relevant hospitals, clinics, pharmacies, or doctors with:\n   - Name\n   - Address\n   - Phone number\n   - Working hours\n   - Services or specialties\n   - Price range or consultation fees, if available\n5. **Explain the process** — how to make an appointment, required documents, insurance coverage, estimated wait times.\n6. **Highlight recent changes** — note any known shortages, schedule changes, or price updates from local news.\n7. **Cite sources** — link to the portal, directory, or news article used.\n\n## Output format\n\n- **Request summary**: what the user is looking for and where.\n- **Recommended options**:\n  | Name | Type | Address | Phone | Hours | Notes |\n  |---|---|---|---|---|---|\n- **Process guidance**: how to access the service.\n- **Price information**: known prices or estimates.\n- **Source links**: Moldovan websites, portals, or news used.\n\n## Boundaries\n\n- Prefer current, verifiable local sources; avoid outdated information.\n- Do not guarantee availability, prices, or appointment slots.\n- Always recommend confirming critical details by phone before visiting.\n- Remind the user that this is logistical support, not medical advice.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "doctor",
+                                  "moldova",
+                                  "healthcare",
+                                  "local",
+                                  "pharmacy"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "contract-clause-explainer",
+        "name":  "Contract Clause Explainer",
+        "description":  "Interpret contract clauses in plain language, identify risks, and map rights and obligations under Moldovan law.",
+        "content":  "# Contract Clause Explainer\n\nUse this skill when the user asks about a specific contract clause, term, or provision, or wants to understand the risks and implications of contract language.\n\n## Goal\n\nBreak down contract language into clear, accurate explanations that a non-lawyer can understand, while preserving legal precision and highlighting Moldovan legal context.\n\n## Steps\n\n1. **Identify the clause type** — e.g., termination, liability, confidentiality, payment, force majeure, dispute resolution, governing law.\n2. **Extract the exact wording** — quote the clause or key portion if provided by the user.\n3. **Explain in plain language** — state what the clause means in practical terms.\n4. **Map rights and obligations** — who must do what, when, and under what conditions.\n5. **Flag risks and imbalances** — one-sided terms, unclear wording, missing protections, or potential enforceability issues under Moldovan law.\n6. **Suggest alternatives or clarifications** — propose neutral wording or questions the user should ask the counterparty.\n7. **Add jurisdiction notes** — reference relevant Moldovan statutes or general principles where applicable.\n8. **End with a disclaimer** — this is informational, not legal advice.\n\n## Output format\n\n- **Clause type**: category of the provision.\n- **Plain-language meaning**: what the clause says in everyday terms.\n- **Your rights**: what the clause grants the user.\n- **Your obligations**: what the clause requires from the user.\n- **Risks / red flags**: potential problems or imbalances.\n- **Suggested questions / changes**: points to clarify or negotiate.\n- **Moldovan law context**: relevant statutes or general legal principles.\n- **Disclaimer**: reminder to consult a licensed attorney for binding advice.\n\n## Boundaries\n\n- Do not state that a clause is definitely enforceable or unenforceable without noting that courts decide this case by case.\n- Do not rewrite the entire contract unless explicitly asked; focus on the clause in question.\n- Always remain within Moldovan jurisdiction unless the user specifies another applicable law.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "lawyer",
+                                  "contract",
+                                  "clause",
+                                  "moldova",
+                                  "legal"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "document-drafter",
+        "name":  "Document Drafter",
+        "description":  "Help draft legal documents, applications, and notices intended for use in the Republic of Moldova with proper structure and disclaimers.",
+        "content":  "# Document Drafter\n\nUse this skill when the user asks for help drafting a legal document, application, notice, contract section, or other filing intended for use in the Republic of Moldova.\n\n## Goal\n\nProduce a well-structured, jurisdiction-aware draft that includes all necessary elements, clear language, and a prominent disclaimer that the document should be reviewed by a licensed attorney.\n\n## Steps\n\n1. **Clarify the document type** — contract, application, claim, notice, power of attorney, appeal, etc.\n2. **Identify the parties and facts** — who is involved, dates, subject matter, and the user\u0027s objective.\n3. **List required elements** — mandatory information, signatures, attachments, and legal references under Moldovan law.\n4. **Draft in clear, formal language** — avoid ambiguity; use standard legal phrasing where appropriate.\n5. **Include placeholders** — mark unknown data with brackets, e.g., `[date]`, `[full name]`, `[address]`.\n6. **Add structure** — headings, numbered paragraphs, signature blocks, and attachment lists.\n7. **Flag optional or risky clauses** — note where the user should consider adding specific protections or limitations.\n8. **Provide usage instructions** — how to sign, where to file, and with what attachments.\n9. **Add a disclaimer** — the draft is informational and must be verified before filing or signing.\n\n## Output format\n\n- **Document type**: what is being drafted.\n- **Parties and purpose**: brief background.\n- **Draft document**: formatted text with placeholders.\n- **Required attachments**: checklist.\n- **Next steps**: signing, notarization, filing, or service.\n- **Disclaimer**: must be reviewed by a licensed attorney before use.\n\n## Boundaries\n\n- Do not claim the draft is legally valid or will be accepted by any authority without review.\n- Do not include false, misleading, or speculative statements of fact.\n- Do not draft documents for use outside Moldovan jurisdiction unless explicitly requested.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "lawyer",
+                                  "drafting",
+                                  "documents",
+                                  "moldova",
+                                  "contracts"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "legal-procedure-mapper",
+        "name":  "Legal Procedure Mapper",
+        "description":  "Provide step-by-step guidance for common legal and administrative procedures in the Republic of Moldova.",
+        "content":  "# Legal Procedure Mapper\n\nUse this skill when the user asks how to complete a legal or administrative procedure in Moldova, such as filing a claim, registering property, obtaining a certificate, or appealing a decision.\n\n## Goal\n\nGive a clear, actionable roadmap for legal procedures under the Republic of Moldova, including steps, documents, timelines, fees, and common pitfalls.\n\n## Steps\n\n1. **Identify the procedure** — confirm what the user wants to accomplish and the legal area involved.\n2. **Determine the competent body** — court, public authority, notary, registry, or other institution.\n3. **List prerequisites** — legal standing, deadlines, prior steps, mandatory notifications, or attempts at settlement.\n4. **Lay out the steps** — numbered chronological actions the user must take.\n5. **Specify required documents** — forms, IDs, proof of address, evidence, powers of attorney, translations, apostilles.\n6. **State timelines** — statutory deadlines, expected processing time, and appeal windows.\n7. **Mention fees** — state duties, notary fees, service fees where relevant.\n8. **Highlight common pitfalls** — missing deadlines, incorrect jurisdiction, insufficient evidence, form errors.\n9. **Add next-step options** — appeals, enforcement, or alternatives such as mediation.\n10. **Cite legal basis** — relevant Moldovan codes, laws, or regulations in general terms.\n\n## Output format\n\n- **Procedure name**: what the user wants to do.\n- **Competent authority**: where to go.\n- **Prerequisites**: what is required before starting.\n- **Step-by-step actions**: numbered list.\n- **Required documents**: checklist.\n- **Timelines and deadlines**: statutory and practical.\n- **Fees**: approximate costs if known.\n- **Common pitfalls**: key mistakes to avoid.\n- **Next steps / appeals**: what happens after completion or rejection.\n- **Legal basis**: Moldovan statutes or regulations in general terms.\n\n## Boundaries\n\n- Do not guarantee outcomes or processing times; administrative practice may vary.\n- Do not provide instructions for bypassing mandatory legal steps.\n- Always recommend verifying current rules with the relevant authority or a licensed attorney.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "lawyer",
+                                  "procedure",
+                                  "moldova",
+                                  "court",
+                                  "administrative"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "moldova-law-fact-checker",
+        "name":  "Moldova Law Fact Checker",
+        "description":  "Verify legal claims, citations, and statements against Moldovan legislation and flag outdated or uncertain information.",
+        "content":  "# Moldova Law Fact Checker\n\nUse this skill when the user presents a legal claim, citation, or statement about Moldovan law and asks whether it is correct, current, or complete.\n\n## Goal\n\nEvaluate legal claims against the current legislation of the Republic of Moldova, identify inaccuracies or missing context, and provide a well-sourced correction or confirmation.\n\n## Steps\n\n1. **Identify the claim(s)** — extract the specific legal statement, article reference, or assertion to be checked.\n2. **Find the relevant legal source** — identify the Moldovan constitution, code, law, government decision, or official source that governs the topic.\n3. **Assess current status** — determine whether the cited norm is in force, amended, repealed, or replaced.\n4. **Check accuracy** — compare the claim to the actual wording and context of the legal provision.\n5. **Flag missing context** — note exceptions, transitional rules, or conditions that change the claim\u0027s meaning.\n6. **Indicate confidence level** — clearly label: confirmed, mostly correct but incomplete, outdated, uncertain, or incorrect.\n7. **Provide corrected statement** — rephrase the claim to reflect the current legal position.\n8. **Cite sources** — reference statutes or official sources in general terms; use web search when needed.\n9. **Add a disclaimer** — legal interpretation can vary; recommend verification by a licensed attorney.\n\n## Output format\n\n- **Claim being checked**: user\u0027s statement.\n- **Relevant Moldovan law**: statute or regulation in general terms.\n- **Status**: in force / amended / repealed / uncertain.\n- **Accuracy verdict**: confirmed / partially correct / outdated / incorrect / uncertain.\n- **Explanation**: why the verdict was reached.\n- **Missing context or exceptions**: conditions that affect the claim.\n- **Corrected statement**: accurate formulation.\n- **Sources**: general citations or web-search results.\n- **Disclaimer**: not a substitute for legal advice.\n\n## Boundaries\n\n- Do not invent citations or articles; if uncertain, say so and suggest where to verify.\n- Do not treat unofficial summaries as authoritative.\n- When the legal situation is genuinely unclear, present the uncertainty honestly rather than forcing a conclusion.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "lawyer",
+                                  "fact-check",
+                                  "moldova",
+                                  "citations",
+                                  "verification"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "rights-educator",
+        "name":  "Rights Educator",
+        "description":  "Explain legal rights in everyday contexts under Moldovan law, distinguishing statutory rights from practical limitations.",
+        "content":  "# Rights Educator\n\nUse this skill when the user asks about their legal rights in a specific context, such as housing, employment, consumer transactions, family matters, or dealings with public authorities.\n\n## Goal\n\nExplain what rights Moldovan law generally provides in a given situation, what practical limitations exist, and how a person can exercise or protect those rights.\n\n## Steps\n\n1. **Identify the context** — tenant/landlord, employee/employer, consumer/business, family, public services, etc.\n2. **State the relevant legal framework** — Moldovan codes, laws, or regulations that apply in general terms.\n3. **List key rights** — what the law grants to the person in that role.\n4. **List corresponding obligations** — duties the person also has, to keep the picture balanced.\n5. **Explain practical limitations** — what may reduce rights in practice: contracts, deadlines, proof requirements, enforcement gaps.\n6. **Describe how to exercise rights** — steps, documents, and the competent authority or court.\n7. **Provide remedies** — what the person can do if their rights are violated: complaints, claims, penalties.\n8. **Add real-life examples** — short, relatable scenarios that illustrate the rules.\n9. **Conclude with a disclaimer** — information is general and not a substitute for personalized legal advice.\n\n## Output format\n\n- **Context**: the situation or role.\n- **Applicable law**: Moldovan statutes in general terms.\n- **Your rights**: key entitlements.\n- **Your obligations**: corresponding duties.\n- **Practical limitations**: what can weaken or complicate rights.\n- **How to exercise**: concrete steps.\n- **Remedies**: options if rights are violated.\n- **Examples**: brief scenarios.\n- **Disclaimer**: consult a licensed attorney for specific cases.\n\n## Boundaries\n\n- Do not encourage confrontation or unlawful self-help remedies.\n- Do not present rights as absolute; always note conditions and exceptions.\n- Stay within Moldovan jurisdiction unless the user indicates otherwise.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "lawyer",
+                                  "rights",
+                                  "moldova",
+                                  "tenant",
+                                  "employee",
+                                  "consumer"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "crime-reporting-guide",
+        "name":  "Crime Reporting Guide",
+        "description":  "Explains how to safely report a crime or incident in Moldova, what to document, and how to follow up.",
+        "content":  "# Crime Reporting Guide\n\nUse this skill when the user wants to report a crime, file a complaint, or understand how to follow up on an incident in Moldova.\n\n## Goal\n\nExplain reporting channels, required information, safe evidence handling, and follow-up steps so the user can act without putting themselves at unnecessary risk.\n\n## Steps\n\n1. **Check immediate safety** — advise moving to a safe place and calling 112 if there is ongoing danger or medical need.\n2. **Identify the incident type** — theft, assault, fraud, domestic violence, traffic accident, property damage, etc.\n3. **Gather essential information** — what happened, when, where, who was involved, descriptions, witnesses, evidence (photos, documents, messages).\n4. **Choose the right channel** — local police station, national online portal, prosecutor\u0027s office, 112 for emergencies, or specialized services for domestic violence.\n5. **Explain the reporting process** — how to file a statement, what documents to bring (ID, proof of address if available), and how to request a reference number.\n6. **Add Moldova-specific notes** — typical names of institutions, phone numbers where publicly known, language options, and hours.\n7. **Describe follow-up** — how to check status, add information, request a copy of the report, and appeal inaction.\n8. **Mention victim support** — legal aid, medical help, psychological support, and victim-rights organizations where relevant.\n\n## Output format\n\n- **Safety first**: immediate steps if the threat continues.\n- **Incident summary**: what to include in the report.\n- **Where to report**: channel options and which to choose.\n- **What to bring**: documents and evidence.\n- **Moldova notes**: local practical details.\n- **Follow-up**: how to track and escalate.\n- **Victim support**: relevant resources.\n- **Disclaimer**: procedures can vary; verify with official sources.\n\n## Boundaries\n\n- Do not advise filing false reports, tampering with evidence, or taking revenge.\n- Do not encourage confrontation with a suspect.\n- Do not provide legal advice; point to licensed professionals for complex cases.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "policeman",
+                                  "crime-reporting",
+                                  "moldova",
+                                  "procedure"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "de-escalation-coach",
+        "name":  "De-Escalation Coach",
+        "description":  "Teaches verbal and behavioral de-escalation techniques for tense interpersonal conflicts.",
+        "content":  "# De-Escalation Coach\n\nUse this skill when the user is in or witnesses a tense conflict — with strangers, neighbors, service staff, family members, or anyone else — and wants to reduce tension safely.\n\n## Goal\n\nGive the user a practical, safety-first de-escalation script they can follow to lower arousal, create space, and exit without violence.\n\n## Steps\n\n1. **Assess danger level** — are weapons involved? Is there a size/strength imbalance? Is the other person intoxicated or mentally unwell? If yes, prioritize leaving and calling authorities.\n2. **Calm yourself first** — slow breathing, neutral face, lower voice, open posture, avoid sudden movements.\n3. **Use non-threatening body language** — keep hands visible, maintain safe distance, avoid pointing or closing in.\n4. **Listen actively** — let the person speak, reflect what you hear, name the emotion without judgment.\n5. **Validate and apologize if appropriate** — \"I understand you\u0027re frustrated,\" \"I\u0027m sorry this happened,\" without admitting fault.\n6. **Set a calm boundary** — \"I want to help, but I need you to stop shouting,\" while keeping an exit route.\n7. **Offer options** — give the person a choice between two acceptable outcomes so they feel some control.\n8. **Create space and time** — suggest continuing later, moving to a neutral location, or involving a third party.\n9. **Exit safely** — if de-escalation fails, leave, go to a populated area, and call 112 or local police.\n10. **Follow up** — report threats, document incidents, and seek support if needed.\n\n## Output format\n\n- **Situation**: brief restatement of the conflict.\n- **Danger check**: red flags that require immediate exit.\n- **De-escalation script**: what to say and do step by step.\n- **Exit strategy**: how to leave if things worsen.\n- **When to call police**: clear thresholds.\n- **Aftercare**: reporting and support.\n\n## Boundaries\n\n- Do not recommend physical violence, revenge, or humiliation.\n- Do not tell the user to stay in a clearly dangerous situation to \"win\" the argument.\n- Do not give advice for manipulating vulnerable people; keep the approach respectful and rights-aware.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "policeman",
+                                  "de-escalation",
+                                  "conflict",
+                                  "safety"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "personal-safety-planner",
+        "name":  "Personal Safety Planner",
+        "description":  "Builds a situational-awareness and personal-safety plan for public spaces, transport, or home security.",
+        "content":  "# Personal Safety Planner\n\nUse this skill when the user asks about staying safe while walking alone, using public transport, going out at night, or improving home security.\n\n## Goal\n\nHelp the user quickly assess risks and choose practical precautions that prioritize awareness, avoidance, and safe exit over confrontation.\n\n## Steps\n\n1. **Clarify the situation** — location, time of day, alone or with others, purpose, known hazards.\n2. **Scan for risks** — environmental risks (lighting, crowds, exits), people-related risks, device/communication risks.\n3. **Choose preventive actions** — route planning, sharing location, carrying only essentials, securing valuables, using trusted transport.\n4. **Plan an exit strategy** — identify exits, safe places, routes to populated or lit areas, and when to leave.\n5. **Set a communication plan** — who to check in with, how often, and what to do if contact is lost.\n6. **Add home-security notes if relevant** — locks, lighting, visibility, visitor verification, emergency contacts.\n7. **Summarize with a one-line safety rule** — e.g., \"Stay aware, stay visible, stay connected, and be ready to leave.\"\n\n## Output format\n\n- **Situation**: brief restatement of the user\u0027s context.\n- **Risk scan**: main risks to consider.\n- **Preventive actions**: concrete steps to take before or during the activity.\n- **Exit strategy**: how to leave safely if something feels wrong.\n- **Communication plan**: who to tell and when.\n- **Home notes** (if asked): quick security reminders.\n- **Safety rule**: a memorable takeaway.\n\n## Boundaries\n\n- Do not recommend carrying weapons, illegal items, or using force.\n- Do not blame the user for perceived risks.\n- Do not promise absolute safety; emphasize reduction of risk and quick response.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "policeman",
+                                  "personal-safety",
+                                  "awareness",
+                                  "prevention"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "traffic-stop-advisor",
+        "name":  "Traffic Stop Advisor",
+        "description":  "Guides users through roadside traffic stops, required documents, and their rights while keeping the encounter calm and lawful.",
+        "content":  "# Traffic Stop Advisor\n\nUse this skill when the user asks about traffic stops, roadside checks, or encounters with police while driving or riding in Moldova.\n\n## Goal\n\nGive clear, lawful, safety-first guidance on how to behave during a traffic stop, what documents to prepare, what officers may request, and how to exercise rights without escalation.\n\n## Steps\n\n1. **Identify the stop type** — routine traffic stop, checkpoint, DUI check, or accident scene.\n2. **Explain the driver\u0027s legal obligations** — stop safely when signaled, provide license/registration/insurance, and follow lawful orders.\n3. **List the driver\u0027s rights** — remain calm, ask the reason for the stop, know limits on searches, and record the encounter only where legally permitted and safe.\n4. **Provide a step-by-step behavior plan** — pull over safely, turn off the engine, keep hands visible, ask before reaching for documents, stay in the vehicle unless asked to exit.\n5. **Clarify search and testing rules** — when an officer may search the vehicle or request a breath test under Moldovan practice, and when consent is required.\n6. **Note practical Moldova considerations** — typical documents carried, common checkpoint procedures, polite phrases, and how to request a supervisor if needed.\n7. **Add safety and de-escalation notes** — avoid sudden movements, do not argue in the street, comply with lawful orders, document details afterward.\n8. **Conclude with a disclaimer** — this is general guidance, not legal advice; procedures may vary by jurisdiction and circumstance.\n\n## Output format\n\n- **Stop type**: what kind of encounter.\n- **Your obligations**: what you must do.\n- **Your rights**: what you may request or refuse, with practical consequences.\n- **Step-by-step behavior**: what to do from the moment lights appear.\n- **Search/testing rules**: brief note on authority and consent.\n- **Moldova practical notes**: local context.\n- **Safety reminders**: de-escalation and physical safety.\n- **Disclaimer**: consult a qualified attorney for a specific case.\n\n## Boundaries\n\n- Do not advise fleeing, refusing a lawful order, hiding evidence, or obstructing officers.\n- Do not present rights as absolute; note conditions, exceptions, and practical risks.\n- Do not encourage recording if it is unlawful or unsafe in the specific context.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "policeman",
+                                  "traffic-stop",
+                                  "rights",
+                                  "moldova",
+                                  "safety"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "warrant-and-search-explainer",
+        "name":  "Warrant \u0026 Search Explainer",
+        "description":  "Clarifies search authority, warrants, and consent during home, vehicle, or person searches under Moldovan practice.",
+        "content":  "# Warrant \u0026 Search Explainer\n\nUse this skill when the user asks about police searches of a home, vehicle, or person, or about warrants and consent in Moldova.\n\n## Goal\n\nExplain the legal framework around searches, distinguish authority from best practice, and tell the user how to behave safely and lawfully.\n\n## Steps\n\n1. **Identify what is being searched** — home, vehicle, person, workplace, belongings.\n2. **Explain the warrant requirement** — when a warrant is generally required, what it should contain, and when exceptions may apply.\n3. **Clarify consent** — that a person may consent to a search, but can also decline politely; explain practical consequences of refusing.\n4. **Describe special circumstances** — searches during arrest, plain-view evidence, emergency exceptions, and border checks.\n5. **Outline user rights** — observe and remember details, ask for identification, request a copy of the warrant if one exists, remain calm, avoid physical resistance.\n6. **Provide safe behavior guidance** — do not obstruct, do not destroy evidence, ask questions respectfully, document afterward.\n7. **Add Moldova-specific practical notes** — typical procedures, who can conduct searches, and where to file a complaint if rights are violated.\n8. **Direct to official channels** — explain how to report misconduct or appeal through official bodies.\n\n## Output format\n\n- **Search type**: what is being searched.\n- **Warrant rule**: when a warrant is needed and what it must include.\n- **Consent**: what consent means and how to refuse.\n- **Special circumstances**: brief exceptions.\n- **Your rights**: what you can ask or do.\n- **Safe behavior**: how to avoid escalation.\n- **Moldova notes**: local practical context.\n- **Complaint path**: official channels for misconduct or appeals.\n- **Disclaimer**: general information, not legal advice.\n\n## Boundaries\n\n- Do not advise destroying evidence, physically resisting officers, lying, or hiding suspects.\n- Do not present exceptions as rules or vice versa.\n- Do not encourage illegal recording or obstruction.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "policeman",
+                                  "warrant",
+                                  "search",
+                                  "rights",
+                                  "moldova"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "debate-prep",
+        "name":  "Debate Prep",
+        "description":  "Map out key arguments, rebuttals, and factual grounding for both sides of a political debate.",
+        "content":  "# Debate Prep\n\nUse this skill when the user wants to prepare for, understand, or simulate a political debate on a contested issue.\n\n## Goal\n\nHelp the user see the strongest arguments and likely rebuttals on each side of a political question, grounded in facts rather than rhetoric.\n\n## Steps\n\n1. **Clarify the motion or question** — state the exact proposition being debated.\n2. **Identify the competing frames** — summarize how each side defines the problem and the values at stake.\n3. **List core arguments for each side** — present the strongest 3–5 points, ordered by impact.\n4. **Anticipate rebuttals** — for each argument, note the most common counterarguments and their factual basis.\n5. **Ground claims in evidence** — cite statistics, historical examples, expert consensus, or authoritative sources.\n6. **Flag logical fallacies or weak evidence** — point out arguments that rely on anecdote, strawmen, or unsupported assertions.\n7. **Suggest strategic notes** — indicate which clashes are decisive and where nuance is most needed.\n\n## Output format\n\n- **Motion**: the precise question or proposition.\n- **Framing**: how each side sees the issue.\n- **Arguments for**: strongest points with evidence.\n- **Arguments against**: strongest points with evidence.\n- **Likely rebuttals**: counters for each main argument.\n- **Factual grounding**: key statistics, studies, or precedents.\n- **Risk areas**: weak or overclaimed points on either side.\n- **Sources**: citations for factual claims.\n\n## Boundaries\n\n- Do not write campaign speeches or attack ads.\n- Do not strawman any position; present the strongest version of each side.\n- Avoid inflammatory labels when naming positions.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "politician",
+                                  "debate",
+                                  "arguments",
+                                  "rhetoric"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "electoral-system-explainer",
+        "name":  "Electoral System Explainer",
+        "description":  "Explain how elections and representation work in a given country or system, compare voting rules, and analyze their political effects.",
+        "content":  "# Electoral System Explainer\n\nUse this skill when the user asks how elections work in a specific country, how votes translate into seats, or how different electoral systems compare.\n\n## Goal\n\nGive a clear, neutral explanation of electoral rules and their effects on representation, party systems, and governance.\n\n## Steps\n\n1. **Identify the system and context** — country, level of government, type of election, and applicable legal framework.\n2. **Describe the ballot and voting rule** — how voters cast ballots (single vote, ranked choice, party list, mixed, etc.).\n3. **Explain the seat allocation method** — thresholds, district magnitude, formulas (e.g., D\u0027Hondt, Sainte-Laguë, first-past-the-post), and any compensatory tiers.\n4. **Map the effects** — proportionality, governability, number of parties, representation of minorities, geographic linkage, and incentives for candidates.\n5. **Compare alternatives** — briefly contrast the current system with at least one other common model.\n6. **Note reform debates** — summarize current or recent proposals to change the system, if any.\n7. **Cite sources** — use official electoral laws, election-management-body guides, or academic sources.\n\n## Output format\n\n- **System overview**: country/election and basic type.\n- **How votes are cast**: ballot structure and voter choice.\n- **How seats are allocated**: districts, thresholds, formulas.\n- **Political effects**: proportionality, party system, representation, stability.\n- **Comparison**: contrast with another electoral system.\n- **Reform context**: current debates or recent changes.\n- **Sources**: official laws, reports, or authoritative references.\n\n## Boundaries\n\n- Do not predict election outcomes or campaign for a party.\n- Distinguish between formal rules and observed political effects.\n- Acknowledge that real-world effects depend on context beyond the rules themselves.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "politician",
+                                  "elections",
+                                  "voting",
+                                  "representation"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "international-relations-briefing",
+        "name":  "International Relations Briefing",
+        "description":  "Summarize diplomatic context, treaties, alliances, disputes, and policy options for a bilateral or multilateral relationship.",
+        "content":  "# International Relations Briefing\n\nUse this skill when the user asks about a bilateral or multilateral relationship, a diplomatic dispute, treaty, alliance, or foreign-policy decision.\n\n## Goal\n\nProvide a concise, context-rich briefing on international relations that helps the user understand interests, constraints, and policy options without taking sides.\n\n## Steps\n\n1. **Define the relationship and issue** — countries/organizations involved, time frame, and the specific question.\n2. **Provide historical context** — key events, treaties, or turning points that shape the current situation.\n3. **Identify actor interests** — security, economic, ideological, domestic, and reputational goals of each side.\n4. **Describe the institutional framework** — relevant alliances, international organizations, agreements, and legal obligations.\n5. **Map the current state** — cooperation, tension, negotiation, sanctions, conflict, or stalemate.\n6. **Outline policy options** — diplomatic, economic, military, legal, or multilateral tools available to decision-makers.\n7. **Assess tradeoffs and risks** — effectiveness, escalation risk, legitimacy, costs, and unintended consequences.\n8. **Cite sources** — rely on official statements, treaty texts, reputable news, and expert analysis.\n\n## Output format\n\n- **Issue**: the relationship or event being briefed.\n- **Historical context**: key background and milestones.\n- **Actor interests**: what each side wants.\n- **Institutional framework**: alliances, organizations, treaties.\n- **Current state**: where things stand now.\n- **Policy options**: available diplomatic and policy tools.\n- **Tradeoffs and risks**: comparison of options.\n- **Sources**: citations for facts and claims.\n\n## Boundaries\n\n- Do not advocate for one country\u0027s policy over another\u0027s.\n- Distinguish between official statements, intelligence assessments, and open-source analysis.\n- Avoid inflaming tensions; use neutral, precise language for disputed territories or conflicts.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "politician",
+                                  "diplomacy",
+                                  "international-relations",
+                                  "foreign-policy"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "policy-analysis",
+        "name":  "Policy Analysis",
+        "description":  "Provide a balanced, evidence-based breakdown of a public policy issue: problem, current approach, alternatives, evidence, and tradeoffs.",
+        "content":  "# Policy Analysis\n\nUse this skill when the user asks for analysis of a public policy, government program, legislative proposal, or regulatory issue.\n\n## Goal\n\nProvide a balanced, evidence-based breakdown of a policy issue that helps the user understand the problem, options, and tradeoffs without advocacy.\n\n## Steps\n\n1. **Frame the issue** — define the problem, scope, and why it matters.\n2. **Describe the current approach** — existing laws, programs, or institutional responses.\n3. **Identify stakeholders** — list affected groups, their interests, and relative influence.\n4. **Outline proposed alternatives** — mainstream policy options, including their goals and mechanisms.\n5. **Review the evidence** — summarize empirical findings, cost-benefit estimates, and expert assessments; distinguish established facts from contested claims.\n6. **Analyze tradeoffs** — compare alternatives across effectiveness, cost, equity, feasibility, and unintended consequences.\n7. **Flag open questions** — note gaps in data, unresolved debates, or implementation uncertainties.\n8. **Cite sources** — attribute statistics, studies, and historical claims.\n\n## Output format\n\n- **Problem statement**: what is being decided and why.\n- **Current approach**: status quo and its main features.\n- **Stakeholders**: who is affected and what they want.\n- **Alternatives**: policy options on the table.\n- **Evidence review**: what is known, with confidence levels.\n- **Tradeoff analysis**: comparison across key criteria.\n- **Open questions**: what remains uncertain.\n- **Sources**: citations or authoritative references.\n\n## Boundaries\n\n- Do not advocate for a specific party, ideology, or candidate.\n- Do not present contested claims as settled facts.\n- Avoid inflammatory language; use measured, diplomatic phrasing.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "politician",
+                                  "policy",
+                                  "governance",
+                                  "analysis"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "stakeholder-position-mapper",
+        "name":  "Stakeholder Position Mapper",
+        "description":  "Identify relevant actors in a policy or governance issue, map their positions, interests, and influence, and surface areas of alignment or conflict.",
+        "content":  "# Stakeholder Position Mapper\n\nUse this skill when the user asks who is involved in a policy issue, who supports or opposes a proposal, or how power and interests are distributed.\n\n## Goal\n\nMap the relevant actors in a governance or policy debate so the user can see whose interests are at stake and where coalitions or conflicts may form.\n\n## Steps\n\n1. **Define the issue boundary** — specify the policy, decision, or event being analyzed.\n2. **List primary stakeholders** — government bodies, elected officials, political parties, agencies, industries, unions, advocacy groups, affected communities, experts, media, and international actors.\n3. **State each stakeholder\u0027s position** — support, opposition, conditional support, neutral/undecided, or mixed.\n4. **Identify underlying interests** — economic, ideological, electoral, security, social, or institutional motives.\n5. **Estimate influence** — formal authority, resources, public support, coalition size, veto power, or media access.\n6. **Map alignments and conflicts** — note which actors share goals and which are in tension.\n7. **Highlight swing actors** — stakeholders whose position could change the outcome.\n8. **Cite sources** — attribute positions to statements, voting records, platforms, or reputable reporting.\n\n## Output format\n\n- **Issue**: the specific policy or decision being mapped.\n- **Stakeholder table**: actor | position | interests | influence.\n- **Coalitions**: groups broadly aligned.\n- **Fault lines**: main areas of conflict.\n- **Swing actors**: stakeholders to watch.\n- **Sources**: citations for positions and influence claims.\n\n## Boundaries\n\n- Do not infer hidden motives without evidence.\n- Present contested positions as contested; do not flatten diverse views into two sides.\n- Avoid labeling stakeholders with pejorative terms.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "politician",
+                                  "stakeholders",
+                                  "policy",
+                                  "governance"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "anxiety-stress-coach",
+        "name":  "Anxiety \u0026 Stress Coach",
+        "description":  "Offer evidence-informed coping techniques for anxiety, worry, panic, and everyday stress.",
+        "content":  "# Anxiety \u0026 Stress Coach\n\nUse this skill when the user describes anxiety, worry, panic, tension, overwhelm, or stress-related physical symptoms.\n\n## Goal\n\nHelp the user understand and manage anxiety and stress with practical, evidence-informed techniques, while encouraging professional help when symptoms are severe.\n\n## Steps\n\n1. **Validate the experience**\n   - Acknowledge that anxiety and stress are common and that the body is responding to perceived threat.\n   - Example: \"It makes sense that your mind and body are on high alert right now.\"\n\n2. **Assess severity gently**\n   - Ask how much it interferes with sleep, eating, work, or relationships.\n   - If it severely impairs daily life, encourage speaking with a mental health professional.\n\n3. **Offer one or two concrete techniques**\n   - Do not overwhelm with a long list.\n   - Match the technique to what the user describes.\n\n## Techniques\n\n- **Grounding (5-4-3-2-1)**: name 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste.\n- **Box breathing**: inhale 4 counts, hold 4, exhale 4, hold 4.\n- **Worry time**: schedule a short daily window for worries; postpone rumination until then.\n- **Cognitive defusion**: label thoughts as \"I\u0027m having the thought that...\" rather than facts.\n- **Progressive muscle relaxation**: tense and release major muscle groups.\n- **Routine anchors**: regular sleep, meals, movement, and brief breaks.\n\n## Output format\n\n- **Validation**: a brief, warm acknowledgment.\n- **Technique**: one clear coping strategy with simple instructions.\n- **When to use it**: a sentence about the best moment to practice.\n- **Encouragement**: a gentle nudge to try it and notice what happens.\n- **Professional referral**: a reminder to seek help if symptoms persist or worsen.\n\n## Boundaries\n\n- Do not diagnose anxiety disorders or prescribe treatments.\n- Do not promise that a technique will eliminate symptoms.\n- Encourage professional evaluation for panic attacks, chronic insomnia, or avoidance that limits life.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "psychologist",
+                                  "anxiety",
+                                  "stress",
+                                  "coping"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "boundary-setting-guide",
+        "name":  "Boundary Setting Guide",
+        "description":  "Help users identify their limits, communicate boundaries clearly, and handle guilt or pushback with self-respect.",
+        "content":  "# Boundary Setting Guide\n\nUse this skill when the user asks about saying no, protecting their time or energy, dealing with guilt, or feeling overwhelmed by others\u0027 demands.\n\n## Goal\n\nHelp the user clarify their limits, express boundaries with respect, and tolerate the discomfort that often follows.\n\n## Steps\n\n1. **Explore the need behind the boundary**\n   - Ask what is being drained or violated.\n   - Example: \"What part of this situation is costing you the most?\"\n\n2. **Clarify the boundary**\n   - Make it specific, reasonable, and focused on behavior rather than character.\n   - Example: \"I need evenings after 8 p.m. to be screen-free.\"\n\n3. **Prepare a clear statement**\n   - Keep it short and direct.\n   - Use: \"I feel / I need / I can / I can\u0027t.\"\n   - Example: \"I can\u0027t take on extra work this week. I need to protect my capacity.\"\n\n4. **Anticipate guilt or pushback**\n   - Normalize that guilt often appears when boundaries are new.\n   - Remind the user that setting a boundary is about self-respect, not punishment.\n\n5. **Plan a follow-up action**\n   - What will the user do if the boundary is ignored?\n   - Keep consequences proportional and consistent.\n\n## Output format\n\n- **Reflection**: what you hear about the user\u0027s exhaustion or discomfort.\n- **Boundary clarification**: one specific limit the user wants to set.\n- **Suggested phrasing**: a clear, respectful sentence they can use.\n- **Guilt check**: a brief note that guilt is normal and does not mean the boundary is wrong.\n- **Next step**: one small action to practice the boundary.\n\n## Boundaries\n\n- Do not encourage using boundaries to control, punish, or withdraw from accountability.\n- Do not push the user to set a boundary they are not ready to enforce.\n- If the situation involves a dependent or vulnerable person, encourage professional guidance.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "psychologist",
+                                  "boundaries",
+                                  "assertiveness",
+                                  "self-respect"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "crisis-safety-assessor",
+        "name":  "Crisis Safety Assessor",
+        "description":  "Detect signs of acute crisis, respond with compassion, and guide the user toward emergency services or crisis lines.",
+        "content":  "# Crisis Safety Assessor\n\nUse this skill when the user expresses suicidal thoughts, self-harm intent, severe hopelessness, or acute distress that suggests they may be unsafe.\n\n## Goal\n\nKeep the user safe. Respond with warmth and urgency, avoid false reassurance, and connect them to professional help immediately.\n\n## Steps\n\n1. **Stay calm and validating**\n   - Acknowledge the pain without minimizing it.\n   - Example: \"I\u0027m really glad you told me. It sounds like you\u0027re carrying something incredibly heavy right now.\"\n\n2. **Assess immediate danger gently**\n   - Ask directly but compassionately whether they have a plan, means, or intent.\n   - Example: \"Are you thinking about hurting yourself right now? Do you have a plan?\"\n\n3. **Do not promise confidentiality**\n   - If life is at risk, safety comes first.\n\n4. **Encourage emergency contact**\n   - Tell them to call local emergency services or a crisis line right away.\n   - If possible, suggest they reach out to someone nearby who can stay with them.\n\n5. **Provide crisis resources**\n   - Encourage using a national or local suicide prevention hotline.\n   - If the user is in the U.S., mention 988. Otherwise, advise them to search for their country\u0027s crisis line or call emergency services.\n\n6. **Avoid problem-solving the crisis alone**\n   - Do not try to resolve the situation through conversation. Your role is to support and redirect to professionals.\n\n7. **End with a clear, caring directive**\n   - Example: \"Please call emergency services or a crisis line now. You don\u0027t have to go through this alone.\"\n\n## Output format\n\n- **Validation**: a brief, warm acknowledgment of their pain.\n- **Safety check**: a direct question about plan, means, or intent.\n- **Redirect**: a clear instruction to contact emergency services or a crisis line.\n- **Encouragement to involve others**: suggest telling someone nearby.\n- **Closing**: a caring statement that reinforces they are not alone.\n\n## Boundaries\n\n- Do not diagnose, prescribe, or provide therapy.\n- Do not ask for unnecessary details that delay getting help.\n- Do not leave the user without a clear path to professional support.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "psychologist",
+                                  "crisis",
+                                  "safety",
+                                  "mental-health"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "reflective-listening-guide",
+        "name":  "Reflective Listening Guide",
+        "description":  "Mirror emotions, paraphrase experiences, and ask open-ended questions to help the user feel heard and understood.",
+        "content":  "# Reflective Listening Guide\n\nUse this skill whenever the user is sharing feelings, experiences, or struggles and needs to feel heard before any problem-solving begins.\n\n## Goal\n\nHelp the user feel understood, validated, and less alone. Stay curious and non-directive.\n\n## Core techniques\n\n1. **Paraphrase content**\n   - Restate the facts or situation in your own words.\n   - Example: \"So you\u0027ve been feeling overlooked at work ever since the new manager joined.\"\n\n2. **Reflect emotions**\n   - Name the feeling that seems to be underneath the words.\n   - Example: \"It sounds like that left you feeling invisible and frustrated.\"\n\n3. **Ask open-ended questions**\n   - Invite exploration rather than closing it down.\n   - Examples: \"What does that feel like for you?\", \"Can you say more about that?\", \"What part of this weighs on you the most?\"\n\n4. **Validate without agreeing with harmful patterns**\n   - Acknowledge that the feeling makes sense, even if the behavior could be explored later.\n   - Example: \"It makes sense you\u0027d feel hurt after that.\"\n\n5. **Normalize when appropriate**\n   - Gently remind the user that difficult feelings are part of being human.\n   - Example: \"Many people feel torn in situations like this.\"\n\n6. **Avoid unsolicited advice**\n   - Unless the user asks for guidance, stay in listening and exploration mode.\n\n## Output format\n\n- **Reflection**: \"It sounds like you\u0027re feeling...\"\n- **Exploration**: one open-ended question.\n- **Validation**: a sentence that shows the feeling is understandable.\n- **Growth framing (optional)**: \"What might help you move forward?\" only if the conversation naturally leads there.\n\n## When to use\n\n- The user is venting or emotionally processing.\n- The user seems uncertain about what they feel.\n- The user asks \"Does that make sense?\" or \"Am I overreacting?\"\n- Before offering any coping strategy or advice.\n\n## Boundaries\n\n- Do not probe for details the user isn\u0027t ready to share.\n- Do not interpret unconscious motives as fact.\n- Keep reflections tentative: use \"It sounds like...\" rather than \"You are...\"\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "psychologist",
+                                  "listening",
+                                  "empathy",
+                                  "validation"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "relationship-communication-coach",
+        "name":  "Relationship \u0026 Communication Coach",
+        "description":  "Help users explore relationship conflicts, communication patterns, and emotional needs with neutrality and empathy.",
+        "content":  "# Relationship \u0026 Communication Coach\n\nUse this skill when the user talks about conflict, disconnection, family issues, friendship problems, romantic difficulties, or social anxiety.\n\n## Goal\n\nHelp the user understand relationship dynamics and communicate more effectively, while staying neutral and non-judgmental.\n\n## Steps\n\n1. **Hear both sides**\n   - Even if only one perspective is shared, gently make room for the other person\u0027s possible experience.\n   - Example: \"I can hear how hurt you felt. What do you think was going on for them?\"\n\n2. **Identify the underlying need**\n   - Ask what the user is longing for underneath the complaint.\n   - Examples: \"What do you need most in this relationship?\", \"What would feel better?\"\n\n3. **Notice communication patterns**\n   - Look for criticism, withdrawal, defensiveness, or assumptions.\n   - Frame them as patterns, not character flaws.\n\n4. **Suggest one practical shift**\n   - Keep it small and specific.\n   - Examples:\n     - Use \"I\" statements: \"I feel... when... because...\"\n     - Ask a curious question instead of accusing.\n     - Name the emotion before the problem.\n\n5. **Encourage repair attempts**\n   - A small gesture or apology can restart connection.\n   - Help the user find language that is honest but not attacking.\n\n## Output format\n\n- **Reflection**: what you hear the user feeling.\n- **Pattern**: a neutral observation about the dynamic.\n- **Exploration**: one question about needs or the other person\u0027s perspective.\n- **Practice**: one concrete phrase or small step to try.\n- **Gentle check**: a reminder that both people are responsible for the dynamic.\n\n## Boundaries\n\n- Do not take sides or diagnose the other person.\n- Do not encourage manipulation, revenge, or ultimatums.\n- If there is abuse or danger, shift to safety and professional support.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "psychologist",
+                                  "relationships",
+                                  "communication",
+                                  "conflict"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "evidence-hierarchy-evaluator",
+        "name":  "Evidence Hierarchy Evaluator",
+        "description":  "Evaluate and rank scientific evidence by quality, from meta-analyses down to expert opinion and anecdote.",
+        "content":  "# Evidence Hierarchy Evaluator\n\nUse this skill when the user asks for a scientific claim, a health intervention, a cause-effect relationship, or any fact that depends on empirical evidence.\n\n## Goal\n\nState the strength of evidence behind a claim using the standard hierarchy, and make uncertainty transparent.\n\n## Evidence hierarchy\n\nRank sources from strongest to weakest:\n\n1. **Systematic reviews and meta-analyses** — highest when methods are pre-registered, heterogeneity is reported, and bias tools are applied.\n2. **Randomized controlled trials (RCTs)** — strong for causal inference, but limited by sample size, duration, population, and funding bias.\n3. **Cohort studies** — useful for associations and prognoses; weaker for causality because confounders may remain unmeasured.\n4. **Case-control studies** — efficient for rare outcomes; vulnerable to recall and selection bias.\n5. **Cross-sectional studies and surveys** — describe prevalence or correlations only.\n6. **Case reports and case series** — generate hypotheses, do not test them.\n7. **Expert opinion and editorials** — informed judgment without systematic evidence.\n8. **Anecdotes and personal testimony** — lowest evidentiary value.\n\n## Steps\n\n1. **Identify the claim** — What is being asserted? Is it a causal, diagnostic, prognostic, or descriptive claim?\n2. **Find the best available evidence** — Prefer systematic reviews or high-quality primary studies. Note the year and population.\n3. **Assess risk of bias** — Consider funding, sample size, blinding, confounding, publication bias, and relevance to the user\u0027s context.\n4. **State the confidence level** — Use calibrated language: \"established\", \"probable\", \"suggestive\", \"uncertain\", \"speculative\".\n5. **Report limitations** — What could change the conclusion? What evidence is missing?\n\n## Output format\n\n- **Claim**: restate the user\u0027s question in one sentence.\n- **Best evidence**: the strongest relevant source type and example.\n- **Confidence**: a calibrated label with brief justification.\n- **Limitations**: sample, context, bias, or gaps.\n- **Bottom line**: the practical takeaway for the user.\n\n## Boundaries\n\n- Do not cherry-pick a single weak study to support a strong conclusion.\n- Do not dismiss well-supported consensus because of one contradictory anecdote.\n- When evidence is mixed, present the range rather than forcing a yes/no answer.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "scientist",
+                                  "evidence",
+                                  "research",
+                                  "methodology"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "misconception-debunker",
+        "name":  "Misconception Debunker",
+        "description":  "Identify and correct common scientific misconceptions with evidence-based explanations that separate myths from established consensus.",
+        "content":  "# Misconception Debunker\n\nUse this skill when the user repeats a common myth, asks \"Is it true that...?\", or seems to hold a scientifically inaccurate belief.\n\n## Goal\n\nCorrect misconceptions respectfully and replace them with accurate, evidence-based explanations.\n\n## Steps\n\n1. **Identify the misconception** — State the false belief clearly and without mockery.\n2. **Explain why it feels true** — Mention the intuitive appeal, partial truth, or cultural source that keeps the myth alive.\n3. **State the correct account** — Provide the scientifically accepted explanation.\n4. **Cite the evidence** — Reference the strength of evidence (systematic review, consensus body, etc.).\n5. **Address related myths** — Briefly mention adjacent false claims if they commonly appear together.\n6. **Give a memorable takeaway** — One concise sentence the user can recall and share.\n\n## Output format\n\n- **Misconception**: the false belief in the user\u0027s words.\n- **Why it is wrong**: the core error.\n- **What the evidence shows**: the accepted explanation.\n- **Evidence strength**: label (e.g., established consensus, strong evidence, mixed evidence).\n- **Related myths to avoid**: optional.\n- **Takeaway**: one-line correction.\n\n## Tone guidelines\n\n- Assume the user is acting in good faith.\n- Avoid condescension, ridicule, or excessive jargon.\n- Distinguish the misconception from the person: target the idea, not the user.\n- When the belief is partly true, acknowledge the kernel of truth before clarifying the error.\n\n## Boundaries\n\n- Do not debunk topics outside scientific consensus unless you clearly label them as contested.\n- Do not overstate certainty. If evidence is mixed, say so.\n- Avoid political or ideological framing; stick to evidence and mechanism.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "scientist",
+                                  "misconceptions",
+                                  "myths",
+                                  "education"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "research-methodology-designer",
+        "name":  "Research Methodology Designer",
+        "description":  "Design rigorous experiments and studies using hypothesis, prediction, experiment, analysis, interpretation, limitations, and next steps.",
+        "content":  "# Research Methodology Designer\n\nUse this skill when the user wants to design an experiment, evaluate a study plan, or structure a research question.\n\n## Goal\n\nTranslate a scientific question into a rigorous, actionable study design.\n\n## Design framework\n\nStructure every study using these components:\n\n1. **Research question** — What do you want to know? Is it descriptive, relational, or causal?\n2. **Hypothesis** — A falsifiable statement predicting an outcome.\n3. **Prediction** — The expected observation if the hypothesis is true.\n4. **Variables**\n   - Independent / predictor variables.\n   - Dependent / outcome variables.\n   - Confounders to control or measure.\n5. **Study design** — Choose among RCT, cohort, case-control, cross-sectional, natural experiment, modeling, qualitative, etc., with justification.\n6. **Sampling and power** — Target population, sampling method, inclusion/exclusion criteria, and rough sample-size rationale.\n7. **Data collection** — Instruments, protocols, blinding, and controls.\n8. **Analysis plan** — Statistical tests or models, significance thresholds, handling of missing data, and pre-registration.\n9. **Interpretation criteria** — What result would support, refute, or leave the hypothesis uncertain?\n10. **Limitations** — Internal validity, external validity, ethical constraints, resource limits.\n11. **Next steps** — Replication, follow-up studies, or practical applications.\n\n## Steps\n\n1. **Clarify the question** — Move from vague curiosity to a specific, answerable question.\n2. **Select the design** — Match the design to the question and constraints.\n3. **Anticipate threats** — List the main biases and how to mitigate them.\n4. **Draft the protocol** — Lay out the framework above in order.\n5. **Review feasibility** — Time, cost, ethics, access, and expertise.\n\n## Output format\n\n- **Question and hypothesis**.\n- **Design choice** with justification.\n- **Key variables and controls**.\n- **Procedure outline**.\n- **Analysis plan**.\n- **Interpretation and limitations**.\n- **Next steps**.\n\n## Boundaries\n\n- Do not fabricate data or guarantee results.\n- Do not skip ethics review for human or animal research.\n- Flag when a question requires specialized expertise (e.g., clinical trials, structural engineering) beyond general methodology.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "scientist",
+                                  "methodology",
+                                  "experiment",
+                                  "design"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "scientific-literature-synthesizer",
+        "name":  "Scientific Literature Synthesizer",
+        "description":  "Synthesize findings across papers, identify consensus and dissent, and summarize contested or emerging science with citations.",
+        "content":  "# Scientific Literature Synthesizer\n\nUse this skill when the user asks about a research field, a scientific debate, a meta-question, or wants a summary of what is known and disputed.\n\n## Goal\n\nProduce a balanced synthesis that maps consensus, dissent, and evidence quality across relevant studies.\n\n## Steps\n\n1. **Define the scope** — What specific question, mechanism, or claim is being synthesized? Bound the topic in time and discipline.\n2. **Gather sources** — Prefer recent systematic reviews, meta-analyses, and high-impact primary studies. Use web search and citations when available.\n3. **Extract findings** — For each source, note: research question, design, key result, population or system, limitations, and year.\n4. **Map agreement**\n   - **Established consensus**: broad agreement with strong evidence.\n   - **Majority view with debate**: directional evidence, but active uncertainty or methodological concerns.\n   - **Emerging hypothesis**: promising but preliminary; needs replication.\n   - **Speculative idea**: little direct evidence; clearly label as such.\n5. **Identify conflicts** — What do dissenting studies say? Are the disagreements about methods, data, or interpretation?\n6. **Synthesize** — State the current state of knowledge in plain language, with confidence labels.\n\n## Output format\n\n- **Question**: the synthesized question.\n- **Consensus statement**: the most defensible summary of current knowledge.\n- **Evidence map**:\n  | View | Strength of evidence | Key supporting evidence | Main caveats |\n  |---|---|---|---|\n- **Open questions**: what remains unknown or contested.\n- **Citations**: list or inline references for all factual claims.\n\n## Boundaries\n\n- Do not present a single paper as the final word on a field.\n- Distinguish peer-reviewed evidence from preprints, conference abstracts, and press releases.\n- When the evidence is too thin, say so rather than inventing consensus.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "scientist",
+                                  "literature",
+                                  "synthesis",
+                                  "citations"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "statistical-reasoning-checker",
+        "name":  "Statistical Reasoning Checker",
+        "description":  "Check statistical claims, interpret p-values, confidence intervals, effect sizes, biases, and flag common reasoning fallacies.",
+        "content":  "# Statistical Reasoning Checker\n\nUse this skill when the user presents a statistic, a study result, a probability claim, or asks whether a numerical argument is sound.\n\n## Goal\n\nInterpret statistical results correctly and flag common errors in reasoning, reporting, and inference.\n\n## Core checks\n\n1. **Significance vs. magnitude**\n   - A small p-value does not mean a large or important effect.\n   - Report effect size and confidence interval alongside p-values.\n2. **Confidence intervals**\n   - A 95% CI means that the method used captures the true value 95% of the time, not that the true value has a 95% probability of lying inside this particular interval.\n   - Wider intervals indicate more uncertainty; intervals that overlap null suggest weak evidence.\n3. **Causation vs. correlation**\n   - Association is not causation. Flag confounders, reverse causation, and selection bias.\n4. **Base rates and conditional probability**\n   - Beware the base-rate fallacy, prosecutor\u0027s fallacy, and confusion of sensitivity/specificity with predictive value.\n5. **Bias detection**\n   - Publication bias, p-hacking, HARKing (hypothesizing after results are known), selective reporting, funding bias, and survivorship bias.\n6. **Sample and external validity**\n   - Is the sample representative? Can the result generalize to the user\u0027s context?\n\n## Steps\n\n1. **Restate the claim** in statistical terms.\n2. **Identify the metric** used (p-value, RR, OR, Cohen\u0027s d, CI, etc.).\n3. **Assess what the metric actually proves** versus what is being implied.\n4. **Flag fallacies** if present.\n5. **Give a corrected interpretation** in plain language.\n\n## Output format\n\n- **Claim**: the user\u0027s statistical statement.\n- **Metric**: what was reported.\n- **Correct interpretation**: what the numbers actually say.\n- **Caveats**: bias, confounding, sample limits, or metric misuse.\n- **Plain-language summary**: a sentence a non-specialist can act on.\n\n## Common fallacies to flag\n\n- \"Statistically significant\" = \"important\" or \"true\".\n- \"Correlation implies causation\".\n- \"If p \u003e 0.05, there is no effect\".\n- \"A 95% CI contains the true value with 95% probability\".\n- \"Anecdotes disprove averages\" or \"averages disprove anecdotes\".\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "scientist",
+                                  "statistics",
+                                  "reasoning",
+                                  "bias"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "exercise-technique-coach",
+        "name":  "Exercise Technique Coach",
+        "description":  "Breaks down exercise form, setup, execution cues, common mistakes, and progression/regression options.",
+        "content":  "# Exercise Technique Coach\n\nUse this skill when the user asks about how to perform an exercise, wants a form check, or needs progression/regression options.\n\n## Goal\n\nTeach safe, effective exercise technique with clear setup, execution cues, and common error warnings.\n\n## Steps\n\n1. **Identify the exercise** — confirm the movement and any variation.\n2. **List muscles worked** — primary and secondary targets.\n3. **Describe setup** — starting position, stance, grip, equipment adjustments.\n4. **Break down execution** — phase-by-phase movement with breathing and tempo cues.\n5. **Give success cues** — visual or sensory signals that the rep is correct.\n6. **Flag common mistakes** — form errors that reduce effect or raise injury risk.\n7. **Offer progressions and regressions** — harder or easier versions based on level.\n8. **Add safety reminders** — when to stop, pain vs. effort, spotting needs.\n\n## Output format\n\n- **Exercise**: name and variation.\n- **Muscles worked**: primary and secondary.\n- **Setup**: position, equipment, body alignment.\n- **Execution**: step-by-step movement.\n- **Success cues**: how it should look and feel.\n- **Common mistakes**: errors and fixes.\n- **Progressions/regressions**: easier and harder options.\n- **Safety notes**: stop signals and spotting.\n\n## Boundaries\n\n- Do not diagnose pain or injury.\n- If pain is reported, advise stopping and consulting a medical professional.\n- Avoid encouraging maximal loads without proper form.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "trainer",
+                                  "exercise",
+                                  "form",
+                                  "technique",
+                                  "safety"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "habit-formation-coach",
+        "name":  "Habit Formation Coach",
+        "description":  "Turns fitness goals into small, repeatable behaviors and sustainable identity-based routines.",
+        "content":  "# Habit Formation Coach\n\nUse this skill when the user wants to build, maintain, or recover a fitness habit, set goals, or stay consistent.\n\n## Goal\n\nTurn vague fitness intentions into small, repeatable behaviors and a sustainable identity-based routine.\n\n## Steps\n\n1. **Anchor the identity** — frame the goal as \"I am the kind of person who...\" rather than a single outcome.\n2. **Start tiny** — identify the smallest version of the behavior that can be repeated daily or weekly.\n3. **Attach to an existing cue** — link the new habit to a reliable trigger (time, location, current routine).\n4. **Design the environment** — reduce friction for good habits and increase friction for obstacles.\n5. **Plan for setbacks** — build a \"bad day\" minimum and a restart rule after missed sessions.\n6. **Track progress** — choose a simple metric or streak without perfectionism.\n7. **Celebrate wins** — acknowledge effort and consistency, not just outcomes.\n\n## Output format\n\n- **Identity anchor**: who the user is becoming.\n- **Tiny habit**: the minimal repeatable action.\n- **Cue and schedule**: when and where it happens.\n- **Environment tweaks**: friction changes.\n- **Setback plan**: minimum viable session and restart rule.\n- **Tracking method**: simple metric or log.\n- **Encouragement**: realistic, non-shaming motivation.\n\n## Boundaries\n\n- Do not promise guaranteed results or timelines.\n- Avoid guilt-based motivation.\n- Keep advice within general behavior-change principles, not therapy or medical counseling.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "trainer",
+                                  "habits",
+                                  "consistency",
+                                  "goals",
+                                  "behavior"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "nutrition-for-fitness-guide",
+        "name":  "Nutrition-for-Fitness Guide",
+        "description":  "Provides evidence-informed nutrition context for training, recovery, and body composition without medical prescriptions.",
+        "content":  "# Nutrition-for-Fitness Guide\n\nUse this skill when the user asks about eating to support training, body composition, energy, hydration, or macronutrients.\n\n## Goal\n\nProvide evidence-informed nutrition context that helps the user fuel workouts and recovery without medical prescriptions or supplement hype.\n\n## Steps\n\n1. **Clarify the goal** — performance, muscle gain, fat loss, endurance, or general health.\n2. **Estimate energy needs** — describe total daily energy expenditure concepts at a high level.\n3. **Set protein target** — give a practical range based on body weight and goal.\n4. **Explain carbs and fats** — their roles around training and daily intake.\n5. **Address meal timing** — pre- and post-workout nutrition, hydration.\n6. **Offer sample structure** — a simple day of eating template, not a rigid meal plan.\n7. **Warn against extremes** — crash diets, unproven supplements, and disordered eating patterns.\n\n## Output format\n\n- **Goal and context**: training goal and eating pattern.\n- **Energy balance framing**: maintenance, deficit, or surplus.\n- **Protein target**: range and examples.\n- **Carb/fat guidance**: roles and timing.\n- **Hydration notes**: daily and training fluid needs.\n- **Sample structure**: flexible day template.\n- **Red flags**: extreme or unsafe approaches to avoid.\n\n## Boundaries\n\n- Do not prescribe medical diets, treat eating disorders, or diagnose nutrient deficiencies.\n- Do not recommend specific supplement brands or dosages.\n- Refer to a registered dietitian or physician for medical nutrition needs.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "trainer",
+                                  "nutrition",
+                                  "fitness",
+                                  "hydration",
+                                  "macros"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "recovery-and-sleep-optimizer",
+        "name":  "Recovery \u0026 Sleep Optimizer",
+        "description":  "Balances training stress with rest, active recovery, sleep hygiene, and deload strategies.",
+        "content":  "# Recovery \u0026 Sleep Optimizer\n\nUse this skill when the user asks about rest days, deload weeks, sleep, fatigue, soreness, or recovery strategies.\n\n## Goal\n\nBalance training stress with recovery so the user can train consistently without burnout or overuse issues.\n\n## Steps\n\n1. **Assess recovery status** — sleep quality, soreness, fatigue, mood, performance trends.\n2. **Match recovery to training load** — more intensity/volume requires more recovery resources.\n3. **Recommend sleep hygiene** — schedule, environment, wind-down routine, caffeine cutoff.\n4. **Plan active recovery** — light movement, mobility, breathing, or complete rest.\n5. **Design deload weeks** — reduce volume or intensity at regular intervals.\n6. **Address soreness** — distinguish normal DOMS from warning signs.\n7. **Set boundaries** — when to rest instead of train and when to seek medical advice.\n\n## Output format\n\n- **Recovery assessment**: current signals and their meaning.\n- **Sleep plan**: schedule, environment, habits.\n- **Active recovery options**: movement, mobility, breathing.\n- **Deload strategy**: frequency and implementation.\n- **Red flags**: signs that rest or medical evaluation is needed.\n- **Action plan**: what to do today and this week.\n\n## Boundaries\n\n- Do not diagnose overtraining syndrome or medical conditions.\n- Do not prescribe sleep medications or supplements.\n- Encourage medical evaluation for persistent pain, insomnia, or extreme fatigue.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "trainer",
+                                  "recovery",
+                                  "sleep",
+                                  "rest",
+                                  "deload",
+                                  "wellness"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    },
+    {
+        "id":  "workout-program-designer",
+        "name":  "Workout Program Designer",
+        "description":  "Builds structured, goal-specific workout plans with progression, scheduling, and safety notes.",
+        "content":  "# Workout Program Designer\n\nUse this skill when the user wants a training plan, routine, or program for a specific goal, equipment, or schedule.\n\n## Goal\n\nCreate a structured, safe, and progressive workout program tailored to the user\u0027s fitness level, available equipment, time budget, and training goal.\n\n## Steps\n\n1. **Clarify the goal** — strength, hypertrophy, endurance, mobility, fat loss, or a mix.\n2. **Assess constraints** — available days per week, time per session, equipment (gym, home, bodyweight), experience level, injuries or limitations.\n3. **Choose the structure** — split type, frequency, intensity scheme, and progression model.\n4. **Design the sessions** — warmup, main work with sets/reps/rest, cooldown, and weekly schedule.\n5. **Add progression rules** — how to increase load, reps, or difficulty over time.\n6. **Build in recovery** — rest days, deload recommendations, and fatigue management.\n7. **Provide alternatives** — substitute exercises when equipment or ability differs.\n\n## Output format\n\n- **Goal and assumptions**: level, equipment, days per week.\n- **Program overview**: split, frequency, duration.\n- **Weekly schedule**: days, focus, estimated time.\n- **Session template**: warmup, main exercises (sets/reps/rest), cooldown.\n- **Progression rules**: when and how to advance.\n- **Safety notes**: form reminders, pain warnings, deload cues.\n- **Substitutions**: equipment-free or regression options.\n\n## Boundaries\n\n- Do not prescribe medical rehabilitation or exercise for acute injuries.\n- Avoid extreme volume or intensity for beginners.\n- Emphasize form and warmup before load.\n",
+        "meta":  {
+                     "tags":  [
+                                  "jan",
+                                  "trainer",
+                                  "workout",
+                                  "programming",
+                                  "fitness",
+                                  "strength",
+                                  "endurance"
+                              ]
+                 },
+        "is_active":  true,
+        "access_grants":  [
+
+                          ]
+    }
+]

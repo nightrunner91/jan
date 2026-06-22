@@ -493,6 +493,13 @@ jan/
   docs/
     architecture.md         # Design decisions and philosophy
     portability-guide.md    # Platform export instructions
+  exports/                  # Ready-to-import OpenWebUI bundles
+    openwebui-skills-en.json
+    openwebui-skills-ru.json
+    openwebui-models-en.json
+    openwebui-models-ru.json
+  scripts/                  # Build/maintenance scripts
+    export-openwebui.ps1    # Pack skills and models into exports/
   shared/                   # Shared global assets
     avatar.fig              # Figma source for avatars
   templates/                # Portability templates
@@ -508,17 +515,30 @@ jan/
 
 ### Import into OpenWebUI
 
+The fastest way to import everything is to use the packed export files in `exports/`.
+
 1. Open your OpenWebUI instance.
 2. Navigate to **Workspace > Skills**.
 3. Click the import button (upload icon).
-4. Upload the required skill set for the selected model.
+4. Select `exports/openwebui-skills-en.json` (English UI) or `exports/openwebui-skills-ru.json` (Russian UI). This imports all 58 skills at once.
 5. Navigate to **Workspace > Models**.
 6. Click the import button (upload icon).
-7. Select any `agents/jan-{alter}/openwebui.json` (English UI) or `openwebui.ru.json` (Russian UI) file.
-8. The model appears in your model list with all capabilities, tools, and skills pre-configured.
+7. Select `exports/openwebui-models-en.json` (English UI) or `exports/openwebui-models-ru.json` (Russian UI). This imports all 11 alters at once.
+8. The alters appear in your model list with all capabilities, tools, and skills pre-configured.
+
+> [!NOTE]
+> Import skills **before** models. Each alter references its skills by ID, so the skills must exist in OpenWebUI first for the bindings to work.
 
 > [!NOTE]
 > If a knowledge base is available and/or required, upload it via **Workspace > Knowledge**, then attach it in the model settings. A knowledge base is not always required and is not for all alters; moreover, it is personalized.
+
+You can still import individual alters from `agents/jan-{alter}/openwebui.json` (English UI) or `openwebui.ru.json` (Russian UI) if you only want a subset.
+
+To regenerate the packed export files after editing skills or models, run:
+
+```powershell
+.\scripts\export-openwebui.ps1
+```
 
 ### Use a Model
 
