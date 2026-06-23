@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/logo.png" alt="Jan" width="609">
+  <img src="assets/logo-en.png" alt="Jan" width="609">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-1.1.0-blue?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/Version-1.2.0-blue?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/Models-11-green?style=for-the-badge" alt="Models">
   <img src="https://img.shields.io/badge/License-ISC-purple?style=for-the-badge" alt="License">
   <img src="https://img.shields.io/badge/Platform-OpenWebUI-orange?style=for-the-badge" alt="Platform">
@@ -50,7 +50,7 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | <img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="24"> | [Jan: Assistant](#jan-assistant) | Personal Assistant | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-constructor/avatar.png" alt="Jan: Constructor" width="24"> | [Jan: Constructor](#jan-constructor) | Construction Engineer | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="24"> | [Jan: Cook](#jan-cook) | Chef / Cook | `deepseek/deepseek-v4-flash` |
-| <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="24"> | [Jan: Developer](#jan-developer) | Software Developer | `qwen/qwen3.6-plus` |
+| <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="24"> | [Jan: Developer](#jan-developer) | Senior Frontend Developer / IT Conversation Partner | `deepseek/deepseek-v4-pro` |
 | <img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="24"> | [Jan: Doctor](#jan-doctor) | Medical Consultant | `google/gemma-4-26b-a4b-it` |
 | <img src="agents/jan-lawyer/avatar.png" alt="Jan: Lawyer" width="24"> | [Jan: Lawyer](#jan-lawyer) | Legal Information Specialist | `deepseek/deepseek-v4-pro` |
 | <img src="agents/jan-policeman/avatar.png" alt="Jan: Policeman" width="24"> | [Jan: Policeman](#jan-policeman) | Public Safety Advisor | `deepseek/deepseek-v4-pro` |
@@ -182,10 +182,10 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 | Parameter | Value |
 |-----------|-------|
-| Role | Software Developer |
-| Tone | Technical, precise, pragmatic |
-| Base model | `qwen/qwen3.6-plus` |
-| Scenarios | Programming in any language, code review, debugging, system design, algorithm selection, refactoring, testing strategies, CI/CD concepts, version control. |
+| Role | Senior Frontend Developer / IT Conversation Partner |
+| Tone | Conversational, opinionated but open-minded, peer-like |
+| Base model | `deepseek/deepseek-v4-pro` |
+| Scenarios | IT industry trends, technology adoption decisions, architecture debates, engineering culture, team dynamics, tech stack evaluation, technical debt strategy, and the business side of software. |
 
 [View system prompt ➦](agents/jan-developer/system.md)
 
@@ -193,12 +193,12 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 
 | Skill | Description |
 |-------|-------------|
-| [Code Reviewer](agents/jan-developer/skills/code-reviewer/skill.en.md) | Systematic code review for correctness, readability, maintainability, performance, security, and test coverage. |
-| [Debugger](agents/jan-developer/skills/debugger/skill.en.md) | Structured root-cause analysis and fix verification for bugs, errors, and unexpected behavior. |
-| [System Designer](agents/jan-developer/skills/system-designer/skill.en.md) | Pragmatic architecture and API design with tradeoffs, data flow, and scalability considerations. |
-| [Security Vulnerability Scanner](agents/jan-developer/skills/security-vulnerability-scanner/skill.en.md) | Identify security flaws, anti-patterns, unsafe defaults, and deployment risks in code and architecture. |
-| [Refactoring Planner](agents/jan-developer/skills/refactoring-planner/skill.en.md) | Plan and execute safe, test-backed refactoring to improve code quality while preserving behavior. |
 | [Technical Dispute Resolver](agents/jan-developer/skills/technical-dispute-resolver/skill.en.md) | Impartial evaluation of conflicting technical opinions and decisions based on evidence, tradeoffs, and a recommended path forward. |
+| [System Designer](agents/jan-developer/skills/system-designer/skill.en.md) | Pragmatic architecture and API design with tradeoffs, data flow, and scalability considerations. |
+| [Tech Trend Analyst](agents/jan-developer/skills/tech-trend-analyst/skill.en.md) | Evaluate emerging technologies, hype cycles, and adoption timing with evidence and real-world perspective. |
+| [Engineering Culture Advisor](agents/jan-developer/skills/eng-culture-advisor/skill.en.md) | Advice on team dynamics, hiring, remote work, code review culture, on-call practices, and building healthy engineering organizations. |
+| [Tech Stack Evaluator](agents/jan-developer/skills/tech-stack-evaluator/skill.en.md) | Compare frameworks, libraries, and tools with real tradeoffs — performance, DX, ecosystem health, migration cost, and team fit. |
+| [Tech Debt Strategist](agents/jan-developer/skills/tech-debt-strategist/skill.en.md) | Reframe technical debt as a business problem — prioritize what to fix, plan legacy migrations, and make the case to management. |
 
 **Knowledge base:**
 
@@ -493,6 +493,13 @@ jan/
   docs/
     architecture.md         # Design decisions and philosophy
     portability-guide.md    # Platform export instructions
+  exports/                  # Ready-to-import OpenWebUI bundles
+    openwebui-skills-en.json
+    openwebui-skills-ru.json
+    openwebui-models-en.json
+    openwebui-models-ru.json
+  scripts/                  # Build/maintenance scripts
+    export-openwebui.ps1    # Pack skills and models into exports/
   shared/                   # Shared global assets
     avatar.fig              # Figma source for avatars
   templates/                # Portability templates
@@ -508,17 +515,30 @@ jan/
 
 ### Import into OpenWebUI
 
+The fastest way to import everything is to use the packed export files in `exports/`.
+
 1. Open your OpenWebUI instance.
 2. Navigate to **Workspace > Skills**.
 3. Click the import button (upload icon).
-4. Upload the required skill set for the selected model.
+4. Select `exports/openwebui-skills-en.json` (English UI) or `exports/openwebui-skills-ru.json` (Russian UI). This imports all 58 skills at once.
 5. Navigate to **Workspace > Models**.
 6. Click the import button (upload icon).
-7. Select any `agents/jan-{alter}/openwebui.json` (English UI) or `openwebui.ru.json` (Russian UI) file.
-8. The model appears in your model list with all capabilities, tools, and skills pre-configured.
+7. Select `exports/openwebui-models-en.json` (English UI) or `exports/openwebui-models-ru.json` (Russian UI). This imports all 11 alters at once.
+8. The alters appear in your model list with all capabilities, tools, and skills pre-configured.
+
+> [!NOTE]
+> Import skills **before** models. Each alter references its skills by ID, so the skills must exist in OpenWebUI first for the bindings to work.
 
 > [!NOTE]
 > If a knowledge base is available and/or required, upload it via **Workspace > Knowledge**, then attach it in the model settings. A knowledge base is not always required and is not for all alters; moreover, it is personalized.
+
+You can still import individual alters from `agents/jan-{alter}/openwebui.json` (English UI) or `openwebui.ru.json` (Russian UI) if you only want a subset.
+
+To regenerate the packed export files after editing skills or models, run:
+
+```powershell
+.\scripts\export-openwebui.ps1
+```
 
 ### Use a Model
 
@@ -562,7 +582,7 @@ Most alters include optional knowledge-base templates you can fill out and attac
   Store your dietary restrictions, preferred cuisines, kitchen equipment, and cooking skill level. Attach it as Full Context knowledge for personalized recipe recommendations.
 
 - **Jan: Developer** — `developer-profile.template-en.md` / `developer-profile.template-ru.md`  
-  Store your tech stack, conventions, current projects, code-review preferences, and communication style. Attach it as Full Context knowledge so the alter respects your environment.
+  Store your tech stack, team context, current projects, engineering culture, and communication style. Attach it as Full Context knowledge so the alter respects your environment and tailors opinions to your situation.
 
 - **Jan: Doctor** — `medical-profile.template-en.md` / `medical-profile.template-ru.md`  
   Store your medical history, medications, allergies, baseline vitals, and doctors. Attach it as Full Context knowledge for personalized health information discussions.

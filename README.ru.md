@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/logo.png" alt="Jan" width="609">
+  <img src="assets/logo-ru.png" alt="Jan" width="609">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Версия-1.1.0-blue?style=for-the-badge" alt="Версия">
+  <img src="https://img.shields.io/badge/Версия-1.2.0-blue?style=for-the-badge" alt="Версия">
   <img src="https://img.shields.io/badge/Модели-11-green?style=for-the-badge" alt="Модели">
   <img src="https://img.shields.io/badge/Лицензия-ISC-purple?style=for-the-badge" alt="Лицензия">
   <img src="https://img.shields.io/badge/Платформа-OpenWebUI-orange?style=for-the-badge" alt="Платформа">
@@ -50,7 +50,7 @@
 | <img src="agents/jan-assistant/avatar.png" alt="Ян: Ассистент" width="24"> | [Ян: Ассистент](#jan-assistant) | Персональный помощник | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-constructor/avatar.png" alt="Ян: Конструктор" width="24"> | [Ян: Конструктор](#jan-constructor) | Инженер-строитель | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-cook/avatar.png" alt="Ян: Повар" width="24"> | [Ян: Повар](#jan-cook) | Шеф-повар / Кулинар | `deepseek/deepseek-v4-flash` |
-| <img src="agents/jan-developer/avatar.png" alt="Ян: Разработчик" width="24"> | [Ян: Разработчик](#jan-developer) | Разработчик ПО | `qwen/qwen3.6-plus` |
+| <img src="agents/jan-developer/avatar.png" alt="Ян: Разработчик" width="24"> | [Ян: Разработчик](#jan-developer) | Старший фронтенд-разработчик / собеседник по IT | `deepseek/deepseek-v4-pro` |
 | <img src="agents/jan-doctor/avatar.png" alt="Ян: Доктор" width="24"> | [Ян: Доктор](#jan-doctor) | Медицинский консультант | `google/gemma-4-26b-a4b-it` |
 | <img src="agents/jan-lawyer/avatar.png" alt="Ян: Юрист" width="24"> | [Ян: Юрист](#jan-lawyer) | Специалист по правовой информации | `deepseek/deepseek-v4-pro` |
 | <img src="agents/jan-policeman/avatar.png" alt="Ян: Полицейский" width="24"> | [Ян: Полицейский](#jan-policeman) | Советник по общественной безопасности | `deepseek/deepseek-v4-pro` |
@@ -94,7 +94,7 @@
 
 | Файл | Назначение |
 |------|------------|
-| [personal-context-profile.template-en.md](agents/jan-assistant/knowledge/personal-context-profile.template-en.md) | Шаблон профиля личного контекста (заполни и прикрепи как базу знаний OpenWebUI). |
+| [personal-context-profile.template-en.md](agents/jan-assistant/knowledge/personal-context-profile.template-en.md) | Шаблон профиля личного контекста (заполни и Прикрепите как базу знаний OpenWebUI). |
 | [personal-context-profile.template-ru.md](agents/jan-assistant/knowledge/personal-context-profile.template-ru.md) | Русская версия шаблона профиля личного контекста. |
 
 </details>
@@ -131,7 +131,7 @@
 
 | Файл | Назначение |
 |------|------------|
-| [construction-project-profile.template-en.md](agents/jan-constructor/knowledge/construction-project-profile.template-en.md) | Шаблон профиля строительного проекта (заполни и прикрепи как базу знаний OpenWebUI). |
+| [construction-project-profile.template-en.md](agents/jan-constructor/knowledge/construction-project-profile.template-en.md) | Шаблон профиля строительного проекта (заполни и Прикрепите как базу знаний OpenWebUI). |
 | [construction-project-profile.template-ru.md](agents/jan-constructor/knowledge/construction-project-profile.template-ru.md) | Русская версия шаблона профиля строительного проекта. |
 
 </details>
@@ -167,7 +167,7 @@
 
 | Файл | Назначение |
 |------|------------|
-| [kitchen-profile.template-en.md](agents/jan-cook/knowledge/kitchen-profile.template-en.md) | Шаблон профиля кухни (заполни и прикрепи как базу знаний OpenWebUI). |
+| [kitchen-profile.template-en.md](agents/jan-cook/knowledge/kitchen-profile.template-en.md) | Шаблон профиля кухни (заполни и Прикрепите как базу знаний OpenWebUI). |
 | [kitchen-profile.template-ru.md](agents/jan-cook/knowledge/kitchen-profile.template-ru.md) | Русская версия шаблона профиля кухни. |
 
 </details>
@@ -182,10 +182,10 @@
 
 | Параметр | Значение |
 |---------|----------|
-| Роль | Разработчик программного обеспечения |
-| Тон | Технический, точный, прагматичный |
-| Базовая модель | `qwen/qwen3.6-plus` |
-| Сценарии | Программирование на любых языках, рецензирование кода, отладка, проектирование систем, выбор алгоритмов, рефакторинг, стратегии тестирования, концепции CI/CD, системы контроля версий. |
+| Роль | Старший фронтенд-разработчик / собеседник по IT |
+| Тон | Разговорный, с собственным мнением, но открытый — как у коллеги |
+| Базовая модель | `deepseek/deepseek-v4-pro` |
+| Сценарии | Тренды IT-индустрии, решения о внедрении технологий, архитектурные дебаты, инженерная культура, динамика команды, оценка технологического стека, стратегия технического долга и бизнес-сторона разработки. |
 
 [Посмотреть системый промпт ➦](agents/jan-developer/system.ru.md)
 
@@ -193,18 +193,18 @@
 
 | Навык | Описание |
 |-------|----------|
-| [Рецензент кода](agents/jan-developer/skills/code-reviewer/skill.ru.md) | Систематическое ревью кода по корректности, читаемости, сопровождаемости, производительности, безопасности и тестовому покрытию. |
-| [Отладчик](agents/jan-developer/skills/debugger/skill.ru.md) | Структурированный анализ первопричин и проверка исправлений для багов, ошибок и неожиданного поведения. |
-| [Проектировщик систем](agents/jan-developer/skills/system-designer/skill.ru.md) | Прагматичное проектирование архитектуры и API с учётом компромиссов, потоков данных и масштабируемости. |
-| [Сканер уязвимостей безопасности](agents/jan-developer/skills/security-vulnerability-scanner/skill.ru.md) | Выявление уязвимостей безопасности, антипаттернов, небезопасных значений по умолчанию и рисков развёртывания в коде и архитектуре. |
-| [Планировщик рефакторинга](agents/jan-developer/skills/refactoring-planner/skill.ru.md) | Планирование и выполнение безопасного рефакторинга, подкреплённого тестами, для улучшения качества кода с сохранением поведения. |
 | [Решатель технических споров](agents/jan-developer/skills/technical-dispute-resolver/skill.ru.md) | Беспристрастная оценка конфликтующих технических мнений и решений на основе доказательств, компромиссов и рекомендуемого пути вперёд. |
+| [Проектировщик систем](agents/jan-developer/skills/system-designer/skill.ru.md) | Прагматичное проектирование архитектуры и API с учётом компромиссов, потоков данных и масштабируемости. |
+| [Аналитик технических трендов](agents/jan-developer/skills/tech-trend-analyst/skill.ru.md) | Оценка новых технологий, циклов хайпа и момента внедрения на основе доказательств и реального опыта. |
+| [Советник по инженерной культуре](agents/jan-developer/skills/eng-culture-advisor/skill.ru.md) | Советы по динамике команды, найму, удалённой работе, культуре код-ревью, практикам дежурств и построению здоровых инженерных организаций. |
+| [Оценщик технологического стека](agents/jan-developer/skills/tech-stack-evaluator/skill.ru.md) | Сравнение фреймворков, библиотек и инструментов с реальными компромиссами — производительность, DX, здоровье экосистемы, стоимость миграции и соответствие команде. |
+| [Стратег технического долга](agents/jan-developer/skills/tech-debt-strategist/skill.ru.md) | Переосмысление технического долга как бизнес-задачи — приоритизация того, что исправлять, планирование миграций с легаси и обоснование перед руководством. |
 
 **База знаний:**
 
 | Файл | Назначение |
 |------|------------|
-| [developer-profile.template-en.md](agents/jan-developer/knowledge/developer-profile.template-en.md) | Шаблон личного профиля разработчика (заполнить и прикрепить как базу знаний OpenWebUI). |
+| [developer-profile.template-en.md](agents/jan-developer/knowledge/developer-profile.template-en.md) | Шаблон личного профиля разработчика (заполнить и Прикрепитеть как базу знаний OpenWebUI). |
 | [developer-profile.template-ru.md](agents/jan-developer/knowledge/developer-profile.template-ru.md) | Русская версия шаблона личного профиля разработчика. |
 
 </details>
@@ -241,7 +241,7 @@
 
 | Файл | Назначение |
 |------|------------|
-| [medical-profile.template-en.md](agents/jan-doctor/knowledge/medical-profile.template-en.md) | Шаблон личного медицинского профиля (заполнить и прикрепить как базу знаний OpenWebUI). |
+| [medical-profile.template-en.md](agents/jan-doctor/knowledge/medical-profile.template-en.md) | Шаблон личного медицинского профиля (заполнить и Прикрепитеть как базу знаний OpenWebUI). |
 | [medical-profile.template-ru.md](agents/jan-doctor/knowledge/medical-profile.template-ru.md) | Русская версия шаблона личного медицинского профиля. |
 
 > [!WARNING]
@@ -318,7 +318,7 @@
 
 | Файл | Назначение |
 |------|------------|
-| [safety-profile.template-en.md](agents/jan-policeman/knowledge/safety-profile.template-en.md) | Шаблон профиля безопасности (заполни и прикрепи как базу знаний OpenWebUI). |
+| [safety-profile.template-en.md](agents/jan-policeman/knowledge/safety-profile.template-en.md) | Шаблон профиля безопасности (заполни и Прикрепите как базу знаний OpenWebUI). |
 | [safety-profile.template-ru.md](agents/jan-policeman/knowledge/safety-profile.template-ru.md) | Русская версия шаблона профиля безопасности. |
 
 </details>
@@ -354,7 +354,7 @@
 
 | Файл | Назначение |
 |------|------------|
-| [political-context-profile.template-en.md](agents/jan-politician/knowledge/political-context-profile.template-en.md) | Шаблон профиля политического контекста (заполни и прикрепи как базу знаний OpenWebUI). |
+| [political-context-profile.template-en.md](agents/jan-politician/knowledge/political-context-profile.template-en.md) | Шаблон профиля политического контекста (заполни и Прикрепите как базу знаний OpenWebUI). |
 | [political-context-profile.template-ru.md](agents/jan-politician/knowledge/political-context-profile.template-ru.md) | Русская версия шаблона профиля политического контекста. |
 
 </details>
@@ -390,7 +390,7 @@
 
 | Файл | Назначение |
 |------|------------|
-| [mental-health-context-profile.template-en.md](agents/jan-psychologist/knowledge/mental-health-context-profile.template-en.md) | Шаблон профиля контекста психического здоровья (заполни и прикрепи как базу знаний OpenWebUI). |
+| [mental-health-context-profile.template-en.md](agents/jan-psychologist/knowledge/mental-health-context-profile.template-en.md) | Шаблон профиля контекста психического здоровья (заполни и Прикрепите как базу знаний OpenWebUI). |
 | [mental-health-context-profile.template-ru.md](agents/jan-psychologist/knowledge/mental-health-context-profile.template-ru.md) | Русская версия шаблона профиля контекста психического здоровья. |
 
 > [!WARNING]
@@ -429,7 +429,7 @@
 
 | Файл | Назначение |
 |------|------------|
-| [research-profile.template-en.md](agents/jan-scientist/knowledge/research-profile.template-en.md) | Шаблон профиля исследований (заполни и прикрепи как базу знаний OpenWebUI). |
+| [research-profile.template-en.md](agents/jan-scientist/knowledge/research-profile.template-en.md) | Шаблон профиля исследований (заполни и Прикрепите как базу знаний OpenWebUI). |
 | [research-profile.template-ru.md](agents/jan-scientist/knowledge/research-profile.template-ru.md) | Русская версия шаблона профиля исследований. |
 
 </details>
@@ -465,7 +465,7 @@
 
 | Файл | Назначение |
 |------|------------|
-| [fitness-profile.template-en.md](agents/jan-trainer/knowledge/fitness-profile.template-en.md) | Шаблон профиля физической формы (заполни и прикрепи как базу знаний OpenWebUI). |
+| [fitness-profile.template-en.md](agents/jan-trainer/knowledge/fitness-profile.template-en.md) | Шаблон профиля физической формы (заполни и Прикрепите как базу знаний OpenWebUI). |
 | [fitness-profile.template-ru.md](agents/jan-trainer/knowledge/fitness-profile.template-ru.md) | Русская версия шаблона профиля физической формы. |
 
 > [!WARNING]
@@ -492,7 +492,14 @@ jan/
       knowledge/            # База знаний / шаблоны конкретного агента (опционально)
   docs/
     architecture.md         # Архитектурные решения и философия
-    portability-guide.md  # Инструкции по экспорту на другие платформы
+    portability-guide.md    # Инструкции по экспорту на другие платформы
+  exports/                  # Готовые к импорту бандлы для OpenWebUI
+    openwebui-skills-en.json
+    openwebui-skills-ru.json
+    openwebui-models-en.json
+    openwebui-models-ru.json
+  scripts/                  # Скрипты сборки и обслуживания
+    export-openwebui.ps1    # Упаковка скиллов и моделей в exports/
   shared/                   # Общие глобальные ресурсы
     avatar.fig              # Figma-исходник аватаров
   templates/                # Шаблоны для переносимости
@@ -508,21 +515,34 @@ jan/
 
 ### Импорт в OpenWebUI
 
-1. Открой свой OpenWebUI.
-2. Перейди в **Workspace > Skills**.
-3. Нажми кнопку импорта (иконка загрузки).
-4. Загрузи необходимый набор скиллов для выбранной модели.
-5. Перейди в **Workspace > Models**.
-6. Нажми кнопку импорта (иконка загрузки).
-7. Выбери любой `agents/jan-{alter}/openwebui.json` (английский интерфейс) или `openwebui.ru.json` (русский интерфейс).
-8. Модель появится в списке со всеми настроенными возможностями, инструментами и навыками.
+Самый быстрый способ импортировать всё сразу — использовать упакованные файлы экспорта из `exports/`.
+
+1. Откройте свой OpenWebUI.
+2. Перейдите в **Workspace > Skills**.
+3. Нажмите кнопку импорта (иконка загрузки).
+4. Выберите `exports/openwebui-skills-en.json` (английский интерфейс) или `exports/openwebui-skills-ru.json` (русский интерфейс). Это импортирует все 58 скиллов за один раз.
+5. Перейдите в **Workspace > Models**.
+6. Нажмите кнопку импорта (иконка загрузки).
+7. Выберите `exports/openwebui-models-en.json` (английский интерфейс) или `exports/openwebui-models-ru.json` (русский интерфейс). Это импортирует всех 11 альтеров за один раз.
+8. Модели появятся в списке со всеми настроенными возможностями, инструментами и навыками.
 
 > [!NOTE]
-> При наличии и/или необходимости базы знаний, загрузи её через **Workspace > Knowledge**, затем прикрепи её в настройках модели. База знаний нужна не всегда и не для всех альтеров, кроме того, она персонализирована.
+> Импортируйте скиллы **до** моделей. Каждый альтер ссылается на скиллы по ID, поэтому скиллы должны существовать в OpenWebUI до импорта моделей.
+
+> [!NOTE]
+> При наличии и/или необходимости базы знаний, загрузите её через **Workspace > Knowledge**, затем прикрепите её в настройках модели. База знаний нужна не всегда и не для всех альтеров, кроме того, она персонализирована.
+
+При необходимости можно по-прежнему импортировать отдельных альтеров из `agents/jan-{alter}/openwebui.json` (английский интерфейс) или `openwebui.ru.json` (русский интерфейс).
+
+Чтобы пересоздать упакованные файлы экспорта после изменения скиллов или моделей, выполните:
+
+```powershell
+.\scripts\export-openwebui.ps1
+```
 
 ### Использование модели
 
-1. Начни новый чат.
+1. Начните новый чат.
 2. Выбери нужного альтера из списка моделей.
 3. Системный промпт, скиллы и знания применены — альтер готов отвечать в своей роли.
 
@@ -542,63 +562,63 @@ jan/
 
 Для использования на другой платформе:
 
-- **LibreChat**: Создай агента, вставь содержимое `.md` в инструкции, подключи нужные плагины.
-- **LM Studio**: Создай пресет, вставь содержимое `.md` как системный промпт, настрой температуру.
-- **Ollama**: Создай Modelfile с блоком `SYSTEM`, собери и запусти.
+- **LibreChat**: Создайте агента, вставьте содержимое `.md` в инструкции, подключите нужные плагины.
+- **LM Studio**: Создайте пресет, вставьте содержимое `.md` как системный промпт, настройте температуру.
+- **Ollama**: Создайте Modelfile с блоком `SYSTEM`, соберите и запустите.
 
 Подробные инструкции, включая рекомендации по температуре и базовым моделям для каждого альтера: `docs/portability-guide.md`.
 
 ## Шаблоны баз знаний
 
-Большинство альтеров включают опциональные шаблоны баз знаний, которые можно заполнить и прикрепить в OpenWebUI:
+Большинство альтеров включают опциональные шаблоны баз знаний, которые можно заполнить и Прикрепитеть в OpenWebUI:
 
 - **Ян: Ассистент** — `personal-context-profile.template-en.md` / `personal-context-profile.template-ru.md`  
-  Сохраняй своё рабочее расписание, предпочтения по коммуникации, проекты и приоритеты. Прикрепи как базу знаний в режиме Full Context, чтобы альтер учитывал твой рабочий процесс.
+  Сохраняйте своё рабочее расписание, предпочтения по коммуникации, проекты и приоритеты. Прикрепите как базу знаний в режиме Full Context, чтобы альтер учитывал твой рабочий процесс.
 
 - **Ян: Конструктор** — `construction-project-profile.template-en.md` / `construction-project-profile.template-ru.md`  
-  Сохраняй текущие проекты, имеющиеся инструменты, уровень навыков, региональные строительные нормы и бюджет. Прикрепи как базу знаний в режиме Full Context для персонализированного строительного руководства.
+  Сохраняйте текущие проекты, имеющиеся инструменты, уровень навыков, региональные строительные нормы и бюджет. Прикрепите как базу знаний в режиме Full Context для персонализированного строительного руководства.
 
 - **Ян: Повар** — `kitchen-profile.template-en.md` / `kitchen-profile.template-ru.md`  
-  Сохраняй диетические ограничения, предпочтительные кухни, кухонное оборудование и уровень кулинарных навыков. Прикрепи как базу знаний в режиме Full Context для персонализированных рекомендаций по рецептам.
+  Сохраняйте диетические ограничения, предпочтительные кухни, кухонное оборудование и уровень кулинарных навыков. Прикрепите как базу знаний в режиме Full Context для персонализированных рекомендаций по рецептам.
 
 - **Ян: Разработчик** — `developer-profile.template-en.md` / `developer-profile.template-ru.md`  
-  Сохраняй свой технологический стек, соглашения, текущие проекты, предпочтения в код-ревью и стиль общения. Прикрепи как базу знаний в режиме Full Context, чтобы альтер учитывал твою среду.
+  Сохраняйте свой технологический стек, контекст команды, текущие проекты, инженерную культуру и стиль общения. Прикрепите как базу знаний в режиме Full Context, чтобы альтер учитывал твою среду и адаптировал мнения под твою ситуацию.
 
 - **Ян: Доктор** — `medical-profile.template-en.md` / `medical-profile.template-ru.md`  
-  Сохраняй медицинскую историю, препараты, аллергии, базовые показатели и врачей. Прикрепи как базу знаний в режиме Full Context для персонализированных дискуссий о здоровье.
+  Сохраняйте медицинскую историю, препараты, аллергии, базовые показатели и врачей. Прикрепите как базу знаний в режиме Full Context для персонализированных дискуссий о здоровье.
 
 - **Ян: Юрист** — сборник кодексов и законов Республики Молдовы (PDF)  
   Предварительно прикреплённые правовые источники, на которых основываются ответы.
 
 - **Ян: Полицейский** — `safety-profile.template-en.md` / `safety-profile.template-ru.md`  
-  Сохраняй своё местоположение, экстренные контакты, информацию о транспортном средстве и известные риски. Прикрепи как базу знаний в режиме Full Context для персонализированного руководства по безопасности.
+  Сохраняйте своё местоположение, экстренные контакты, информацию о транспортном средстве и известные риски. Прикрепите как базу знаний в режиме Full Context для персонализированного руководства по безопасности.
 
 - **Ян: Политик** — `political-context-profile.template-en.md` / `political-context-profile.template-ru.md`  
-  Сохраняй регион интереса, области политики и текущие политические вопросы. Прикрепи как базу знаний в режиме Full Context для релевантного анализа политики.
+  Сохраняйте регион интереса, области политики и текущие политические вопросы. Прикрепите как базу знаний в режиме Full Context для релевантного анализа политики.
 
 - **Ян: Психолог** — `mental-health-context-profile.template-en.md` / `mental-health-context-profile.template-ru.md`  
-  Сохраняй текущие проблемы, цели терапии и предпочтения по коммуникации. Прикрепи как базу знаний в режиме Full Context для персонализированной поддержки.
+  Сохраняйте текущие проблемы, цели терапии и предпочтения по коммуникации. Прикрепите как базу знаний в режиме Full Context для персонализированной поддержки.
 
 - **Ян: Учёный** — `research-profile.template-en.md` / `research-profile.template-ru.md`  
-  Сохраняй свою область исследований, текущие проекты, методологию и сеть сотрудничества. Прикрепи как базу знаний в режиме Full Context для релевантного научного руководства.
+  Сохраняйте свою область исследований, текущие проекты, методологию и сеть сотрудничества. Прикрепите как базу знаний в режиме Full Context для релевантного научного руководства.
 
 - **Ян: Тренер** — `fitness-profile.template-en.md` / `fitness-profile.template-ru.md`  
-  Сохраняй свой уровень физической формы, цели, травмы, доступное оборудование и расписание. Прикрепи как базу знаний в режиме Full Context для персонализированных рекомендаций по тренировкам.
+  Сохраняйте свой уровень физической формы, цели, травмы, доступное оборудование и расписание. Прикрепите как базу знаний в режиме Full Context для персонализированных рекомендаций по тренировкам.
 
 Заполненные личные профили игнорируются Git (см. `.gitignore`), чтобы чувствительные данные не попадали в репозиторий.
 
 ## Добавление нового альтера
 
-1. Скопируй существующую папку альтера (например, `agents/jan-trainer/`).
-2. Отредактируй `system.md` — измени роль, тон, правила поведения, темы и список навыков.
-3. Отредактируй `system.ru.md` — обнови русский перевод.
-4. Отредактируй `openwebui.json` и `openwebui.ru.json` — обнови id, name, description, capabilities, toolIds и skillIds.
-5. Добавь навыки агента в папку `skills/{skill-slug}/` с файлами `manifest.json`, `skill.en.md` и `skill.ru.md`.
-6. Замени `avatar.png` на соответствующий аватар.
+1. Скопируйте существующую папку альтера (например, `agents/jan-trainer/`).
+2. Отредактируйте `system.md` — измените роль, тон, правила поведения, темы и список навыков.
+3. Отредактируйте `system.ru.md` — обновите русский перевод.
+4. Отредактируйте `openwebui.json` и `openwebui.ru.json` — обновите id, name, description, capabilities, toolIds и skillIds.
+5. Добавьте навыки агента в папку `skills/{skill-slug}/` с файлами `manifest.json`, `skill.en.md` и `skill.ru.md`.
+6. Замените `avatar.png` на соответствующий аватар.
 
 Всё. Никакой сборки, изменений в БД или дополнительной настройки.
 
-Для пустой заготовки используй `templates/openwebui-model-template.json`.
+Для пустой заготовки используйте `templates/openwebui-model-template.json`.
 
 ## Лицензия
 

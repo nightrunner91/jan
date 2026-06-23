@@ -18,15 +18,31 @@ The `.md` file is the portable artifact. The JSON is OpenWebUI-specific.
 
 ## Export to OpenWebUI
 
-This is the native format and requires no adaptation.
+This is the native format and requires no adaptation. Pre-packed bundles are available in `exports/`.
+
+### One-click import (recommended)
 
 1. Open OpenWebUI.
-2. Go to Workspace > Models.
+2. Go to **Workspace > Skills**.
 3. Click the import button (upload icon).
-4. Select an `agents/jan-{alter}/openwebui.json` file.
-5. The model appears in your model list with all capabilities and tools pre-configured.
+4. Select `exports/openwebui-skills-en.json` (English UI) or `exports/openwebui-skills-ru.json` (Russian UI). All 58 skills are imported in one action.
+5. Go to **Workspace > Models**.
+6. Click the import button (upload icon).
+7. Select `exports/openwebui-models-en.json` (English UI) or `exports/openwebui-models-ru.json` (Russian UI). All 11 alters are imported in one action.
+8. Each alter appears in your model list with capabilities, tools, and skills pre-configured.
 
-**Bulk import**: You can import all 11 JSON files at once. OpenWebUI handles duplicates by updating existing models.
+Import skills **before** models so the skill bindings resolve correctly.
+
+### Per-alter import
+
+If you only want a single alter:
+
+1. Go to **Workspace > Models**.
+2. Click the import button (upload icon).
+3. Select `agents/jan-{alter}/openwebui.json` (English UI) or `openwebui.ru.json` (Russian UI).
+4. The model appears in your model list with all capabilities and tools pre-configured.
+
+OpenWebUI handles duplicates by updating existing models.
 
 ---
 
@@ -145,7 +161,7 @@ curl http://localhost:11434/api/chat -d '{
 | Assistant | `deepseek-v4-flash`, `llama3.1:70b` |
 | Constructor | `qwen2.5:32b`, `llama3.1:70b` |
 | Cook | `llama3.1:70b`, `mistral:latest` |
-| Developer | `deepseek-coder-v2:16b`, `qwen2.5-coder:32b` |
+| Developer | `qwen2.5:32b`, `llama3.1:70b` |
 | Doctor | `llama3.1:70b`, `claude-sonnet` (if available via Ollama) |
 | Lawyer | `llama3.1:70b`, `mixtral:8x22b` |
 | Policeman | `llama3.1:70b`, `qwen2.5:32b` |
