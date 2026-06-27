@@ -14,55 +14,121 @@
 
 ---
 
-## About You
+## Basic Information
 
 - **Name / handle:**
 - **Role / title:**
 - **Experience level:**
-- **Location / time zone:**
+- **Primary language:**
+- **Time zone / working hours:**
 
 ## Work Context
 
 - **Company / organization:**
-- **Team size and structure:**
+- **Team:**
 - **Domain / industry:**
 - **Main responsibilities:**
 - **Current focus:**
 
+## Daily Tools and Environment
+
+- **Operating system(s):**
+- **IDE / editor:**
+- **Terminal / shell:**
+- **Version control system:**
+- **Browser / extensions:**
+- **Notes / knowledge base:**
+- **Communication tools:**
+
 ## Tech Stack
 
-### Primary stack
+### Languages
 
-- **Languages:**
-- **Frontend frameworks / libraries:**
-- **Backend frameworks / services:**
-- **Databases:**
-- **Infrastructure / cloud:**
+- **Language | Proficiency | Preferred use cases:**
 
-### Tools you love
+### Frameworks and Libraries
 
-- **Tools or technologies you'd choose again:**
-- **Tools you'd drop if you could:**
+- **Framework / library | Version | Used for:**
 
-## Engineering Culture
+### Databases
 
-- **Team practices (agile, async-first, pair programming, etc.):**
-- **Code review culture:**
-- **On-call / incident response:**
-- **Remote / hybrid / office:**
+- **Database | Engine | Role:**
 
-## Hot Takes
+### Infrastructure and Platforms
 
-- **Technologies you're skeptical about:**
-- **Technologies you're bullish on:**
-- **Opinions you hold that others disagree with:**
-- **Trends you think are overhyped or underhyped:**
+- **Cloud provider(s):**
+- **Containerization / orchestration:**
+- **CI/CD platform:**
+- **Monitoring / logging:**
+- **Hosting / deployment:**
 
-## Current Interests
+### APIs and External Services
 
-- **What you're learning or exploring:**
-- **What you want to discuss:**
-- **Industry topics you care about:**
+- **Service | Purpose | Authentication method:**
+
+## Project Context
+
+### Active Projects
+
+- **Project | Repository URL | Description | Tech stack | Status:**
+
+### Project Conventions
+
+- **Folder structure / monorepo:**
+- **Branching strategy:**
+- **Commit message format:**
+- **Release process:**
+
+## Code Standards and Preferences
+
+- **Style guides:**
+- **Linters / formatters:**
+- **Naming conventions:**
+- **Code organization principles:**
+- **Preferred patterns:**
+- **Anti-patterns to avoid:**
+- **Documentation requirements:**
+
+## Testing and Quality
+
+- **Testing frameworks:**
+- **Target test coverage:**
+- **Types of tests used:**
+- **Quality gates:**
+- **Code review requirements:**
+
+## CI/CD and DevOps
+
+- **Pipeline steps:**
+- **Deployment environments:**
+- **Rollback strategy:**
+- **Feature flags / toggles:**
+
+## Security and Secrets
+
+- **Secrets management tool:**
+- **Encryption / hashing preferences:**
+- **Authentication / authorization patterns:**
+- **Sensitive data handling rules:**
+
+## Current Tasks / Backlog
+
+- **Task | Priority | Deadline | Notes:**
+
+## Known Issues / Technical Debt
+
+- **Issue | Impact | Proposed solution | Status:**
+
+## Learning Goals
+
+- **Topic | Why | Target depth:**
+
+## Code Review Preferences
+
+- **Focus on:**
+- **Ignore / don't nitpick:**
+- **Tone / feedback style:**
+- **Typical mistakes to point out:**
 
 ## Communication Preferences
 
@@ -73,4 +139,4 @@
 
 ## Notes for Jan Developer
 
-- **Specific instructions for the AI assistant (e.g., prefer frontend topics, skip DevOps details, challenge me on my opinions, etc.):**
+- **Specific instructions for the AI assistant (e.g., always suggest tests, prefer functional style, point out security implications, default to strict mode TypeScript, etc.):**

@@ -50,7 +50,7 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 | <img src="agents/jan-assistant/avatar.png" alt="Jan: Assistant" width="24"> | [Jan: Assistant](#jan-assistant) | Personal Assistant | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-constructor/avatar.png" alt="Jan: Constructor" width="24"> | [Jan: Constructor](#jan-constructor) | Construction Engineer | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-cook/avatar.png" alt="Jan: Cook" width="24"> | [Jan: Cook](#jan-cook) | Chef / Cook | `deepseek/deepseek-v4-flash` |
-| <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="24"> | [Jan: Developer](#jan-developer) | Senior Frontend Developer / IT Conversation Partner | `deepseek/deepseek-v4-pro` |
+| <img src="agents/jan-developer/avatar.png" alt="Jan: Developer" width="24"> | [Jan: Developer](#jan-developer) | Senior Frontend Developer / IT Conversation Partner | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-doctor/avatar.png" alt="Jan: Doctor" width="24"> | [Jan: Doctor](#jan-doctor) | Medical Consultant | `google/gemma-4-26b-a4b-it` |
 | <img src="agents/jan-lawyer/avatar.png" alt="Jan: Lawyer" width="24"> | [Jan: Lawyer](#jan-lawyer) | Legal Information Specialist | `deepseek/deepseek-v4-pro` |
 | <img src="agents/jan-policeman/avatar.png" alt="Jan: Policeman" width="24"> | [Jan: Policeman](#jan-policeman) | Public Safety Advisor | `deepseek/deepseek-v4-pro` |
@@ -184,7 +184,7 @@ In the same spirit, each Jan alter is the same AI model, differing in **system p
 |-----------|-------|
 | Role | Senior Frontend Developer / IT Conversation Partner |
 | Tone | Conversational, opinionated but open-minded, peer-like |
-| Base model | `deepseek/deepseek-v4-pro` |
+| Base model | `deepseek/deepseek-v4-flash` |
 | Scenarios | IT industry trends, technology adoption decisions, architecture debates, engineering culture, team dynamics, tech stack evaluation, technical debt strategy, and the business side of software. |
 
 [View system prompt ➦](agents/jan-developer/system.md)

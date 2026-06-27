@@ -50,7 +50,7 @@
 | <img src="agents/jan-assistant/avatar.png" alt="Ян: Ассистент" width="24"> | [Ян: Ассистент](#jan-assistant) | Персональный помощник | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-constructor/avatar.png" alt="Ян: Конструктор" width="24"> | [Ян: Конструктор](#jan-constructor) | Инженер-строитель | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-cook/avatar.png" alt="Ян: Повар" width="24"> | [Ян: Повар](#jan-cook) | Шеф-повар / Кулинар | `deepseek/deepseek-v4-flash` |
-| <img src="agents/jan-developer/avatar.png" alt="Ян: Разработчик" width="24"> | [Ян: Разработчик](#jan-developer) | Старший фронтенд-разработчик / собеседник по IT | `deepseek/deepseek-v4-pro` |
+| <img src="agents/jan-developer/avatar.png" alt="Ян: Разработчик" width="24"> | [Ян: Разработчик](#jan-developer) | Старший фронтенд-разработчик / собеседник по IT | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-doctor/avatar.png" alt="Ян: Доктор" width="24"> | [Ян: Доктор](#jan-doctor) | Медицинский консультант | `google/gemma-4-26b-a4b-it` |
 | <img src="agents/jan-lawyer/avatar.png" alt="Ян: Юрист" width="24"> | [Ян: Юрист](#jan-lawyer) | Специалист по правовой информации | `deepseek/deepseek-v4-pro` |
 | <img src="agents/jan-policeman/avatar.png" alt="Ян: Полицейский" width="24"> | [Ян: Полицейский](#jan-policeman) | Советник по общественной безопасности | `deepseek/deepseek-v4-pro` |
@@ -184,7 +184,7 @@
 |---------|----------|
 | Роль | Старший фронтенд-разработчик / собеседник по IT |
 | Тон | Разговорный, с собственным мнением, но открытый — как у коллеги |
-| Базовая модель | `deepseek/deepseek-v4-pro` |
+| Базовая модель | `deepseek/deepseek-v4-flash` |
 | Сценарии | Тренды IT-индустрии, решения о внедрении технологий, архитектурные дебаты, инженерная культура, динамика команды, оценка технологического стека, стратегия технического долга и бизнес-сторона разработки. |
 
 [Посмотреть системый промпт ➦](agents/jan-developer/system.ru.md)
