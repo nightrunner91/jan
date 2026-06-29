@@ -48,7 +48,7 @@
 | | Альтер | Роль | Базовая модель |
 |--------|--------|------|----------------|
 | <img src="agents/jan-assistant/avatar.png" alt="Ян: Ассистент" width="24"> | [Ян: Ассистент](#jan-assistant) | Персональный помощник | `deepseek/deepseek-v4-flash` |
-| <img src="agents/jan-constructor/avatar.png" alt="Ян: Конструктор" width="24"> | [Ян: Конструктор](#jan-constructor) | Инженер-строитель | `deepseek/deepseek-v4-flash` |
+| <img src="agents/jan-constructor/avatar.png" alt="Ян: Строитель" width="24"> | [Ян: Строитель](#jan-constructor) | Инженер-строитель | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-cook/avatar.png" alt="Ян: Повар" width="24"> | [Ян: Повар](#jan-cook) | Шеф-повар / Кулинар | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-developer/avatar.png" alt="Ян: Разработчик" width="24"> | [Ян: Разработчик](#jan-developer) | Старший фронтенд-разработчик / собеседник по IT | `deepseek/deepseek-v4-flash` |
 | <img src="agents/jan-doctor/avatar.png" alt="Ян: Доктор" width="24"> | [Ян: Доктор](#jan-doctor) | Медицинский консультант | `google/gemma-4-26b-a4b-it` |
@@ -102,7 +102,7 @@
 <details>
 <summary>
 
-### <img src="agents/jan-constructor/avatar.png" alt="Ян: Конструктор" width="30" align="left"> Ян: Конструктор
+### <img src="agents/jan-constructor/avatar.png" alt="Ян: Строитель" width="30" align="left"> Ян: Строитель
 
 </summary>
 
@@ -575,7 +575,7 @@ jan/
 - **Ян: Ассистент** — `personal-context-profile.template-en.md` / `personal-context-profile.template-ru.md`  
   Сохраняйте своё рабочее расписание, предпочтения по коммуникации, проекты и приоритеты. Прикрепите как базу знаний в режиме Full Context, чтобы альтер учитывал твой рабочий процесс.
 
-- **Ян: Конструктор** — `construction-project-profile.template-en.md` / `construction-project-profile.template-ru.md`  
+- **Ян: Строитель** — `construction-project-profile.template-en.md` / `construction-project-profile.template-ru.md`  
   Сохраняйте текущие проекты, имеющиеся инструменты, уровень навыков, региональные строительные нормы и бюджет. Прикрепите как базу знаний в режиме Full Context для персонализированного строительного руководства.
 
 - **Ян: Повар** — `kitchen-profile.template-en.md` / `kitchen-profile.template-ru.md`  
